@@ -1,12 +1,15 @@
+// Hero Section
+
 .hero {
 	position: relative;
+	padding: 9rem 0 5rem;
+
 	// .hero__wrapper
 
 	&__wrapper {
 		display: flex;
 		align-items: center;
-		justify-content: space-around;
-		padding: 9rem 0 5rem;
+		justify-content: space-between;
 	}
 
 	// .hero__sidebar
@@ -92,7 +95,7 @@
 	// .hero__main
 
 	&__main {
-		max-width: 50%;
+		max-width: 55%;
 		flex-grow: 1;
 		margin-top: 4rem;
 	}
@@ -283,5 +286,243 @@
 		}
 		.collapsed {
 		}
+	}
+}
+
+// My Projects Section
+
+.projects {
+	background-color: #242531;
+	padding: 7rem 0 3rem;
+	// .projects__wrapper
+
+	&__wrapper {
+	}
+
+	// .projects__header
+
+	&__header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	// .projects__text
+
+	&__text {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+	}
+
+	// .projects__doodleImg
+
+	&__doodleImg {
+	}
+
+	// .projects__textWrapper
+
+	&__textWrapper {
+	}
+
+	// .projects__doodleText
+
+	&__doodleText {
+		font-family: $brownist;
+		font-size: 26px;
+		text-align: left;
+		color: #e9d2f4;
+		margin-bottom: 0;
+		line-height: 1;
+	}
+
+	// .projects__title
+
+	&__title {
+		font-family: $georgia;
+		font-size: 32px;
+		font-weight: bold;
+		letter-spacing: 0.32px;
+		text-align: left;
+		color: #16bac5;
+		margin-bottom: 0;
+	}
+
+	// .projects__button
+
+	&__button {
+		flex-grow: 0;
+		font-family: $lato;
+		font-size: 16px;
+		font-weight: bold;
+		text-align: left;
+		color: #f7f4f9;
+		border: none;
+		padding: 0.75rem 1.75rem;
+		line-height: 1;
+		border-radius: 22px;
+		background-color: #1873f2;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+	}
+
+	// .projects__buttonArrow
+
+	&__buttonArrow {
+		margin-left: 5px;
+	}
+
+	// .projects__list
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 4rem;
+		padding: 4rem 0;
+	}
+
+	// .projects__single
+
+	&__single {
+		display: flex;
+		gap: 1.5rem;
+		min-height: 520px;
+
+		&:nth-child(even) {
+			flex-direction: row-reverse;
+		}
+	}
+
+	// .projects__projectOne
+
+	&__projectOne {
+		.projects__details {
+			&::after {
+				content: "";
+				position: absolute;
+				top: 0;
+				right: -2rem;
+				width: 100%;
+				height: 100%;
+				z-index: -1;
+				background-image: url("../../images/home/project-icon-1.svg");
+				background-repeat: no-repeat;
+			}
+		}
+	}
+
+	// .projects__projectTwo
+
+	&__projectTwo {
+		.projects__details {
+			&::after {
+				content: "";
+				position: absolute;
+				top: 0;
+				right: -2rem;
+				width: 100%;
+				height: 100%;
+				z-index: -1;
+				background-image: url("../../images/home/project-icon-2.svg");
+				background-repeat: no-repeat;
+			}
+		}
+
+		.projects__image {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	// .projects__preview
+
+	&__preview {
+		border-radius: 12px;
+		flex-basis: 60%;
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: linear-gradient(
+			180deg,
+			rgba(198, 55, 55, 1) -6%,
+			rgba(242, 216, 216, 1) 100%
+		);
+	}
+
+	// .projects__image
+
+	&__image {
+		width: 60%;
+	}
+
+	// .projects__details
+
+	&__details {
+		flex-basis: 40%;
+		padding: 2rem;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		border-radius: 12px;
+		background-color: #fee6e7;
+		position: relative;
+		z-index: 1;
+	}
+
+	// .projects__projectLogo
+
+	&__projectLogo {
+	}
+
+	// .projects__projectTitle
+
+	&__projectTitle {
+		font-family: $lato;
+		font-size: 26px;
+		font-weight: 900;
+		line-height: 1.4;
+		text-align: left;
+		align-self: stretch;
+		color: #2e3047;
+		margin-top: auto;
+	}
+
+	// .projects__projectDesc
+
+	&__projectDesc {
+		font-family: $lato;
+		font-size: 16px;
+		line-height: 1.25;
+		letter-spacing: 0.16px;
+		text-align: left;
+		align-self: stretch;
+		color: #2e3047;
+		max-width: 430px;
+	}
+
+	// .projects__projectTags
+
+	&__projectTags {
+		display: flex;
+		gap: 0.5rem;
+	}
+
+	// .projects__projectTag
+
+	&__projectTag {
+		font-family: $lato;
+		font-size: 12px;
+		font-weight: 500;
+		line-height: 1.67;
+		letter-spacing: 0.2px;
+		text-align: center;
+		color: #2e3047;
+		margin-bottom: 0;
+		border-radius: 25px;
+		background-color: #f8d8d8;
+		padding: 3px 10px;
 	}
 }
