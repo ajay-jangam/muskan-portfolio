@@ -909,6 +909,9 @@ body:before {
   width: 440px;
   min-height: 470px;
   position: relative;
+  /* Reset rotation for active slides */
+  /* Rotate next slide clockwise */
+  /* Rotate previous slide counterclockwise */
 }
 .feedback__slider .swiper-button-next {
   top: 7.25rem;
@@ -924,6 +927,24 @@ body:before {
 .feedback__slider .swiper-button-prev::after {
   content: url("../../images/home/bi_arrow-left.svg");
 }
+.feedback__slider .swiper-slide-active {
+  transform: rotate(0);
+}
+.feedback__slider .swiper-slide-rotate-next {
+  transform: rotate(0); /* Reset to original rotation */
+}
+.feedback__slider .swiper-slide-rotate-prev {
+  transform: rotate(0); /* Reset to original rotation */
+}
+.feedback__slider .swiper-slide-next {
+  transform: rotate(90deg); /* Rotate 90 degrees clockwise */
+}
+.feedback__slider .swiper-slide-prev {
+  transform: rotate(-90deg); /* Rotate 90 degrees counterclockwise */
+}
+.feedback__slides {
+  min-height: 470px;
+}
 .feedback__slide {
   border-radius: 12px;
   background-color: #fff;
@@ -931,8 +952,9 @@ body:before {
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: transform 0.6s ease-in-out;
-  backface-visibility: hidden; /* Prevents flicker during transition */
+  min-height: 470px;
+  transform-origin: bottom center; /* Set the pivot point at the bottom */
+  transition: transform 0.4s ease; /* Smooth transition for rotation */
 }
 .feedback__slideImg {
   width: 100px;

@@ -1,15 +1,15 @@
-$(document).ready(function () {
+$(document).ready(() => {
 	// Load more Functionality
 	$(".projects__single").slice(0, 2).css("display", "flex").show()
 	let isExpanded = false
 
-	$(".projects__button").click(function (e) {
+	$(".projects__button").click((e) => {
 		e.preventDefault()
 
 		isExpanded
 			? $(".projects__single:visible")
 					.slice(-3)
-					.slideUp("slow", function () {
+					.slideUp("slow", () => {
 						$(this).css("display", "none")
 					})
 			: $(".projects__single:hidden")
@@ -28,48 +28,62 @@ $(document).ready(function () {
 	const clientsSliderOptionsPara = {
 		// Optional parameters
 		loop: true,
-		spaceBetween: false,
-		autoplay: {
-			delay: 0,
-			disableOnInteraction: true,
-		},
 		slidesPerView: "auto",
-		speed: 5000,
+		speed: 4000,
 		grabCursor: false,
 		mousewheelControl: false,
 		keyboardControl: true,
 	}
 	const clientsSliderTop = new Swiper(".clients__sliderTop", {
 		...clientsSliderOptionsPara,
+		autoplay: {
+			delay: 0,
+			disableOnInteraction: true,
+		},
 	})
 
 	const clientsSliderBottom = new Swiper(".clients__sliderBottom", {
 		...clientsSliderOptionsPara,
 		autoplay: {
+			delay: 0,
 			reverseDirection: true,
+			disableOnInteraction: true,
 		},
 	})
 
 	const feedbackRibbonSlider = new Swiper(".feedback__ribbon", {
 		...clientsSliderOptionsPara,
+		autoplay: {
+			delay: 0,
+			disableOnInteraction: true,
+		},
 	})
 
 	let previousIndex = 0 // To track the direction of slide change
 
 	const feedbackSlider = new Swiper(".feedback__slider", {
 		loop: true,
-		effect: "slide", // Set initial effect
-		// on: {
-		// 	slideChangeTransitionStart: function () {
-		// 		const activeSlide = this.slides[this.activeIndex]
-		// 		activeSlide.classList.add("rotating-slide")
-		// 	},
-		// 	slideChangeTransitionEnd: function () {
-		// 		const activeSlide = this.slides[this.activeIndex]
-		// 		activeSlide.classList.remove("rotating-slide")
-		// 	},
-		// },
-		slidesPerView: "auto",
+		on: {
+			slideChangeTransitionStart: () => {
+				// Remove rotation classes from all slides
+				$(".swiper-slide").removeClass(
+					"swiper-slide-rotate-next swiper-slide-rotate-prev"
+				)
+
+				// Check the direction of the slide change
+				if (feedbackSlider.swipeDirection === "next") {
+					// Add clockwise rotation for the next slide
+					$(
+						feedbackSlider.slides[feedbackSlider.activeIndex]
+					).addClass("swiper-slide-rotate-next")
+				} else if (feedbackSlider.swipeDirection === "prev") {
+					// Add counterclockwise rotation for the previous slide
+					$(
+						feedbackSlider.slides[feedbackSlider.activeIndex]
+					).addClass("swiper-slide-rotate-prev")
+				}
+			},
+		},
 		navigation: {
 			nextEl: ".swiper-button-next",
 			prevEl: ".swiper-button-prev",
@@ -77,7 +91,7 @@ $(document).ready(function () {
 	})
 
 	// Copy email functionality
-	$(".footer__copyLink").click(function () {
+	$(".footer__copyLink").click(() => {
 		let copyText = $(".footer__email").val()
 		navigator.clipboard
 			.writeText(copyText)
