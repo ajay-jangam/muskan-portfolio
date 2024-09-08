@@ -1,0 +1,278 @@
+.footer {
+	background-color: #e9d2f4;
+	padding: 6rem 0 2rem;
+
+	// .footer__wrapper
+
+	&__wrapper {
+	}
+
+	// .footer__main
+
+	&__main {
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 6rem;
+	}
+
+	// .footer__left
+
+	&__left {
+		flex-basis: 80%;
+	}
+
+	// .footer__qoute
+
+	&__qoute {
+		font-family: $lato;
+		font-size: 38px;
+		font-weight: 600;
+		text-align: left;
+		color: #2e3047;
+		display: flex;
+		flex-direction: column;
+	}
+
+	// .footer__logo
+
+	&__logo {
+		width: 55px;
+		height: 55px;
+		border-radius: 28px;
+		object-fit: scale-down;
+	}
+
+	// .footer__logo1
+
+	&__logo1 {
+	}
+
+	// .footer__logo2
+
+	&__logo2 {
+		background-color: #800080;
+	}
+
+	// .footer__logo3
+
+	&__logo3 {
+		background-color: #3ba99c;
+	}
+
+	// .footer__logo4
+
+	&__logo4 {
+		background-color: #ff1493;
+	}
+
+	// .footer__title
+
+	&__title {
+		font-family: $georgia;
+		font-size: 72px;
+		font-weight: bold;
+		font-style: italic;
+		letter-spacing: -0.72px;
+		text-align: left;
+		color: #1873f2;
+		line-height: 1;
+		margin: 5rem 0 0rem;
+		span {
+			font-style: normal;
+		}
+	}
+
+	// .footer__titleFirst
+
+	&__titleFirst {
+		font-family: $lato;
+		color: #2e3047;
+	}
+
+	// .footer__copyEmailWrapper
+
+	&__copyEmailWrapper {
+		margin: 0 0 0.5rem;
+	}
+
+	// .footer__email
+
+	&__email {
+		font-family: $lato;
+		font-size: 20px;
+		font-weight: 500;
+		text-align: left;
+		color: #2e3047;
+		background: #0000;
+		border: none;
+		width: 300px;
+
+		&:focus-visible {
+			outline: none;
+		}
+	}
+
+	// .footer__copyLink
+
+	&__copyLink {
+		font-family: $lato;
+		font-size: 16px;
+		font-weight: bold;
+		text-align: left;
+		color: #f7f4f9;
+		background: #0000;
+		border: none;
+		padding: 0;
+		transform: translateX(-8px);
+	}
+
+	// .footer__copyLinkIcon
+
+	&__copyLinkIcon {
+	}
+
+	// .footer__copiedText
+
+	&__copiedText {
+		margin-left: 0px;
+		display: none;
+		font-family: "Lato";
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 1.43;
+		letter-spacing: 0.14px;
+		text-align: left;
+		color: #2e3047;
+	}
+
+	// .footer__link
+
+	&__link {
+		font-family: $lato;
+		font-size: 16px;
+		font-weight: bold;
+		text-align: left;
+		color: #f7f4f9;
+		border-radius: 56px;
+		background-color: #1873f2;
+		padding: 1.5rem 2.5rem;
+		text-decoration: none;
+		display: inline-flex;
+		align-items: center;
+		line-height: 1;
+		gap: 10px;
+		position: relative;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			width: 90%;
+			height: 45%;
+			opacity: 0.5;
+			border-radius: 126px;
+			background-image: linear-gradient(
+				to bottom,
+				#fff 0%,
+				rgba(255, 255, 255, 0)
+			);
+		}
+	}
+
+	// .footer__linkIcon
+
+	&__linkIcon {
+	}
+
+	// .footer__right
+
+	&__right {
+		flex-basis: 20%;
+		border-radius: 150px;
+		background-color: #3ba99c;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 1rem;
+		max-width: 230px;
+		max-height: 380px;
+	}
+
+	// .footer__profileImg
+
+	&__profileImg {
+		width: 200px;
+	}
+
+	// .footer__roundTextImg
+
+	&__roundTextImg {
+		transform: translateY(60px);
+	}
+
+	// .footer__bottom
+
+	&__bottom {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	// .footer__copyRights
+
+	&__copyRights {
+		font-family: Arial;
+		font-size: 14px;
+		letter-spacing: -0.56px;
+		text-align: left;
+		color: #2e3047;
+		margin-bottom: 0;
+
+		span {
+			margin: 0 0.5rem;
+		}
+	}
+
+	// .footer__bottomLinks
+
+	&__bottomLinks {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		display: flex;
+		gap: 1rem;
+	}
+
+	// .footer__bottomLink
+
+	&__bottomLink {
+		font-family: $lato;
+		font-size: 14px;
+		line-height: 1.7;
+		text-align: left;
+		a {
+			color: #2e3047;
+			text-decoration: none;
+		}
+		span {
+			opacity: 0.6;
+		}
+	}
+	// .footer__connect
+
+	&__connect {
+		font-family: Inter;
+		font-size: 16px;
+		font-weight: 600;
+		text-align: left;
+		color: #2e3047;
+	}
+	// .footer_linkIcon
+
+	&_linkIcon {
+		margin-left: 2px;
+	}
+}

@@ -59,20 +59,34 @@ $(document).ready(function () {
 	const feedbackSlider = new Swiper(".feedback__slider", {
 		loop: true,
 		effect: "slide", // Set initial effect
-		on: {
-			slideChangeTransitionStart: function () {
-				const activeSlide = this.slides[this.activeIndex]
-				activeSlide.classList.add("rotating-slide")
-			},
-			slideChangeTransitionEnd: function () {
-				const activeSlide = this.slides[this.activeIndex]
-				activeSlide.classList.remove("rotating-slide")
-			},
-		},
+		// on: {
+		// 	slideChangeTransitionStart: function () {
+		// 		const activeSlide = this.slides[this.activeIndex]
+		// 		activeSlide.classList.add("rotating-slide")
+		// 	},
+		// 	slideChangeTransitionEnd: function () {
+		// 		const activeSlide = this.slides[this.activeIndex]
+		// 		activeSlide.classList.remove("rotating-slide")
+		// 	},
+		// },
 		slidesPerView: "auto",
 		navigation: {
 			nextEl: ".swiper-button-next",
 			prevEl: ".swiper-button-prev",
 		},
+	})
+
+	// Copy email functionality
+	$(".footer__copyLink").click(function () {
+		let copyText = $(".footer__email").val()
+		navigator.clipboard
+			.writeText(copyText)
+			.then(() => {
+				$(".footer__copyLink").remove()
+				$(".footer__copiedText").show()
+			})
+			.catch((err) => {
+				alert("Failed to copy the link: ", err)
+			})
 	})
 })
