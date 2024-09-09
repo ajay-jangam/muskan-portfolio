@@ -10,7 +10,7 @@
 
 	.container {
 		border-radius: 44px;
-		border: solid 2px rgba(46, 48, 71, 0.04);
+		// border: solid 2px rgba(46, 48, 71, 0.04);
 		background-color: #fff;
 		box-shadow: 0px 4px 37px 0px rgba(58, 73, 249, 0.1);
 	}
@@ -77,9 +77,12 @@
 				font-weight: bold;
 				border-radius: 22px;
 				background-color: #e9d2f4;
-				padding: 0.5rem 1.75rem;
+				padding: 0.5rem 1.5rem;
 				position: relative;
-
+				line-height: 1;
+				display: flex;
+				gap: 5px;
+				align-items: center;
 				&::before {
 					content: "";
 					position: absolute;
@@ -96,6 +99,10 @@
 						#fff 0%,
 						rgba(255, 255, 255, 0)
 					);
+				}
+
+				.resume-downloadIcon {
+					width: 20px;
 				}
 			}
 		}

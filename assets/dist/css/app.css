@@ -11,8 +11,16 @@ body {
     Variables
 /*******************************************/
 @font-face {
+  font-family: "Lato Light";
+  src: url("../../fonts/lato/Lato-Light.ttf");
+}
+@font-face {
   font-family: "Lato";
   src: url("../../fonts/lato/Lato-Regular.ttf");
+}
+@font-face {
+  font-family: "Lato Bold";
+  src: url("../../fonts/lato/Lato-Black.ttf");
 }
 @font-face {
   font-family: "Georgia";
@@ -77,7 +85,6 @@ body:before {
 }
 .navbar .container {
   border-radius: 44px;
-  border: solid 2px rgba(46, 48, 71, 0.04);
   background-color: #fff;
   box-shadow: 0px 4px 37px 0px rgba(58, 73, 249, 0.1);
 }
@@ -114,8 +121,12 @@ body:before {
   font-weight: bold;
   border-radius: 22px;
   background-color: #e9d2f4;
-  padding: 0.5rem 1.75rem;
+  padding: 0.5rem 1.5rem;
   position: relative;
+  line-height: 1;
+  display: flex;
+  gap: 5px;
+  align-items: center;
 }
 .navbar-nav .resume-link .nav-link::before {
   content: "";
@@ -129,6 +140,9 @@ body:before {
   opacity: 0.5;
   border-radius: 126px;
   background-image: linear-gradient(to bottom, #fff 0%, rgba(255, 255, 255, 0));
+}
+.navbar-nav .resume-link .nav-link .resume-downloadIcon {
+  width: 20px;
 }
 
 .footer {
@@ -181,6 +195,7 @@ body:before {
 }
 .footer__title span {
   font-style: normal;
+  margin-right: -10px;
 }
 .footer__titleFirst {
   font-family: "Lato";
@@ -381,7 +396,7 @@ body:before {
 .hero__main {
   max-width: 55%;
   flex-grow: 1;
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 .hero__text {
   position: relative;
@@ -478,10 +493,11 @@ body:before {
 }
 .hero__accordion .accordion-item {
   border: none;
+  background-color: rgba(0, 0, 0, 0);
   border-bottom: solid 1px rgba(238, 238, 238, 0.93);
 }
 .hero__accordion .accordion-button {
-  font-family: "Lato";
+  font-family: "Lato Bold";
   font-size: 16px;
   font-weight: 900;
   text-align: left;
@@ -489,9 +505,7 @@ body:before {
   box-shadow: none;
   padding-bottom: 0.5rem;
   border-color: rgba(238, 238, 238, 0.93);
-}
-.hero__accordion .accordion-button:not(.collapsed) {
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0);
 }
 .hero__accordion .accordion-button:is(.collapsed) {
   padding: 2rem 1rem;
@@ -504,6 +518,10 @@ body:before {
   text-align: left;
   color: #2e3047;
 }
+.hero__accordion .collapsed {
+  background-color: rgba(0, 0, 0, 0);
+}
+
 .projects {
   background-color: #242531;
   padding: 7rem 0 3rem;
@@ -597,14 +615,29 @@ body:before {
 .projects__projectOne .projects__details::after {
   background-image: url("../../images/home/project-icon-1.svg");
 }
+.projects__projectTwo .projects__details {
+  background-color: #fdeedb;
+}
 .projects__projectTwo .projects__details::after {
   background-image: url("../../images/home/project-icon-2.svg");
+}
+.projects__projectTwo .projects__details .projects__projectTag {
+  background-color: #fae0c4;
 }
 .projects__projectThree .projects__details::after {
   background-image: url("../../images/home/project-icon-3.svg");
   transform: scale(0.9);
   right: -6.5rem;
   top: -2rem;
+}
+.projects__projectFour .projects__details {
+  background-color: #fdeedb;
+}
+.projects__projectFour .projects__details::after {
+  background-image: url("../../images/home/project-icon-2.svg");
+}
+.projects__projectFour .projects__details .projects__projectTag {
+  background-color: #fae0c4;
 }
 .projects__preview {
   border-radius: 12px;
@@ -615,8 +648,8 @@ body:before {
   align-items: center;
 }
 .projects__image {
-  width: 100%;
-  height: 100%;
+  width: calc(100% + 1rem);
+  height: calc(100% + 1rem);
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -642,7 +675,7 @@ body:before {
   background-repeat: no-repeat;
 }
 .projects__projectTitle {
-  font-family: "Lato";
+  font-family: "Lato Bold";
   font-size: 26px;
   font-weight: 900;
   line-height: 1.4;
@@ -1095,20 +1128,20 @@ body:before {
 }
 .blogs__list {
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
   margin-top: 4rem;
 }
 .blogs__blog {
   width: 32%;
   padding: 1rem;
   border-radius: 12px;
-  box-shadow: 0 7px 37.5px 0 rgba(0, 43, 181, 0.1);
   background-color: #fff;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
 .blogs__blog:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
+  box-shadow: 0 7px 37.5px 0 rgba(0, 43, 181, 0.1);
 }
 .blogs__image {
   width: 100%;
@@ -1154,7 +1187,7 @@ body:before {
   margin: 1rem 0;
 }
 .blogs__desc {
-  font-family: "Lato";
+  font-family: "Lato Light";
   font-size: 14px;
   font-weight: 300;
   line-height: 1.43;
