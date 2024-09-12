@@ -2,14 +2,27 @@
 
 .hero {
 	position: relative;
-	padding: 9rem 0 5rem;
+	padding: 9rem 0 12rem;
 	background-color: rgba(233, 210, 244, 0.1);
+
+	@include mq($until: mini) {
+		padding: 6rem 0;
+	}
+
+	@include mq($until: mobile) {
+		padding: 5rem 0;
+	}
+
 	// .hero__wrapper
 
 	&__wrapper {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+
+		@include mq($until: mobile) {
+			padding: 0 1.5rem;
+		}
 	}
 
 	// .hero__sidebar
@@ -26,9 +39,21 @@
 		box-shadow: 0px 18px 37.5px 0px rgba(58, 73, 249, 0.1);
 		background-color: #fff;
 		position: sticky;
-		top: 9rem;
+		top: 10rem;
 		align-self: flex-start;
 		height: fit-content;
+
+		@include mq($until: mini) {
+			position: static;
+		}
+	}
+
+	// .hero__sidebarDesktop
+
+	&__sidebarDesktop {
+		@include mq($until: mini) {
+			display: none;
+		}
 	}
 
 	// .hero__sidebarWrapper
@@ -65,6 +90,10 @@
 		font-weight: bold;
 		color: #1873f2;
 		margin: 0;
+
+		@include mq($until: mobile) {
+			font-size: 24px;
+		}
 	}
 
 	// .hero__profileLocation
@@ -74,6 +103,10 @@
 		font-size: 16px;
 		color: #171d1c;
 		margin-bottom: 2.5rem;
+
+		@include mq($until: mobile) {
+			font-size: 14px;
+		}
 	}
 
 	// .hero__quoteIcon
@@ -90,6 +123,15 @@
 		letter-spacing: 0.16px;
 		color: #171d1c;
 		margin: auto 2rem;
+
+		@include mq($until: mini) {
+			margin: unset;
+			max-width: 280px;
+		}
+
+		@include mq($until: mobile) {
+			font-size: 14px;
+		}
 	}
 
 	// .hero__main
@@ -97,7 +139,11 @@
 	&__main {
 		max-width: 55%;
 		flex-grow: 1;
-		margin-top: 3rem;
+		margin-top: 4rem;
+
+		@include mq($until: mini) {
+			max-width: 100%;
+		}
 	}
 
 	// .hero__mainFirstFold
@@ -117,6 +163,17 @@
 		position: absolute;
 		left: -4.5rem;
 		top: 1rem;
+
+		@include mq($until: mini) {
+			width: 30px;
+			left: -1.5rem;
+			top: 0.5rem;
+		}
+
+		@include mq($until: mobile) {
+			width: 24px;
+			left: -1.25rem;
+		}
 	}
 
 	// .hero__doodleText
@@ -127,6 +184,16 @@
 		text-align: left;
 		color: #16bac5;
 		margin: 0 0 0 10px;
+
+		@include mq($until: mini) {
+			font-size: 18px;
+			line-height: 1;
+			margin: 0 0 0 5px;
+		}
+
+		@include mq($until: mobile) {
+			font-size: 14px;
+		}
 	}
 
 	// .hero__title
@@ -140,9 +207,25 @@
 		line-height: 0.95;
 		letter-spacing: 1px;
 
+		@include mq($until: mini) {
+			font-size: 68.98px;
+		}
+
+		@include mq($until: mobile) {
+			font-size: 47.98px;
+		}
+
 		span {
 			font-size: 106.1px;
 			color: #e9d2f4;
+
+			@include mq($until: mini) {
+				font-size: 74.42px;
+			}
+
+			@include mq($until: mobile) {
+				font-size: 51.98px;
+			}
 		}
 	}
 
@@ -157,6 +240,11 @@
 		color: #2e3047;
 		margin: 2rem 0 2rem;
 		max-width: 670px;
+
+		@include mq($until: mobile) {
+			font-size: 14px;
+			max-width: 300px;
+		}
 	}
 
 	// .hero__stats
@@ -165,12 +253,20 @@
 		display: flex;
 		gap: 8rem;
 		margin-top: 2rem;
+
+		@include mq($until: mini) {
+			justify-content: space-between;
+			gap: unset;
+		}
 	}
 
 	// .hero__stat
 
 	&__stat {
 		max-width: 4rem;
+		@include mq($until: mini) {
+			max-width: unset;
+		}
 	}
 
 	// .hero__statNumber
@@ -182,6 +278,14 @@
 		text-align: left;
 		color: #1873f2;
 		margin-bottom: 0;
+
+		@include mq($until: mini) {
+			font-size: 48px;
+		}
+
+		@include mq($until: mobile) {
+			font-size: 36px;
+		}
 	}
 
 	// .hero__statText
@@ -193,19 +297,39 @@
 		letter-spacing: 0.16px;
 		text-align: left;
 		color: #2e3047;
+
+		@include mq($until: mini) {
+			max-width: min-content;
+		}
+
+		@include mq($until: mobile) {
+			font-size: 14px;
+		}
 	}
 
 	// .hero__mainSecondFold
 
 	&__mainSecondFold {
 		margin-top: 9rem;
+
+		@include mq($until: mobile) {
+			margin-top: 5rem;
+		}
 	}
 
 	// .hero__mainSecondFoldText
 
 	&__mainSecondFoldText {
 		position: relative;
-		margin-bottom: 5rem;
+		margin-bottom: 3rem;
+
+		@include mq($until: mini) {
+			margin-bottom: 2rem;
+		}
+
+		@include mq($until: mobile) {
+			margin-bottom: 1rem;
+		}
 	}
 
 	// .hero__doodleImage
@@ -214,6 +338,11 @@
 		position: absolute;
 		left: -3rem;
 		top: 0;
+
+		@include mq($until: mini) {
+			width: 20px;
+			left: -1.25rem;
+		}
 	}
 
 	// .hero__doodleTextTwo
@@ -225,6 +354,10 @@
 		color: #16bac5;
 		margin: 0 0 -5px 0;
 		line-height: 1;
+
+		@include mq($until: mobile) {
+			font-size: 14px;
+		}
 	}
 
 	// .hero__mainSecondFoldTitle
@@ -237,6 +370,9 @@
 		text-align: left;
 		color: #2e3047;
 
+		@include mq($until: mobile) {
+			font-size: 24px;
+		}
 		span {
 			color: #1873f2;
 		}
@@ -255,17 +391,27 @@
 		.accordion-header {
 		}
 		.accordion-button {
-			font-family: $lato-bold;
+			font-family: $lato-semi-bold;
 			font-size: 16px;
-			font-weight: 900;
+			font-weight: 600;
 			text-align: left;
 			color: #2e3047;
 			box-shadow: none;
-			padding-bottom: 0.5rem;
+			padding: 2rem 1rem 0.5rem;
 			border-color: rgba(238, 238, 238, 0.93);
 			background-color: #0000;
+
+			@include mq($until: mobile) {
+				font-size: 14px;
+				padding: 2rem 0.5rem 0.5rem;
+			}
+
 			&:is(.collapsed) {
 				padding: 2rem 1rem;
+
+				@include mq($until: mobile) {
+					padding: 2rem 0.5rem;
+				}
 			}
 		}
 		.accordion-collapse {
@@ -281,9 +427,27 @@
 			letter-spacing: 0.16px;
 			text-align: left;
 			color: #2e3047;
+			padding: 1rem;
+
+			@include mq($until: mobile) {
+				font-size: 12px;
+				padding: 1rem 0.5rem;
+			}
 		}
 		.collapsed {
 			background-color: #0000;
+		}
+	}
+
+	// .hero__sidebarWrapper
+
+	&__sidebarWrapper {
+		display: none;
+
+		@include mq($until: mini) {
+			display: flex;
+			margin-top: 3rem;
+			max-width: 100%;
 		}
 	}
 }
@@ -293,12 +457,20 @@
 .projects {
 	background-color: #242531;
 	padding: 7rem 0 3rem;
+
+	@include mq($until: mobile) {
+		padding: 3rem 0 2rem;
+	}
 	// .projects__wrapper
 
 	&__wrapper {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
+		// align-items: center;
+
+		@include mq($until: mobile) {
+			padding: 0 1.5rem;
+		}
 	}
 
 	// .projects__header
@@ -307,6 +479,9 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		@include mq($until: mini) {
+			justify-content: center;
+		}
 	}
 
 	// .projects__text
@@ -320,6 +495,12 @@
 	// .projects__doodleImg
 
 	&__doodleImg {
+		@include mq($until: mini) {
+			width: 50px;
+		}
+		@include mq($until: mobile) {
+			width: 40px;
+		}
 	}
 
 	// .projects__textWrapper
@@ -336,6 +517,13 @@
 		color: #e9d2f4;
 		margin-bottom: 0;
 		line-height: 1;
+
+		@include mq($until: mini) {
+			font-size: 18px;
+		}
+		@include mq($until: mobile) {
+			font-size: 14px;
+		}
 	}
 
 	// .projects__title
@@ -348,6 +536,10 @@
 		text-align: left;
 		color: #16bac5;
 		margin-bottom: 0;
+
+		@include mq($until: mobile) {
+			font-size: 24px;
+		}
 	}
 
 	// .projects__button
@@ -387,6 +579,30 @@
 		}
 	}
 
+	// projects__buttonDesktop
+
+	&__buttonDesktop {
+		@include mq($until: mini) {
+			display: none;
+		}
+	}
+
+	// projects__buttonMobile
+
+	&__buttonMobile {
+		display: none;
+		@include mq($until: mini) {
+			display: inline-flex;
+			width: max-content;
+			margin: 0 auto;
+		}
+
+		@include mq($until: mini) {
+			font-size: 14px;
+			padding: 1rem 2rem;
+		}
+	}
+
 	// .projects__buttonArrow
 
 	&__buttonArrow {
@@ -401,6 +617,11 @@
 		flex-direction: column;
 		gap: 4rem;
 		padding: 4rem 0;
+
+		@include mq($until: mobile) {
+			gap: 2rem;
+			padding: 2rem 0;
+		}
 	}
 
 	// .projects__single
@@ -409,9 +630,19 @@
 		display: flex;
 		gap: 1.5rem;
 		min-height: 520px;
-		display: none;
+
+		@include mq($until: mini) {
+			flex-direction: column;
+		}
+
+		@include mq($until: mobile) {
+			gap: 1rem;
+		}
 		&:nth-child(even) {
 			flex-direction: row-reverse;
+			@include mq($until: mini) {
+				flex-direction: column;
+			}
 		}
 
 		&:nth-child(3) {
@@ -496,6 +727,20 @@
 		height: calc(100% + 1rem);
 		-o-object-fit: cover;
 		object-fit: cover;
+
+		@include mq($until: mini) {
+			display: none;
+		}
+	}
+
+	// .projects__imageMobile
+
+	&__imageMobile {
+		display: none;
+
+		@include mq($until: mini) {
+			display: block;
+		}
 	}
 
 	// .projects__details
@@ -510,6 +755,8 @@
 		background-color: #fee6e7;
 		position: relative;
 		z-index: 1;
+		overflow: hidden;
+		cursor: pointer;
 
 		&::after {
 			content: "";
@@ -520,6 +767,18 @@
 			height: 100%;
 			z-index: -1;
 			background-repeat: no-repeat;
+
+			@include mq($until: mini) {
+				background-size: contain;
+				right: 0;
+				width: 80%;
+			}
+		}
+
+		&:hover {
+			.projects__viewButton {
+				margin-bottom: 0;
+			}
 		}
 	}
 
@@ -539,6 +798,14 @@
 		align-self: stretch;
 		color: #2e3047;
 		margin-top: auto;
+
+		@include mq($until: mini) {
+			margin-top: 36%;
+		}
+
+		@include mq($until: mobile) {
+			font-size: 16px;
+		}
 	}
 
 	// .projects__projectDesc
@@ -552,6 +819,10 @@
 		align-self: stretch;
 		color: #2e3047;
 		max-width: 430px;
+
+		@include mq($until: mobile) {
+			font-size: 12px;
+		}
 	}
 
 	// .projects__projectTags
@@ -575,6 +846,32 @@
 		border-radius: 25px;
 		background-color: #f8d8d8;
 		padding: 3px 10px;
+
+		@include mq($until: mobile) {
+			font-size: 8px;
+		}
+	}
+
+	// .projects__viewButton
+
+	&__viewButton {
+		font-family: $lato;
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 1;
+		color: rgba(46, 48, 71, 1);
+		letter-spacing: 0.01em;
+		text-align: left;
+		text-decoration: none;
+		background-color: #fff;
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		padding: 0.75rem 0;
+		margin-top: 2rem;
+		border-radius: 22px;
+		transition: all 0.2s ease-in-out;
+		margin-bottom: -4.5rem;
 	}
 }
 
@@ -582,12 +879,21 @@
 
 .clients {
 	padding: 10rem 0;
+
+	@include mq($until: mini) {
+		padding: 4rem 0;
+	}
+
 	// .clients__headerWrapper
 
 	&__headerWrapper {
 		display: flex;
 		justify-content: center;
 		margin-bottom: 3rem;
+
+		@include mq($until: mobile) {
+			margin-bottom: 1.5rem;
+		}
 	}
 	// .clients__header
 
@@ -602,6 +908,12 @@
 		position: absolute;
 		left: -5rem;
 		top: 0;
+
+		@include mq($until: mobile) {
+			width: 40px;
+			transform: rotate(-30deg);
+			left: -2.5rem;
+		}
 	}
 
 	// .clients__doodleText
@@ -613,6 +925,10 @@
 		color: #16bac5;
 		margin-bottom: 0;
 		line-height: 1;
+
+		@include mq($until: mobile) {
+			font-size: 14px;
+		}
 	}
 
 	// .clients__title
@@ -624,6 +940,17 @@
 		letter-spacing: 0.32px;
 		text-align: left;
 		color: #2e3047;
+
+		@include mq($until: mini) {
+			max-width: 260px;
+		}
+
+		@include mq($until: mobile) {
+			max-width: 200px;
+			font-size: 24px;
+			line-height: 1.2;
+			margin-top: 5px;
+		}
 
 		span {
 			color: #1873f2;
@@ -655,6 +982,10 @@
 		padding: 2rem 4rem;
 		border-radius: 12px;
 		overflow: hidden;
+
+		@include mq($until: mobile) {
+			padding: 0;
+		}
 	}
 
 	// .clients__slide-1
@@ -667,6 +998,9 @@
 
 	&__slideLogo {
 		object-fit: contain;
+		@include mq($until: mobile) {
+			transform: scale(0.6);
+		}
 	}
 
 	// .clients__slide-2
@@ -776,12 +1110,8 @@
 		// direction: ltr;
 		overflow: hidden;
 
-		.clients__sliders {
-			// transition-delay: unset !important;
-			// transition-duration: 5000ms !important;
-		}
-		.clients__slide {
-			// transform: rotateY(180deg); /* Flip the slides back */
+		@include mq($until: mobile) {
+			height: 110px;
 		}
 	}
 
@@ -889,6 +1219,13 @@
 	border-top-left-radius: 30px;
 	border-bottom-right-radius: 30px;
 	padding: 3rem 0 7rem;
+
+	@include mq($until: mini) {
+		border-radius: 0;
+	}
+	@include mq($until: mobile) {
+		padding: 1.5rem 0 7rem;
+	}
 	// .feedback__ribbon
 
 	&__ribbon {
@@ -901,6 +1238,10 @@
 
 	&__ribbonWrapper {
 		gap: 1rem;
+
+		@include mq($until: mobile) {
+			gap: 0.45rem;
+		}
 	}
 
 	// .feedback__ribbonSingle
@@ -915,6 +1256,9 @@
 	// .feedback__ribbonIcon
 
 	&__ribbonIcon {
+		@include mq($until: mobile) {
+			width: 15px;
+		}
 	}
 
 	// .feedback__ribbonText
@@ -926,6 +1270,15 @@
 		text-align: left;
 		color: #000;
 		margin: 0 0 0 1rem;
+
+		@include mq($until: mini) {
+			font-size: 28px;
+		}
+
+		@include mq($until: mobile) {
+			font-size: 13.54px;
+			margin: 0 0 0 5px;
+		}
 	}
 
 	// .feedback__wrapper
@@ -940,17 +1293,45 @@
 		max-width: 750px;
 		margin: 12rem auto -2rem;
 		display: flex;
+
+		@include mq($until: mini) {
+			margin: 10rem auto 0rem;
+			justify-content: center;
+		}
+
+		@include mq($until: mobile) {
+			margin: 6rem auto 0rem;
+		}
 	}
 
 	// .feedback__quote
 
 	&__quote {
 		margin-right: 2rem;
+
+		@include mq($until: mini) {
+			width: 120px;
+			transform: translate(-25px, 30px);
+			margin-right: 0;
+			position: relative;
+			z-index: 11;
+		}
+		@include mq($until: mobile) {
+			width: 65px;
+			transform: translate(-115px, 35px);
+		}
 	}
 
 	// .feedback__text
 
 	&__text {
+		@include mq($until: mini) {
+			max-width: 240px;
+		}
+		@include mq($until: mobile) {
+			max-width: 170px;
+			margin-left: -7rem;
+		}
 	}
 
 	// .feedback__doodleText
@@ -962,6 +1343,10 @@
 		color: #e9d2f4;
 		line-height: 1;
 		margin-bottom: 0;
+
+		@include mq($until: mobile) {
+			font-size: 14px;
+		}
 	}
 
 	// .feedback__title
@@ -974,6 +1359,11 @@
 		text-align: left;
 		color: #f7f4f9;
 		margin-bottom: 0;
+
+		@include mq($until: mobile) {
+			font-size: 24px;
+			line-height: 1.2;
+		}
 	}
 
 	// .feedback__doodleImg
@@ -982,6 +1372,9 @@
 		position: absolute;
 		right: 4rem;
 		bottom: -3rem;
+		@include mq($until: mini) {
+			display: none;
+		}
 	}
 
 	// .feedback__slider
@@ -993,21 +1386,42 @@
 		min-height: 470px;
 		position: relative;
 
+		@include mq($until: mini) {
+			min-height: unset;
+		}
+
+		@include mq($until: mobile) {
+			width: 290px;
+		}
 		.swiper-button-next {
 			top: 7.25rem;
 			right: 5.5rem;
 
+			@include mq($until: mobile) {
+				top: 5.5rem;
+				right: 3.5rem;
+			}
+
 			&::after {
 				content: url("../../images/home/bi_arrow-right.svg");
+				@include mq($until: mobile) {
+					transform: scale(0.7);
+				}
 			}
 		}
 
 		.swiper-button-prev {
 			top: 7.25rem;
 			left: 5rem;
-
+			@include mq($until: mobile) {
+				top: 5.5rem;
+				left: 3rem;
+			}
 			&::after {
 				content: url("../../images/home/bi_arrow-left.svg");
+				@include mq($until: mobile) {
+					transform: scale(0.7);
+				}
 			}
 		}
 
@@ -1039,6 +1453,9 @@
 
 	&__slides {
 		min-height: 470px;
+		@include mq($until: mini) {
+			min-height: unset;
+		}
 	}
 
 	// .feedback__slide
@@ -1053,6 +1470,15 @@
 		min-height: 470px;
 		transform-origin: bottom center; /* Set the pivot point at the bottom */
 		transition: transform 0.4s ease; /* Smooth transition for rotation */
+
+		@include mq($until: mini) {
+			padding: 3rem;
+			min-height: unset;
+		}
+
+		@include mq($until: mobile) {
+			padding: 3rem 2rem;
+		}
 	}
 
 	// .feedback__slideImg
@@ -1062,6 +1488,10 @@
 		height: 100%;
 		object-fit: contain;
 		margin-bottom: 2rem;
+
+		@include mq($until: mobile) {
+			width: 70px;
+		}
 	}
 
 	// .feedback__slideDesc
@@ -1072,6 +1502,10 @@
 		line-height: 1.53;
 		text-align: center;
 		color: #2e3047;
+
+		@include mq($until: mobile) {
+			font-size: 12px;
+		}
 	}
 
 	// .feedback__slideName
@@ -1084,6 +1518,10 @@
 		text-align: center;
 		color: #000;
 		margin: 1rem 0 0.5rem;
+
+		@include mq($until: mobile) {
+			font-size: 12px;
+		}
 	}
 
 	// .feedback__slidePost
@@ -1095,6 +1533,10 @@
 		text-align: center;
 		color: #696969;
 		margin-bottom: 0;
+
+		@include mq($until: mobile) {
+			font-size: 10px;
+		}
 	}
 }
 
@@ -1104,6 +1546,10 @@
 	padding: 10rem 0 15rem;
 	background-image: url("../../images/home/principles_background.png");
 	background-size: cover;
+
+	@include mq($until: mini) {
+		padding: 6rem 0 0;
+	}
 	// .principles__wrapper
 
 	&__wrapper {
@@ -1118,6 +1564,15 @@
 		max-width: max-content;
 		margin: 0 auto 8rem;
 		position: relative;
+
+		@include mq($until: mini) {
+			max-width: 250px;
+			margin: 0 auto 2rem;
+		}
+		@include mq($until: mobile) {
+			font-size: 14px;
+			max-width: 190px;
+		}
 	}
 
 	// .principles__doodleImg
@@ -1126,6 +1581,11 @@
 		position: absolute;
 		left: -4.5rem;
 		top: 1rem;
+		@include mq($until: mobile) {
+			left: -2.5rem;
+			top: 0.5rem;
+			width: 40px;
+		}
 	}
 
 	// .principles__doodleText
@@ -1149,6 +1609,13 @@
 		text-align: left;
 		color: #2e3047;
 
+		@include mq($until: mini) {
+			line-height: 1.2;
+		}
+		@include mq($until: mobile) {
+			font-size: 24px;
+		}
+
 		span {
 			color: #1873f2;
 		}
@@ -1159,6 +1626,30 @@
 	&__list {
 		display: flex;
 		justify-content: center;
+		@include mq($until: mini) {
+			flex-direction: column;
+			align-items: center;
+
+			&:first-child {
+				.principles__single {
+					.principles__image1 {
+						transform: rotate(270deg);
+					}
+				}
+			}
+			&:nth-child(3n + 2) {
+				.principles__single {
+					.principles__image1 {
+						transform: rotate(90deg);
+					}
+				}
+			}
+		}
+
+		@include mq($until: mobile) {
+			transform: scale(0.75);
+			margin: -9rem 0;
+		}
 	}
 
 	// .principles__single
@@ -1168,9 +1659,17 @@
 		align-items: center;
 		position: relative;
 
+		@include mq($until: mini) {
+			flex-direction: column;
+			margin: -3rem 0;
+			&:nth-child(4) {
+				margin: 3rem 0;
+			}
+		}
+
 		&:nth-child(even) {
 			.principles__doodleImage2 {
-				top: 9rem;
+				top: 8rem;
 			}
 		}
 	}
@@ -1187,6 +1686,11 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+
+		@include mq($until: mini) {
+			transform: rotate(-90deg);
+			margin: -3rem 0;
+		}
 	}
 
 	// .principles__doodleText1
@@ -1195,6 +1699,11 @@
 		position: absolute;
 		top: -7rem;
 		color: #e08dac;
+
+		@include mq($until: mini) {
+			top: -9rem;
+			transform: rotate(90deg);
+		}
 	}
 
 	// .principles__doodleText2
@@ -1205,6 +1714,14 @@
 		top: unset;
 		color: #1873f2;
 		width: max-content;
+		@include mq($until: mini) {
+			bottom: -12rem;
+			transform: rotate(90deg);
+		}
+		@include mq($until: mobile) {
+			bottom: -11rem;
+			width: fit-content;
+		}
 	}
 
 	// .principles__doodleText3
@@ -1212,6 +1729,10 @@
 	&__doodleText3 {
 		position: absolute;
 		top: -7rem;
+		@include mq($until: mini) {
+			top: -8rem;
+			transform: rotate(90deg);
+		}
 	}
 
 	// .principles__doodleText4
@@ -1221,6 +1742,13 @@
 		bottom: -9rem;
 		top: unset;
 		color: #e08dac;
+		@include mq($until: mini) {
+			bottom: -10rem;
+			transform: rotate(90deg);
+		}
+		@include mq($until: mobile) {
+			bottom: -8rem;
+		}
 	}
 
 	// .principles__doodleImage2
@@ -1343,7 +1871,7 @@
 
 	&__blogTitle {
 		font-family: $lato;
-		font-size: 22px;
+		font-size: 18px;
 		font-weight: bold;
 		line-height: 1.25;
 		text-align: left;
