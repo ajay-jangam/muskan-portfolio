@@ -109,6 +109,14 @@
 			font-size: 56px;
 			margin: 2rem 0 0rem;
 		}
+		@include mq($until: mobile) {
+			font-size: 28px;
+			letter-spacing: -0.01em;
+
+			span {
+				margin: 0 -4px 0 0px;
+			}
+		}
 	}
 
 	// .footer__titleFirst
@@ -139,6 +147,11 @@
 		&:focus-visible {
 			outline: none;
 		}
+
+		@include mq($until: mobile) {
+			font-size: 16px;
+			width: 240px;
+		}
 	}
 
 	// .footer__copyLink
@@ -153,6 +166,9 @@
 		border: none;
 		padding: 0;
 		transform: translateX(-8px);
+		@include mq($until: mobile) {
+			font-size: 16px;
+		}
 	}
 
 	// .footer__copyLinkIcon
@@ -172,6 +188,10 @@
 		letter-spacing: 0.14px;
 		text-align: left;
 		color: #2e3047;
+
+		@include mq($until: mobile) {
+			font-size: 12px;
+		}
 	}
 
 	// .footer__link
@@ -184,13 +204,18 @@
 		color: #f7f4f9;
 		border-radius: 56px;
 		background-color: #1873f2;
-		padding: 1.5rem 2.5rem;
+		padding: 1.25rem 2.5rem;
 		text-decoration: none;
 		display: inline-flex;
 		align-items: center;
 		line-height: 1;
 		gap: 10px;
 		position: relative;
+
+		@include mq($until: mobile) {
+			font-size: 14px;
+			padding: 1rem 1.5rem;
+		}
 
 		&::before {
 			content: "";

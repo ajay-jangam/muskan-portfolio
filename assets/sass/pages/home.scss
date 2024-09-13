@@ -90,7 +90,7 @@
 		font-weight: bold;
 		color: #1873f2;
 		margin: 0;
-
+		line-height: 1.2;
 		@include mq($until: mobile) {
 			font-size: 24px;
 		}
@@ -123,7 +123,7 @@
 		letter-spacing: 0.16px;
 		color: #171d1c;
 		margin: auto 2rem;
-
+		line-height: 1.25;
 		@include mq($until: mini) {
 			margin: unset;
 			max-width: 280px;
@@ -184,6 +184,7 @@
 		text-align: left;
 		color: #16bac5;
 		margin: 0 0 0 10px;
+		letter-spacing: 1.04px;
 
 		@include mq($until: mini) {
 			font-size: 18px;
@@ -200,7 +201,7 @@
 
 	&__title {
 		font-family: $georgia;
-		font-size: 98.9px;
+		font-size: 100px;
 		font-weight: bold;
 		text-align: left;
 		color: #1873f2;
@@ -216,7 +217,7 @@
 		}
 
 		span {
-			font-size: 106.1px;
+			font-size: 108.1px;
 			color: #e9d2f4;
 
 			@include mq($until: mini) {
@@ -251,7 +252,7 @@
 
 	&__stats {
 		display: flex;
-		gap: 8rem;
+		gap: 10rem;
 		margin-top: 2rem;
 
 		@include mq($until: mini) {
@@ -321,15 +322,7 @@
 
 	&__mainSecondFoldText {
 		position: relative;
-		margin-bottom: 3rem;
-
-		@include mq($until: mini) {
-			margin-bottom: 2rem;
-		}
-
-		@include mq($until: mobile) {
-			margin-bottom: 1rem;
-		}
+		margin-bottom: 1rem;
 	}
 
 	// .hero__doodleImage
@@ -354,7 +347,7 @@
 		color: #16bac5;
 		margin: 0 0 -5px 0;
 		line-height: 1;
-
+		letter-spacing: 1.04px;
 		@include mq($until: mobile) {
 			font-size: 14px;
 		}
@@ -517,6 +510,7 @@
 		color: #e9d2f4;
 		margin-bottom: 0;
 		line-height: 1;
+		letter-spacing: 1.04px;
 
 		@include mq($until: mini) {
 			font-size: 18px;
@@ -630,9 +624,13 @@
 		display: flex;
 		gap: 1.5rem;
 		min-height: 520px;
+		padding: 1.5rem;
+		border-radius: 24px;
+		background-color: rgba(255, 255, 255, 0.05);
 
 		@include mq($until: mini) {
 			flex-direction: column;
+			padding: 1rem;
 		}
 
 		@include mq($until: mobile) {
@@ -790,7 +788,7 @@
 	// .projects__projectTitle
 
 	&__projectTitle {
-		font-family: $lato-bold;
+		font-family: $lato-semi-bold;
 		font-size: 26px;
 		font-weight: 900;
 		line-height: 1.4;
@@ -925,7 +923,7 @@
 		color: #16bac5;
 		margin-bottom: 0;
 		line-height: 1;
-
+		letter-spacing: 1.04px;
 		@include mq($until: mobile) {
 			font-size: 14px;
 		}
@@ -1343,7 +1341,7 @@
 		color: #e9d2f4;
 		line-height: 1;
 		margin-bottom: 0;
-
+		letter-spacing: 1.04px;
 		@include mq($until: mobile) {
 			font-size: 14px;
 		}
@@ -1383,7 +1381,7 @@
 		margin: 0 auto;
 		overflow: hidden;
 		width: 440px;
-		min-height: 470px;
+		min-height: 400px;
 		position: relative;
 
 		@include mq($until: mini) {
@@ -1452,7 +1450,7 @@
 	// .feedback__slides
 
 	&__slides {
-		min-height: 470px;
+		min-height: 400px;
 		@include mq($until: mini) {
 			min-height: unset;
 		}
@@ -1463,11 +1461,11 @@
 	&__slide {
 		border-radius: 12px;
 		background-color: #fff;
-		padding: 4rem 3rem;
+		padding: 3rem 2rem;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		min-height: 470px;
+		min-height: 400px;
 		transform-origin: bottom center; /* Set the pivot point at the bottom */
 		transition: transform 0.4s ease; /* Smooth transition for rotation */
 
@@ -1597,6 +1595,7 @@
 		color: #16bac5;
 		line-height: 1;
 		margin-bottom: 0;
+		letter-spacing: 1.04px;
 	}
 
 	// .principles__title
@@ -1783,7 +1782,7 @@
 		color: #2e3047;
 		line-height: 1;
 		margin-bottom: 0;
-
+		letter-spacing: 1.04px;
 		@include mq($until: mobile) {
 			font-size: 14px;
 			padding: 0 1rem;

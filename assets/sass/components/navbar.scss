@@ -44,7 +44,7 @@
 	// .navbar-nav
 	&-nav {
 		align-items: center;
-		gap: 2rem;
+		gap: 1.5rem;
 		.nav {
 			// .nav-item
 			&-item {
@@ -53,7 +53,7 @@
 			// .nav-link
 			&-link {
 				font-family: $lato;
-				font-size: 16px;
+				font-size: 18px;
 				line-height: 1.58;
 				letter-spacing: 0.16px;
 				text-align: left;

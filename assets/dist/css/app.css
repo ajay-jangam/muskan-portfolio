@@ -102,11 +102,11 @@ body:before {
 }
 .navbar-nav {
   align-items: center;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 .navbar-nav .nav-link {
   font-family: "Lato";
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.58;
   letter-spacing: 0.16px;
   text-align: left;
@@ -249,6 +249,15 @@ body:before {
     margin: 2rem 0 0rem;
   }
 }
+@media (max-width: 31.24em) {
+  .footer__title {
+    font-size: 28px;
+    letter-spacing: -0.01em;
+  }
+  .footer__title span {
+    margin: 0 -4px 0 0px;
+  }
+}
 .footer__titleFirst {
   font-family: "Lato";
   color: #2e3047;
@@ -269,6 +278,12 @@ body:before {
 .footer__email:focus-visible {
   outline: none;
 }
+@media (max-width: 31.24em) {
+  .footer__email {
+    font-size: 16px;
+    width: 240px;
+  }
+}
 .footer__copyLink {
   font-family: "Lato";
   font-size: 16px;
@@ -279,6 +294,11 @@ body:before {
   border: none;
   padding: 0;
   transform: translateX(-8px);
+}
+@media (max-width: 31.24em) {
+  .footer__copyLink {
+    font-size: 16px;
+  }
 }
 .footer__copiedText {
   margin-left: 0px;
@@ -291,6 +311,11 @@ body:before {
   text-align: left;
   color: #2e3047;
 }
+@media (max-width: 31.24em) {
+  .footer__copiedText {
+    font-size: 12px;
+  }
+}
 .footer__link {
   font-family: "Lato";
   font-size: 16px;
@@ -299,13 +324,19 @@ body:before {
   color: #f7f4f9;
   border-radius: 56px;
   background-color: #1873f2;
-  padding: 1.5rem 2.5rem;
+  padding: 1.25rem 2.5rem;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
   line-height: 1;
   gap: 10px;
   position: relative;
+}
+@media (max-width: 31.24em) {
+  .footer__link {
+    font-size: 14px;
+    padding: 1rem 1.5rem;
+  }
 }
 .footer__link::before {
   content: "";
@@ -535,6 +566,7 @@ body:before {
   font-weight: bold;
   color: #1873f2;
   margin: 0;
+  line-height: 1.2;
 }
 @media (max-width: 31.24em) {
   .hero__profileName {
@@ -561,6 +593,7 @@ body:before {
   letter-spacing: 0.16px;
   color: #171d1c;
   margin: auto 2rem;
+  line-height: 1.25;
 }
 @media (max-width: 48.0525em) {
   .hero__profileDescription {
@@ -610,6 +643,7 @@ body:before {
   text-align: left;
   color: #16bac5;
   margin: 0 0 0 10px;
+  letter-spacing: 1.04px;
 }
 @media (max-width: 48.0525em) {
   .hero__doodleText {
@@ -625,7 +659,7 @@ body:before {
 }
 .hero__title {
   font-family: "Georgia";
-  font-size: 98.9px;
+  font-size: 100px;
   font-weight: bold;
   text-align: left;
   color: #1873f2;
@@ -643,7 +677,7 @@ body:before {
   }
 }
 .hero__title span {
-  font-size: 106.1px;
+  font-size: 108.1px;
   color: #e9d2f4;
 }
 @media (max-width: 48.0525em) {
@@ -674,7 +708,7 @@ body:before {
 }
 .hero__stats {
   display: flex;
-  gap: 8rem;
+  gap: 10rem;
   margin-top: 2rem;
 }
 @media (max-width: 48.0525em) {
@@ -738,17 +772,7 @@ body:before {
 }
 .hero__mainSecondFoldText {
   position: relative;
-  margin-bottom: 3rem;
-}
-@media (max-width: 48.0525em) {
-  .hero__mainSecondFoldText {
-    margin-bottom: 2rem;
-  }
-}
-@media (max-width: 31.24em) {
-  .hero__mainSecondFoldText {
-    margin-bottom: 1rem;
-  }
+  margin-bottom: 1rem;
 }
 .hero__doodleImage {
   position: absolute;
@@ -768,6 +792,7 @@ body:before {
   color: #16bac5;
   margin: 0 0 -5px 0;
   line-height: 1;
+  letter-spacing: 1.04px;
 }
 @media (max-width: 31.24em) {
   .hero__doodleTextTwo {
@@ -899,6 +924,7 @@ body:before {
   color: #e9d2f4;
   margin-bottom: 0;
   line-height: 1;
+  letter-spacing: 1.04px;
 }
 @media (max-width: 48.0525em) {
   .projects__doodleText {
@@ -995,10 +1021,14 @@ body:before {
   display: flex;
   gap: 1.5rem;
   min-height: 520px;
+  padding: 1.5rem;
+  border-radius: 24px;
+  background-color: rgba(255, 255, 255, 0.05);
 }
 @media (max-width: 48.0525em) {
   .projects__single {
     flex-direction: column;
+    padding: 1rem;
   }
 }
 @media (max-width: 31.24em) {
@@ -1108,7 +1138,7 @@ body:before {
   margin-bottom: 0;
 }
 .projects__projectTitle {
-  font-family: "Lato Bold";
+  font-family: "Lato Semi-Bold";
   font-size: 26px;
   font-weight: 900;
   line-height: 1.4;
@@ -1225,6 +1255,7 @@ body:before {
   color: #16bac5;
   margin-bottom: 0;
   line-height: 1;
+  letter-spacing: 1.04px;
 }
 @media (max-width: 31.24em) {
   .clients__doodleText {
@@ -1511,6 +1542,7 @@ body:before {
   color: #e9d2f4;
   line-height: 1;
   margin-bottom: 0;
+  letter-spacing: 1.04px;
 }
 @media (max-width: 31.24em) {
   .feedback__doodleText {
@@ -1546,7 +1578,7 @@ body:before {
   margin: 0 auto;
   overflow: hidden;
   width: 440px;
-  min-height: 470px;
+  min-height: 400px;
   position: relative;
   /* Reset rotation for active slides */
   /* Rotate next slide clockwise */
@@ -1614,7 +1646,7 @@ body:before {
   transform: rotate(-90deg); /* Rotate 90 degrees counterclockwise */
 }
 .feedback__slides {
-  min-height: 470px;
+  min-height: 400px;
 }
 @media (max-width: 48.0525em) {
   .feedback__slides {
@@ -1624,11 +1656,11 @@ body:before {
 .feedback__slide {
   border-radius: 12px;
   background-color: #fff;
-  padding: 4rem 3rem;
+  padding: 3rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 470px;
+  min-height: 400px;
   transform-origin: bottom center; /* Set the pivot point at the bottom */
   transition: transform 0.4s ease; /* Smooth transition for rotation */
 }
@@ -1745,6 +1777,7 @@ body:before {
   color: #16bac5;
   line-height: 1;
   margin-bottom: 0;
+  letter-spacing: 1.04px;
 }
 .principles__title {
   font-family: "Georgia";
@@ -1899,6 +1932,7 @@ body:before {
   color: #2e3047;
   line-height: 1;
   margin-bottom: 0;
+  letter-spacing: 1.04px;
 }
 @media (max-width: 31.24em) {
   .blogs__doodleText {
@@ -2057,4 +2091,120 @@ body:before {
 }
 .blogs__linkArrow {
   margin-left: 5px;
+}
+
+.contact-us {
+  background-image: url("../../images/home/principles_background.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.contact {
+  padding: 10rem 0;
+  text-align: center;
+}
+.contact__icon {
+  border-radius: 40px;
+  background-color: #3ba99c;
+  width: 100px;
+  height: 54px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 3px;
+  align-items: center;
+  margin: 0 auto 1rem;
+}
+.contact__profileImg {
+  width: 47px;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  box-shadow: 0px 4px 4px 0px rgba(29, 90, 83, 0.5);
+  border-radius: 40px;
+}
+.contact__title {
+  font-family: "Georgia";
+  font-size: 74px;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: -0.72px;
+  color: #1873f2;
+  line-height: 1;
+}
+.contact__title span {
+  font-style: normal;
+  margin-right: -10px;
+}
+@media (max-width: 48.0525em) {
+  .contact__title {
+    font-size: 56px;
+    margin: 2rem 0 0rem;
+  }
+}
+.contact__titleFirst {
+  font-family: "Lato";
+  color: #2e3047;
+}
+.contact__copyEmailWrapper {
+  margin: 0 0 0.5rem;
+}
+.contact__email {
+  font-family: "Lato";
+  font-size: 20px;
+  font-weight: 500;
+  color: #2e3047;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  width: 300px;
+}
+.contact__email:focus-visible {
+  outline: none;
+}
+.contact__copyLink {
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: bold;
+  color: #f7f4f9;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  padding: 0;
+  transform: translateX(-8px);
+}
+.contact__copiedText {
+  margin-left: 0px;
+  display: none;
+  font-family: "Lato";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.43;
+  letter-spacing: 0.14px;
+  text-align: left;
+  color: #2e3047;
+}
+.contact__socialLinks {
+  margin: 2rem 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+.contact__socialLink {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact__socialLink a {
+  padding: 12px;
+  border-radius: 30px;
+  background-color: #2e3047;
+  transition: all 0.2s ease;
+}
+.contact__socialLink a:hover {
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.3);
+}
+.contact__socaialIcons {
+  width: 25px;
 }

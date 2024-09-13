@@ -1,0 +1,157 @@
+.contact-us {
+	background-image: url("../../images/home/principles_background.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.contact {
+	padding: 10rem 0;
+	text-align: center;
+
+	// .contact__wrapper
+
+	&__wrapper {
+	}
+
+	// .contact__icon
+
+	&__icon {
+		border-radius: 40px;
+		background-color: #3ba99c;
+		width: 100px;
+		height: 54px;
+		display: flex;
+		justify-content: flex-end;
+		padding: 3px;
+		align-items: center;
+		margin: 0 auto 1rem;
+	}
+
+	// .contact__profileImg
+
+	&__profileImg {
+		width: 47px;
+		height: 100%;
+		object-fit: contain;
+		box-shadow: 0px 4px 4px 0px rgba(29, 90, 83, 0.5);
+		border-radius: 40px;
+	}
+
+	// .contact__title
+
+	&__title {
+		font-family: $georgia;
+		font-size: 74px;
+		font-weight: bold;
+		font-style: italic;
+		letter-spacing: -0.72px;
+		color: #1873f2;
+		line-height: 1;
+		span {
+			font-style: normal;
+			margin-right: -10px;
+		}
+		@include mq($until: mini) {
+			font-size: 56px;
+			margin: 2rem 0 0rem;
+		}
+	}
+
+	// .contact__titleFirst
+
+	&__titleFirst {
+		font-family: $lato;
+		color: #2e3047;
+	}
+
+	// .contact__copyEmailWrapper
+
+	&__copyEmailWrapper {
+		margin: 0 0 0.5rem;
+	}
+
+	// .contact__email
+
+	&__email {
+		font-family: $lato;
+		font-size: 20px;
+		font-weight: 500;
+		color: #2e3047;
+		background: #0000;
+		border: none;
+		width: 300px;
+
+		&:focus-visible {
+			outline: none;
+		}
+	}
+
+	// .contact__copyLink
+
+	&__copyLink {
+		font-family: $lato;
+		font-size: 16px;
+		font-weight: bold;
+		color: #f7f4f9;
+		background: #0000;
+		border: none;
+		padding: 0;
+		transform: translateX(-8px);
+	}
+
+	// .contact__copyLinkIcon
+
+	&__copyLinkIcon {
+	}
+
+	// .contact__copiedText
+
+	&__copiedText {
+		margin-left: 0px;
+		display: none;
+		font-family: "Lato";
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 1.43;
+		letter-spacing: 0.14px;
+		text-align: left;
+		color: #2e3047;
+	}
+
+	// .contact__socialLinks
+
+	&__socialLinks {
+		margin: 2rem 0;
+		padding: 0;
+		list-style: none;
+		display: flex;
+		justify-content: center;
+		gap: 4rem;
+	}
+
+	// .contact__socialLink
+
+	&__socialLink {
+		width: 30px;
+		height: 30px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		a {
+			padding: 12px;
+			border-radius: 30px;
+			background-color: #2e3047;
+			transition: all 0.2s ease;
+
+			&:hover {
+				box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.3);
+			}
+		}
+	}
+
+	// .contact__socaialIcons
+
+	&__socaialIcons {
+		width: 25px;
+	}
+}
