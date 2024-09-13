@@ -2,9 +2,15 @@
 	background-color: #e9d2f4;
 	padding: 6rem 0 2rem;
 
+	@include mq($until: mini) {
+		padding: 3rem 0 2rem;
+	}
 	// .footer__wrapper
 
 	&__wrapper {
+		@include mq($until: mobile) {
+			padding: 0 1.5rem;
+		}
 	}
 
 	// .footer__main
@@ -13,6 +19,11 @@
 		display: flex;
 		justify-content: space-between;
 		padding-bottom: 6rem;
+
+		@include mq($until: mini) {
+			flex-direction: column;
+			padding-bottom: 4rem;
+		}
 	}
 
 	// .footer__left
@@ -31,6 +42,12 @@
 		color: #2e3047;
 		display: flex;
 		flex-direction: column;
+		@include mq($until: mini) {
+			font-size: 28px;
+		}
+		@include mq($until: mobile) {
+			font-size: 20px;
+		}
 	}
 
 	// .footer__logo
@@ -40,6 +57,10 @@
 		height: 55px;
 		border-radius: 28px;
 		object-fit: scale-down;
+		@include mq($until: mobile) {
+			width: 30px;
+			height: 30px;
+		}
 	}
 
 	// .footer__logo1
@@ -51,6 +72,9 @@
 
 	&__logo2 {
 		background-color: #800080;
+		@include mq($until: mobile) {
+			margin-right: 60%;
+		}
 	}
 
 	// .footer__logo3
@@ -80,6 +104,10 @@
 		span {
 			font-style: normal;
 			margin-right: -10px;
+		}
+		@include mq($until: mini) {
+			font-size: 56px;
+			margin: 2rem 0 0rem;
 		}
 	}
 
@@ -200,18 +228,60 @@
 		padding: 1rem;
 		max-width: 230px;
 		max-height: 380px;
+
+		@include mq($until: mini) {
+			flex-direction: row;
+			justify-content: space-between;
+			max-width: 60%;
+			max-height: 190px;
+			margin: 4rem 0;
+		}
+		@include mq($until: mobile) {
+			max-width: 257px;
+			max-height: 140px;
+			padding: 0.7rem;
+		}
 	}
 
+	// .footer__rightMobile
+
+	&__rightMobile {
+		display: none;
+		@include mq($until: mini) {
+			display: flex;
+		}
+	}
+
+	// .footer__rightDesktop
+
+	&__rightDesktop {
+		@include mq($until: mini) {
+			display: none;
+		}
+	}
 	// .footer__profileImg
 
 	&__profileImg {
 		width: 200px;
+		@include mq($until: mini) {
+			width: 160px;
+		}
+		@include mq($until: mobile) {
+			width: 120px;
+		}
 	}
 
 	// .footer__roundTextImg
 
 	&__roundTextImg {
 		transform: translateY(60px);
+		@include mq($until: mini) {
+			transform: translate(120px, 0);
+		}
+		@include mq($until: mobile) {
+			transform: translate(47px, 0);
+			width: 160px;
+		}
 	}
 
 	// .footer__bottom
@@ -220,6 +290,26 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+	}
+
+	// .footer__bottomMobile
+
+	&__bottomMobile {
+		display: none;
+		@include mq($until: mini) {
+			display: flex;
+		}
+	}
+
+	// .footer__bottomDesktop
+
+	&__bottomDesktop {
+		@include mq($until: mini) {
+			justify-content: center;
+			.footer__bottomLinks {
+				display: none;
+			}
+		}
 	}
 
 	// .footer__copyRights
@@ -244,7 +334,15 @@
 		margin: 0;
 		list-style: none;
 		display: flex;
+		align-items: center;
 		gap: 1rem;
+
+		@include mq($until: mini) {
+			margin-top: 1.5rem;
+		}
+		@include mq($until: mobile) {
+			margin-top: 1rem;
+		}
 	}
 
 	// .footer__bottomLink
@@ -270,6 +368,9 @@
 		font-weight: 600;
 		text-align: left;
 		color: #2e3047;
+		@include mq($until: mobile) {
+			font-size: 14px;
+		}
 	}
 	// .footer_linkIcon
 

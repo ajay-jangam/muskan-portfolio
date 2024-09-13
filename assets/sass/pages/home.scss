@@ -1647,8 +1647,8 @@
 		}
 
 		@include mq($until: mobile) {
-			transform: scale(0.75);
-			margin: -9rem 0;
+			transform: scale(0.65);
+			margin: -14rem 0;
 		}
 	}
 
@@ -1669,7 +1669,7 @@
 
 		&:nth-child(even) {
 			.principles__doodleImage2 {
-				top: 8rem;
+				top: 7.5rem;
 			}
 		}
 	}
@@ -1765,6 +1765,10 @@
 	padding: 7rem 0;
 	background-image: url("../../images/home/blogs_backgrond.jpg");
 	background-size: cover;
+
+	@include mq($until: mini) {
+		padding: 4rem 0;
+	}
 	// .blogs__wrapper
 
 	&__wrapper {
@@ -1779,6 +1783,11 @@
 		color: #2e3047;
 		line-height: 1;
 		margin-bottom: 0;
+
+		@include mq($until: mobile) {
+			font-size: 14px;
+			padding: 0 1rem;
+		}
 	}
 
 	// .blogs__title
@@ -1790,6 +1799,11 @@
 		letter-spacing: 0.32px;
 		text-align: left;
 		color: #1873f2;
+
+		@include mq($until: mobile) {
+			font-size: 24px;
+			padding: 0 1rem;
+		}
 	}
 
 	// .blogs__list
@@ -1798,6 +1812,16 @@
 		display: flex;
 		gap: 2rem;
 		margin-top: 4rem;
+
+		@include mq($until: mini) {
+			overflow-x: scroll;
+			padding: 2.5rem 1rem;
+			margin: 0 -2rem 0 0;
+		}
+
+		@include mq($until: mobile) {
+			margin: 0 -1rem 0 0;
+		}
 	}
 
 	// .blogs__blog
@@ -1809,6 +1833,14 @@
 		background-color: #fff;
 		cursor: pointer;
 		transition: all 0.2s ease-in-out;
+
+		@include mq($until: mini) {
+			min-width: 60%;
+		}
+
+		@include mq($until: mobile) {
+			min-width: 85%;
+		}
 
 		&:hover {
 			transform: scale(1.1);
@@ -1854,6 +1886,9 @@
 		border-radius: 5.9px;
 		padding: 10px;
 		background-color: rgba(75, 107, 251, 0.05);
+		@include mq($until: mobile) {
+			font-size: 10px;
+		}
 	}
 
 	// .blogs__readTime
@@ -1865,6 +1900,9 @@
 		text-align: left;
 		color: #97989f;
 		margin: 0 0 0 auto;
+		@include mq($until: mobile) {
+			font-size: 10px;
+		}
 	}
 
 	// .blogs__blogTitle
@@ -1877,6 +1915,9 @@
 		text-align: left;
 		color: #181a2a;
 		margin: 1rem 0;
+		@include mq($until: mobile) {
+			font-size: 16px;
+		}
 	}
 
 	// .blogs__desc
@@ -1889,6 +1930,9 @@
 		letter-spacing: 0.14px;
 		text-align: left;
 		color: #2e3047;
+		@include mq($until: mobile) {
+			font-size: 12px;
+		}
 	}
 
 	// .blogs__link
@@ -1902,6 +1946,9 @@
 		color: #2e3047;
 		text-decoration: none;
 		position: relative;
+		@include mq($until: mobile) {
+			font-size: 12px;
+		}
 
 		&::after {
 			position: absolute;

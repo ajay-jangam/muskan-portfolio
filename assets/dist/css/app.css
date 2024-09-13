@@ -95,6 +95,11 @@ body:before {
 .navbar-brand img {
   width: 120px;
 }
+@media (max-width: 31.24em) {
+  .navbar-brand img {
+    width: 70px;
+  }
+}
 .navbar-nav {
   align-items: center;
   gap: 2rem;
@@ -153,10 +158,26 @@ body:before {
   background-color: #e9d2f4;
   padding: 6rem 0 2rem;
 }
+@media (max-width: 48.0525em) {
+  .footer {
+    padding: 3rem 0 2rem;
+  }
+}
+@media (max-width: 31.24em) {
+  .footer__wrapper {
+    padding: 0 1.5rem;
+  }
+}
 .footer__main {
   display: flex;
   justify-content: space-between;
   padding-bottom: 6rem;
+}
+@media (max-width: 48.0525em) {
+  .footer__main {
+    flex-direction: column;
+    padding-bottom: 4rem;
+  }
 }
 .footer__left {
   flex-basis: 80%;
@@ -170,6 +191,16 @@ body:before {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 48.0525em) {
+  .footer__qoute {
+    font-size: 28px;
+  }
+}
+@media (max-width: 31.24em) {
+  .footer__qoute {
+    font-size: 20px;
+  }
+}
 .footer__logo {
   width: 55px;
   height: 55px;
@@ -177,8 +208,19 @@ body:before {
   -o-object-fit: scale-down;
      object-fit: scale-down;
 }
+@media (max-width: 31.24em) {
+  .footer__logo {
+    width: 30px;
+    height: 30px;
+  }
+}
 .footer__logo2 {
   background-color: #800080;
+}
+@media (max-width: 31.24em) {
+  .footer__logo2 {
+    margin-right: 60%;
+  }
 }
 .footer__logo3 {
   background-color: #3ba99c;
@@ -200,6 +242,12 @@ body:before {
 .footer__title span {
   font-style: normal;
   margin-right: -10px;
+}
+@media (max-width: 48.0525em) {
+  .footer__title {
+    font-size: 56px;
+    margin: 2rem 0 0rem;
+  }
 }
 .footer__titleFirst {
   font-family: "Lato";
@@ -283,16 +331,82 @@ body:before {
   max-width: 230px;
   max-height: 380px;
 }
+@media (max-width: 48.0525em) {
+  .footer__right {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 60%;
+    max-height: 190px;
+    margin: 4rem 0;
+  }
+}
+@media (max-width: 31.24em) {
+  .footer__right {
+    max-width: 257px;
+    max-height: 140px;
+    padding: 0.7rem;
+  }
+}
+.footer__rightMobile {
+  display: none;
+}
+@media (max-width: 48.0525em) {
+  .footer__rightMobile {
+    display: flex;
+  }
+}
+@media (max-width: 48.0525em) {
+  .footer__rightDesktop {
+    display: none;
+  }
+}
 .footer__profileImg {
   width: 200px;
 }
+@media (max-width: 48.0525em) {
+  .footer__profileImg {
+    width: 160px;
+  }
+}
+@media (max-width: 31.24em) {
+  .footer__profileImg {
+    width: 120px;
+  }
+}
 .footer__roundTextImg {
   transform: translateY(60px);
+}
+@media (max-width: 48.0525em) {
+  .footer__roundTextImg {
+    transform: translate(120px, 0);
+  }
+}
+@media (max-width: 31.24em) {
+  .footer__roundTextImg {
+    transform: translate(47px, 0);
+    width: 160px;
+  }
 }
 .footer__bottom {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.footer__bottomMobile {
+  display: none;
+}
+@media (max-width: 48.0525em) {
+  .footer__bottomMobile {
+    display: flex;
+  }
+}
+@media (max-width: 48.0525em) {
+  .footer__bottomDesktop {
+    justify-content: center;
+  }
+  .footer__bottomDesktop .footer__bottomLinks {
+    display: none;
+  }
 }
 .footer__copyRights {
   font-family: Arial;
@@ -310,7 +424,18 @@ body:before {
   margin: 0;
   list-style: none;
   display: flex;
+  align-items: center;
   gap: 1rem;
+}
+@media (max-width: 48.0525em) {
+  .footer__bottomLinks {
+    margin-top: 1.5rem;
+  }
+}
+@media (max-width: 31.24em) {
+  .footer__bottomLinks {
+    margin-top: 1rem;
+  }
 }
 .footer__bottomLink {
   font-family: "Lato";
@@ -331,6 +456,11 @@ body:before {
   font-weight: 600;
   text-align: left;
   color: #2e3047;
+}
+@media (max-width: 31.24em) {
+  .footer__connect {
+    font-size: 14px;
+  }
 }
 .footer_linkIcon {
   margin-left: 2px;
@@ -1655,8 +1785,8 @@ body:before {
 }
 @media (max-width: 31.24em) {
   .principles__list {
-    transform: scale(0.75);
-    margin: -9rem 0;
+    transform: scale(0.65);
+    margin: -14rem 0;
   }
 }
 .principles__single {
@@ -1674,7 +1804,7 @@ body:before {
   }
 }
 .principles__single:nth-child(even) .principles__doodleImage2 {
-  top: 8rem;
+  top: 7.5rem;
 }
 .principles__inner {
   position: relative;
@@ -1757,6 +1887,11 @@ body:before {
   background-image: url("../../images/home/blogs_backgrond.jpg");
   background-size: cover;
 }
+@media (max-width: 48.0525em) {
+  .blogs {
+    padding: 4rem 0;
+  }
+}
 .blogs__doodleText {
   font-family: "Brownist";
   font-size: 26px;
@@ -1764,6 +1899,12 @@ body:before {
   color: #2e3047;
   line-height: 1;
   margin-bottom: 0;
+}
+@media (max-width: 31.24em) {
+  .blogs__doodleText {
+    font-size: 14px;
+    padding: 0 1rem;
+  }
 }
 .blogs__title {
   font-family: "Georgia";
@@ -1773,10 +1914,28 @@ body:before {
   text-align: left;
   color: #1873f2;
 }
+@media (max-width: 31.24em) {
+  .blogs__title {
+    font-size: 24px;
+    padding: 0 1rem;
+  }
+}
 .blogs__list {
   display: flex;
   gap: 2rem;
   margin-top: 4rem;
+}
+@media (max-width: 48.0525em) {
+  .blogs__list {
+    overflow-x: scroll;
+    padding: 2.5rem 1rem;
+    margin: 0 -2rem 0 0;
+  }
+}
+@media (max-width: 31.24em) {
+  .blogs__list {
+    margin: 0 -1rem 0 0;
+  }
 }
 .blogs__blog {
   width: 32%;
@@ -1785,6 +1944,16 @@ body:before {
   background-color: #fff;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+}
+@media (max-width: 48.0525em) {
+  .blogs__blog {
+    min-width: 60%;
+  }
+}
+@media (max-width: 31.24em) {
+  .blogs__blog {
+    min-width: 85%;
+  }
 }
 .blogs__blog:hover {
   transform: scale(1.1);
@@ -1816,6 +1985,11 @@ body:before {
   padding: 10px;
   background-color: rgba(75, 107, 251, 0.05);
 }
+@media (max-width: 31.24em) {
+  .blogs__tag {
+    font-size: 10px;
+  }
+}
 .blogs__readTime {
   font-family: Lato;
   font-size: 13.7px;
@@ -1823,6 +1997,11 @@ body:before {
   text-align: left;
   color: #97989f;
   margin: 0 0 0 auto;
+}
+@media (max-width: 31.24em) {
+  .blogs__readTime {
+    font-size: 10px;
+  }
 }
 .blogs__blogTitle {
   font-family: "Lato";
@@ -1833,6 +2012,11 @@ body:before {
   color: #181a2a;
   margin: 1rem 0;
 }
+@media (max-width: 31.24em) {
+  .blogs__blogTitle {
+    font-size: 16px;
+  }
+}
 .blogs__desc {
   font-family: "Lato Light";
   font-size: 14px;
@@ -1841,6 +2025,11 @@ body:before {
   letter-spacing: 0.14px;
   text-align: left;
   color: #2e3047;
+}
+@media (max-width: 31.24em) {
+  .blogs__desc {
+    font-size: 12px;
+  }
 }
 .blogs__link {
   font-family: "Lato";
@@ -1851,6 +2040,11 @@ body:before {
   color: #2e3047;
   text-decoration: none;
   position: relative;
+}
+@media (max-width: 31.24em) {
+  .blogs__link {
+    font-size: 12px;
+  }
 }
 .blogs__link::after {
   position: absolute;

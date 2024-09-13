@@ -23,6 +23,9 @@
 	&-brand {
 		img {
 			width: 120px;
+			@include mq($until: mobile) {
+				width: 70px;
+			}
 		}
 	}
 
