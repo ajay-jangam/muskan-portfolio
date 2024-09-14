@@ -450,6 +450,16 @@ body:before {
 .footer__copyRights span {
   margin: 0 0.5rem;
 }
+@media (max-width: 31.24em) {
+  .footer__copyRights {
+    max-width: 265px;
+    text-align: center;
+    font-size: 12px;
+  }
+  .footer__copyRights span {
+    display: none;
+  }
+}
 .footer__bottomLinks {
   padding: 0;
   margin: 0;
@@ -471,7 +481,7 @@ body:before {
 .footer__bottomLink {
   font-family: "Lato";
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1;
   text-align: left;
 }
 .footer__bottomLink a {
@@ -2098,10 +2108,38 @@ body:before {
   background-repeat: no-repeat;
   background-size: contain;
 }
+.contact-us .footer {
+  background-color: #fdfafe;
+  padding: 0rem 0 2rem;
+  display: flex;
+  gap: unset;
+  width: 100%;
+  justify-content: space-between;
+}
+.contact-us .footer .footer__main {
+  display: none;
+}
+@media (max-width: 31.24em) {
+  .contact-us .footer .footer__bottomDesktop {
+    flex-direction: column-reverse;
+  }
+  .contact-us .footer .footer__bottomLinks {
+    display: flex;
+    margin: 0 0 3rem;
+    gap: unset;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
 
 .contact {
-  padding: 10rem 0;
+  padding: 10rem 0 7rem;
   text-align: center;
+}
+@media (max-width: 31.24em) {
+  .contact {
+    padding: 7rem 0 4rem;
+  }
 }
 .contact__icon {
   border-radius: 40px;
@@ -2114,6 +2152,12 @@ body:before {
   align-items: center;
   margin: 0 auto 1rem;
 }
+@media (max-width: 31.24em) {
+  .contact__icon {
+    width: 70px;
+    height: 40px;
+  }
+}
 .contact__profileImg {
   width: 47px;
   height: 100%;
@@ -2121,6 +2165,11 @@ body:before {
      object-fit: contain;
   box-shadow: 0px 4px 4px 0px rgba(29, 90, 83, 0.5);
   border-radius: 40px;
+}
+@media (max-width: 31.24em) {
+  .contact__profileImg {
+    width: 34px;
+  }
 }
 .contact__title {
   font-family: "Georgia";
@@ -2141,21 +2190,40 @@ body:before {
     margin: 2rem 0 0rem;
   }
 }
+@media (max-width: 31.24em) {
+  .contact__title {
+    font-size: 28px;
+    letter-spacing: -0.01em;
+  }
+  .contact__title span {
+    margin: 0 -4px 0 0px;
+  }
+}
 .contact__titleFirst {
   font-family: "Lato";
   color: #2e3047;
 }
 .contact__copyEmailWrapper {
   margin: 0 0 0.5rem;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
 }
 .contact__email {
-  font-family: "Lato";
+  font-family: "Lato Semi-Bold";
   font-size: 20px;
   font-weight: 500;
   color: #2e3047;
   background: rgba(0, 0, 0, 0);
   border: none;
   width: 300px;
+}
+@media (max-width: 31.24em) {
+  .contact__email {
+    font-size: 16px;
+    width: 250px;
+  }
 }
 .contact__email:focus-visible {
   outline: none;
@@ -2170,6 +2238,11 @@ body:before {
   padding: 0;
   transform: translateX(-8px);
 }
+@media (max-width: 31.24em) {
+  .contact__copyLink {
+    font-size: 14px;
+  }
+}
 .contact__copiedText {
   margin-left: 0px;
   display: none;
@@ -2181,20 +2254,23 @@ body:before {
   text-align: left;
   color: #2e3047;
 }
+@media (max-width: 31.24em) {
+  .contact__copiedText {
+    font-size: 12px;
+  }
+}
 .contact__socialLinks {
   margin: 2rem 0;
   padding: 0;
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 4rem;
+  gap: 2rem;
 }
-.contact__socialLink {
-  width: 30px;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@media (max-width: 31.24em) {
+  .contact__socialLinks {
+    gap: 1.5rem;
+  }
 }
 .contact__socialLink a {
   padding: 12px;
@@ -2206,5 +2282,163 @@ body:before {
   box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.3);
 }
 .contact__socaialIcons {
-  width: 25px;
+  width: 20px;
+  height: 20px;
+}
+
+.collaborate {
+  padding: 0 0 4rem;
+}
+@media (max-width: 31.24em) {
+  .collaborate__wrapper {
+    padding: 0 1.5rem;
+  }
+}
+.collaborate__header {
+  margin-bottom: 2rem;
+}
+.collaborate__doodleText {
+  font-family: "Brownist";
+  font-size: 26px;
+  text-align: left;
+  letter-spacing: 1.04px;
+  color: #16bac5;
+  margin: 0;
+  line-height: 1;
+}
+@media (max-width: 31.24em) {
+  .collaborate__doodleText {
+    font-size: 14px;
+  }
+}
+@media (max-width: 31.24em) {
+  .collaborate__doodleImg {
+    display: none;
+  }
+}
+.collaborate__doodleTitle {
+  font-family: "Georgia";
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 0.32px;
+  text-align: left;
+  color: #1873f2;
+  line-height: 1.25;
+  margin: 0;
+}
+.collaborate__doodleTitle span {
+  color: #2e3047;
+}
+@media (max-width: 31.24em) {
+  .collaborate__doodleTitle {
+    font-size: 24px;
+    max-width: 240px;
+  }
+}
+.collaborate__cards {
+  display: flex;
+  gap: 1.5rem;
+}
+@media (max-width: 48.0525em) {
+  .collaborate__cards {
+    flex-wrap: wrap;
+  }
+}
+.collaborate__card {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  padding: 1.8rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+@media (max-width: 48.0525em) {
+  .collaborate__card {
+    width: 47%;
+    height: 260px;
+    padding: 2.5rem;
+  }
+}
+@media (max-width: 31.24em) {
+  .collaborate__card {
+    width: 100%;
+  }
+}
+.collaborate__card:nth-child(1) {
+  background-color: #16bac5;
+}
+.collaborate__card:nth-child(2) {
+  background-color: #66a1f3;
+}
+.collaborate__card:nth-child(3) {
+  background-color: #e08dac;
+}
+.collaborate__card:nth-child(4) {
+  background-color: #f4b669;
+}
+.collaborate__card:hover {
+  box-shadow: 0 18px 37px 0 rgba(58, 73, 249, 0.05);
+}
+.collaborate__cardTitle {
+  font-family: "Lato";
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.25;
+  text-align: left;
+  color: #181a2a;
+}
+.collaborate__cardDesc {
+  font-family: "Lato";
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.16px;
+  text-align: left;
+  color: #2e3047;
+  margin-bottom: auto;
+  padding-right: 1.5rem;
+}
+@media (max-width: 31.24em) {
+  .collaborate__cardDesc {
+    padding-right: 0;
+  }
+}
+.collaborate__cardLink {
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: left;
+  color: #2e3047;
+  text-decoration: none;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+.collaborate__cardLink::after {
+  position: absolute;
+  content: "";
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  background-color: #2e3047;
+}
+.collaborate__cardLink svg path {
+  transition: all 0.2s ease;
+}
+.collaborate__cardLink:hover {
+  color: #fff;
+}
+.collaborate__cardLink:hover svg path {
+  stroke: #fff;
+}
+.collaborate__cardLink:hover::after {
+  background-color: #fff;
 }

@@ -350,6 +350,16 @@
 		span {
 			margin: 0 0.5rem;
 		}
+
+		@include mq($until: mobile) {
+			max-width: 265px;
+			text-align: center;
+			font-size: 12px;
+
+			span {
+				display: none;
+			}
+		}
 	}
 
 	// .footer__bottomLinks
@@ -375,7 +385,7 @@
 	&__bottomLink {
 		font-family: $lato;
 		font-size: 14px;
-		line-height: 1.7;
+		line-height: 1;
 		text-align: left;
 		a {
 			color: #2e3047;
