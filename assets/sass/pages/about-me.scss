@@ -1,0 +1,411 @@
+.about {
+    background-image: url("../../images/about-me/bg-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow-y: hidden;
+    z-index: 0;
+    padding: 30rem 0 15rem;
+
+    // .about__slider
+
+    &__slider {
+        overflow-x: hidden;
+        .swiper-wrapper {
+        }
+        .swiper-slide {
+        }
+    }
+
+    // .about__slides
+
+    &__slides {
+        gap: 2rem;
+    }
+
+    // .about__slide
+
+    &__slide {
+        width: auto;
+        transition: all 0.2s ease;
+        &:hover {
+            box-shadow: 0 18px 37.5px 0 rgba(0, 43, 181, 0.1);
+        }
+    }
+
+    // .about__slideImg
+
+    &__slideImg {
+        height: 180px;
+        object-fit: contain;
+        border-radius: 12px;
+    }
+
+    // .about__connect
+
+    &__connect {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: -26rem;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    // .about__title
+
+    &__title {
+        font-family: $lato;
+        font-size: 62px;
+        font-weight: bold;
+        text-align: left;
+        color: #2e3047;
+        margin-bottom: 2rem;
+        span {
+            font-family: $georgia;
+            font-size: 70px;
+            font-weight: bold;
+            font-style: italic;
+            text-align: left;
+            color: #1873f2;
+        }
+    }
+
+    // .about__connectWrapper
+
+    &__connectWrapper {
+        position: relative;
+    }
+
+    // .about__mobileBody
+
+    &__mobileBody {
+    }
+
+    // .about__content
+
+    &__content {
+        position: absolute;
+        top: 6rem;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    // .about__profileImg
+
+    &__profileImg {
+        width: 150px;
+    }
+
+    // .about__text
+
+    &__text {
+        font-family: $lato-light;
+        font-size: 24px;
+        font-weight: 300;
+        letter-spacing: -0.24px;
+        text-align: center;
+        color: #2e3047;
+        margin: 2rem 0 2.5rem;
+        line-height: 1.25;
+        span {
+            font-family: $lato-bold;
+            font-weight: bold;
+            display: block;
+        }
+    }
+
+    // .about__profileStats
+
+    &__profileStats {
+        display: flex;
+        gap: 1rem;
+    }
+
+    // .about__profileStat
+
+    &__profileStat {
+        border-radius: 12px;
+        padding: 0.75rem 1.5rem;
+        &:nth-child(1) {
+            background-color: #fffe91;
+        }
+        &:nth-child(2) {
+            background-color: #b7fbc8;
+        }
+    }
+
+    // .about__profileStatNum
+
+    &__profileStatNum {
+        font-family: $lato-bold;
+        font-size: 26.7px;
+        font-weight: bold;
+        text-align: center;
+        color: #2e3047;
+        line-height: 1;
+        margin-bottom: 0.75rem;
+    }
+
+    // .about__profileStatName
+
+    &__profileStatName {
+        font-family: $lato;
+        font-size: 12px;
+        line-height: 1.11;
+        letter-spacing: 0.12px;
+        text-align: center;
+        color: #2e3047;
+        margin: 0;
+        max-width: min-content;
+    }
+
+    // .about__connectBtn
+
+    &__connectBtn {
+        font-family: $lato;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: left;
+        color: #f7f4f9;
+        border-radius: 56px;
+        background-color: #1873f2;
+        padding: 1.25rem 2.5rem;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        line-height: 1;
+        gap: 10px;
+        position: relative;
+        margin: 3rem 0 0;
+        @include mq($until: mobile) {
+            font-size: 14px;
+            padding: 1rem 1.5rem;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            width: 90%;
+            height: 45%;
+            opacity: 0.5;
+            border-radius: 126px;
+            background-image: linear-gradient(
+                to bottom,
+                #fff 0%,
+                rgba(255, 255, 255, 0)
+            );
+        }
+    }
+
+    // .about__linkedinIcon
+
+    &__linkedinIcon {
+    }
+
+    // .about__rightArrow
+
+    &__rightArrow {
+    }
+}
+
+// Details Section
+
+.details {
+    background-image: url("../../images/about-me/details-bg.jpg");
+    background-size: contain;
+    padding: 5rem 0;
+
+    // .details__wrapper
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    // .details__left
+
+    &__left {
+        flex-basis: 48%;
+    }
+
+    // .details__text
+
+    &__text {
+        font-family: $lato-semi-bold;
+        font-size: 32px;
+        font-weight: bold;
+        letter-spacing: -0.32px;
+        text-align: left;
+        color: #2e3047;
+        margin-bottom: 0;
+        span {
+            font-family: $georgia;
+            font-style: italic;
+            letter-spacing: normal;
+            color: #1873f2;
+        }
+    }
+
+    // .details__followWrappper
+
+    &__followWrappper {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        margin-top: 1rem;
+    }
+    // .details__followText
+
+    &__followText {
+        font-family: $lato;
+        font-size: 14px;
+        letter-spacing: 0.56px;
+        text-align: left;
+        color: #000;
+        margin-bottom: 0;
+    }
+
+    // .details__followLinks
+
+    &__followLinks {
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    // .details__followLink
+
+    &__followLink {
+        font-family: $lato;
+        font-size: 14px;
+        line-height: 1.7;
+        text-align: left;
+        color: hwb(235deg 18% 72% / 60%);
+        text-decoration: none;
+    }
+
+    // .details__right
+
+    &__right {
+        flex-basis: 48%;
+    }
+
+    // .details__description
+
+    &__description {
+        font-family: Inter;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.16px;
+        text-align: left;
+        color: #2e3047;
+    }
+
+    // .details__cards
+
+    &__cards {
+        flex-basis: 100%;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin-top: 4rem;
+    }
+
+    // .details__doodle
+
+    &__doodle {
+        position: absolute;
+        top: -11rem;
+    }
+
+    // .details__doodleText
+
+    &__doodleText {
+        font-family: $brownist;
+        font-size: 32px;
+        letter-spacing: 1.28px;
+        text-align: left;
+        color: #2e3047;
+        letter-spacing: 1.04px;
+    }
+
+    // .details__doodelImg
+
+    &__doodelImg {
+        width: 60px;
+        margin: -1rem 0 0 2rem;
+    }
+
+    // .details__card
+
+    &__card {
+        border-radius: 12px;
+        background-color: #0000;
+        padding: 2rem;
+        flex-basis: 31%;
+        transition: all 0.2s ease;
+        &:hover {
+            box-shadow: 0 7px 37.5px 0 rgba(0, 43, 181, 0.1);
+            background-color: #fff;
+
+            .details__cardIconWrapper {
+                background-color: #1873f2;
+            }
+        }
+    }
+
+    // .details__cardIconWrapper
+
+    &__cardIconWrapper {
+        border-radius: 27px;
+        background-color: #2e3047;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 55px;
+        height: 55px;
+        margin-bottom: 1.5rem;
+        transition: all 0.2s ease;
+    }
+
+    // .details__cardIcon
+
+    &__cardIcon {
+    }
+
+    // .details__cardTitle
+
+    &__cardTitle {
+        font-family: $lato;
+        font-size: 18px;
+        font-weight: 900;
+        letter-spacing: -0.18px;
+        text-align: left;
+        color: #2e3047;
+    }
+
+    // .details__cardDesc
+
+    &__cardDesc {
+        font-family: Inter;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.16px;
+        text-align: left;
+        color: #2e3047;
+    }
+}

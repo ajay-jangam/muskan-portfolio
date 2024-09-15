@@ -1,537 +1,539 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!-- Required meta tags -->
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<!-- Bootstarp CSS -->
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-			crossorigin="anonymous"
-		/>
+        <!-- Bootstarp CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
 
-		<!-- Swiper CSS -->
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-		/>
+        <!-- Swiper CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
 
-		<!-- Main CSS -->
-		<link href="./assets/dist/css/app.css" rel="stylesheet" />
+        <!-- Main CSS -->
+        <link href="./assets/dist/css/app.css" rel="stylesheet" />
 
-		<title>Portfolio</title>
-	</head>
+        <title>Portfolio</title>
+    </head>
 
-	<body>
-		<!-- contain main wrapper for website -->
-		<main class="wrapper home">
-			<header>
-				<nav class="navbar navbar-expand-lg">
-					<div class="container">
-						<a class="navbar-brand" href="/">
-							<img
-								src="./assets/images/home/logo.svg"
-								alt="Portfoilio Logo"
-							/>
-						</a>
-						<button
-							class="navbar-toggler"
-							type="button"
-							data-bs-toggle="collapse"
-							data-bs-target="#navbarSupportedContent"
-							aria-controls="navbarSupportedContent"
-							aria-expanded="false"
-							aria-label="Toggle navigation"
-						>
-							<span class="navbar-toggler-icon"></span>
-						</button>
-						<div
-							class="collapse navbar-collapse"
-							id="navbarSupportedContent"
-						>
-							<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-								<li class="nav-item">
-									<a
-										class="nav-link active"
-										aria-current="page"
-										href="#"
-										>Home</a
-									>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#">My projects</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#">About me</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="/contact-us.html"
-										>Let's talk</a
-									>
-								</li>
-								<li class="nav-item resume-link">
-									<a
-										class="nav-link"
-										href="./assets/resume/MuskanBhatia_Resume_2024.pdf"
-										target="_blank"
-										>Get My Resume
-										<img
-											src="./assets/images/home/download.svg"
-											alt=""
-											class="resume-downloadIcon"
-										/>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</nav>
-			</header>
+    <body>
+        <!-- contain main wrapper for website -->
+        <main class="wrapper home">
+            <header>
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container">
+                        <a class="navbar-brand" href="/">
+                            <img
+                                src="./assets/images/home/logo.svg"
+                                alt="Portfoilio Logo"
+                            />
+                        </a>
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                        >
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div
+                            class="collapse navbar-collapse"
+                            id="navbarSupportedContent"
+                        >
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link active"
+                                        aria-current="page"
+                                        href="/"
+                                        >Home</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">My projects</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about-me.html"
+                                        >About me</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/contact-us.html"
+                                        >Let's talk</a
+                                    >
+                                </li>
+                                <li class="nav-item resume-link">
+                                    <a
+                                        class="nav-link"
+                                        href="./assets/resume/MuskanBhatia_Resume_2024.pdf"
+                                        target="_blank"
+                                        >Get My Resume
+                                        <img
+                                            src="./assets/images/home/download.svg"
+                                            alt=""
+                                            class="resume-downloadIcon"
+                                        />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
 
-			<!-- Hero Section Start -->
+            <!-- Hero Section Start -->
 
-			<section class="hero">
-				<div class="hero__wrapper container">
-					<div class="hero__sidebar hero__sidebarDesktop">
-						<!-- <div class="hero__sidebarWrapper"> -->
-						<div class="hero__profile">
-							<img
-								src="./assets/images/home/profile-img.png"
-								alt="Profile Image"
-								class="hero__profileImg"
-							/>
-						</div>
-						<div class="hero__profileContent">
-							<p class="hero__profileName">Muskan Bhatia</p>
-							<p class="hero__profileLocation">
-								Based in Delhi, India
-							</p>
-							<img
-								src="./assets/images/home/quote.svg"
-								alt=""
-								class="hero__quoteIcon"
-							/>
-							<p class="hero__profileDescription">
-								I help businesses by designing human ✧ centered
-								digital experiences ✺︎
-							</p>
-						</div>
-						<!-- </div> -->
-					</div>
-					<div class="hero__main">
-						<div class="hero__mainFirstFold">
-							<div class="hero__text">
-								<img
-									src="./assets/images/home/graphic-arrow.svg"
-									alt=""
-									class="hero__doodleArrow"
-								/>
-								<p class="hero__doodleText">Innovative</p>
-								<h2 class="hero__title">
-									PRODUCT <span>DESIGNER</span>
-								</h2>
-								<p class="hero__subTitle">
-									My core focus revolves around understanding
-									people and leveraging empathy to craft
-									optimised user experiences that genuinely
-									resonate with their needs and aspirations.
-								</p>
-								<div class="hero__stats">
-									<div class="hero__stat">
-										<p class="hero__statNumber">3+</p>
-										<p class="hero__statText">
-											Years of Experience
-										</p>
-									</div>
-									<div class="hero__stat">
-										<p class="hero__statNumber">15+</p>
-										<p class="hero__statText">
-											Projects Completed
-										</p>
-									</div>
-									<div class="hero__stat">
-										<p class="hero__statNumber">10+</p>
-										<p class="hero__statText">
-											Client Sectors
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="hero__sidebarWrapper hero__sidebar">
-							<div class="hero__profile">
-								<img
-									src="./assets/images/home/profile-img.png"
-									alt="Profile Image"
-									class="hero__profileImg"
-								/>
-							</div>
-							<div class="hero__profileContent">
-								<p class="hero__profileName">Muskan Bhatia</p>
-								<p class="hero__profileLocation">
-									Based in Delhi, India
-								</p>
-								<img
-									src="./assets/images/home/quote.svg"
-									alt=""
-									class="hero__quoteIcon"
-								/>
-								<p class="hero__profileDescription">
-									I help businesses by designing human ✧
-									centered digital experiences ✺︎
-								</p>
-							</div>
-						</div>
-						<div class="hero__mainSecondFold">
-							<div class="hero__mainSecondFoldText">
-								<img
-									src="./assets/images/home/graphic-arrow-1.svg"
-									alt=""
-									class="hero__doodleImage"
-								/>
-								<p class="hero__doodleTextTwo">
-									#The Visionary Path
-								</p>
-								<p class="hero__mainSecondFoldTitle">
-									My Design <span>Approach</span>
-								</p>
-							</div>
-							<div class="hero__accordion">
-								<div class="accordion" id="accordionExample">
-									<div class="accordion-item">
-										<h2 class="accordion-header">
-											<button
-												class="accordion-button"
-												type="button"
-												data-bs-toggle="collapse"
-												data-bs-target="#collapseOne"
-												aria-expanded="true"
-												aria-controls="collapseOne"
-											>
-												AI-Enhanced Design with a
-												Personal Twist
-											</button>
-										</h2>
-										<div
-											id="collapseOne"
-											class="accordion-collapse collapse show"
-											data-bs-parent="#accordionExample"
-										>
-											<div class="accordion-body">
-												AI provides the foundation, but
-												it’s the personal touch that
-												builds the experience. I infuse
-												every data-driven insight with
-												my unique design perspective,
-												creating results that feel
-												tailored and human.
-											</div>
-										</div>
-									</div>
-									<div class="accordion-item">
-										<h2 class="accordion-header">
-											<button
-												class="accordion-button collapsed"
-												type="button"
-												data-bs-toggle="collapse"
-												data-bs-target="#collapseTwo"
-												aria-expanded="false"
-												aria-controls="collapseTwo"
-											>
-												I Design for Empathy, Not Just
-												Usability
-											</button>
-										</h2>
-										<div
-											id="collapseTwo"
-											class="accordion-collapse collapse"
-											data-bs-parent="#accordionExample"
-										>
-											<div class="accordion-body">
-												<strong
-													>This is the second item's
-													accordion body.</strong
-												>
-												It is hidden by default, until
-												the collapse plugin adds the
-												appropriate classes that we use
-												to style each element. These
-												classes control the overall
-												appearance, as well as the
-												showing and hiding via CSS
-												transitions. You can modify any
-												of this with custom CSS or
-												overriding our default
-												variables. It's also worth
-												noting that just about any HTML
-												can go within the
-												<code>.accordion-body</code>,
-												though the transition does limit
-												overflow.
-											</div>
-										</div>
-									</div>
-									<div class="accordion-item">
-										<h2 class="accordion-header">
-											<button
-												class="accordion-button collapsed"
-												type="button"
-												data-bs-toggle="collapse"
-												data-bs-target="#collapseThree"
-												aria-expanded="false"
-												aria-controls="collapseThree"
-											>
-												I See Design as a Journey, Not a
-												Destination
-											</button>
-										</h2>
-										<div
-											id="collapseThree"
-											class="accordion-collapse collapse"
-											data-bs-parent="#accordionExample"
-										>
-											<div class="accordion-body">
-												<strong
-													>This is the third item's
-													accordion body.</strong
-												>
-												It is hidden by default, until
-												the collapse plugin adds the
-												appropriate classes that we use
-												to style each element. These
-												classes control the overall
-												appearance, as well as the
-												showing and hiding via CSS
-												transitions. You can modify any
-												of this with custom CSS or
-												overriding our default
-												variables. It's also worth
-												noting that just about any HTML
-												can go within the
-												<code>.accordion-body</code>,
-												though the transition does limit
-												overflow.
-											</div>
-										</div>
-									</div>
-									<div class="accordion-item">
-										<h2 class="accordion-header">
-											<button
-												class="accordion-button collapsed"
-												type="button"
-												data-bs-toggle="collapse"
-												data-bs-target="#collapseFour"
-												aria-expanded="false"
-												aria-controls="collapseFour"
-											>
-												I Design for Evolution, Not
-												Perfection
-											</button>
-										</h2>
-										<div
-											id="collapseFour"
-											class="accordion-collapse collapse"
-											data-bs-parent="#accordionExample"
-										>
-											<div class="accordion-body">
-												<strong
-													>This is the third item's
-													accordion body.</strong
-												>
-												It is hidden by default, until
-												the collapse plugin adds the
-												appropriate classes that we use
-												to style each element. These
-												classes control the overall
-												appearance, as well as the
-												showing and hiding via CSS
-												transitions. You can modify any
-												of this with custom CSS or
-												overriding our default
-												variables. It's also worth
-												noting that just about any HTML
-												can go within the
-												<code>.accordion-body</code>,
-												though the transition does limit
-												overflow.
-											</div>
-										</div>
-									</div>
-									<div class="accordion-item">
-										<h2 class="accordion-header">
-											<button
-												class="accordion-button collapsed"
-												type="button"
-												data-bs-toggle="collapse"
-												data-bs-target="#collapseFive"
-												aria-expanded="false"
-												aria-controls="collapseFive"
-											>
-												I Believe in Co-Creation with
-												Clients
-											</button>
-										</h2>
-										<div
-											id="collapseFive"
-											class="accordion-collapse collapse"
-											data-bs-parent="#accordionExample"
-										>
-											<div class="accordion-body">
-												<strong
-													>This is the third item's
-													accordion body.</strong
-												>
-												It is hidden by default, until
-												the collapse plugin adds the
-												appropriate classes that we use
-												to style each element. These
-												classes control the overall
-												appearance, as well as the
-												showing and hiding via CSS
-												transitions. You can modify any
-												of this with custom CSS or
-												overriding our default
-												variables. It's also worth
-												noting that just about any HTML
-												can go within the
-												<code>.accordion-body</code>,
-												though the transition does limit
-												overflow.
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+            <section class="hero">
+                <div class="hero__wrapper container">
+                    <div class="hero__sidebar hero__sidebarDesktop">
+                        <!-- <div class="hero__sidebarWrapper"> -->
+                        <div class="hero__profile">
+                            <img
+                                src="./assets/images/home/profile-img.png"
+                                alt="Profile Image"
+                                class="hero__profileImg"
+                            />
+                        </div>
+                        <div class="hero__profileContent">
+                            <p class="hero__profileName">Muskan Bhatia</p>
+                            <p class="hero__profileLocation">
+                                Based in Delhi, India
+                            </p>
+                            <img
+                                src="./assets/images/home/quote.svg"
+                                alt=""
+                                class="hero__quoteIcon"
+                            />
+                            <p class="hero__profileDescription">
+                                I help businesses by designing human ✧ centered
+                                digital experiences ✺︎
+                            </p>
+                        </div>
+                        <!-- </div> -->
+                    </div>
+                    <div class="hero__main">
+                        <div class="hero__mainFirstFold">
+                            <div class="hero__text">
+                                <img
+                                    src="./assets/images/home/graphic-arrow.svg"
+                                    alt=""
+                                    class="hero__doodleArrow"
+                                />
+                                <p class="hero__doodleText">Innovative</p>
+                                <h2 class="hero__title">
+                                    PRODUCT <span>DESIGNER</span>
+                                </h2>
+                                <p class="hero__subTitle">
+                                    My core focus revolves around understanding
+                                    people and leveraging empathy to craft
+                                    optimised user experiences that genuinely
+                                    resonate with their needs and aspirations.
+                                </p>
+                                <div class="hero__stats">
+                                    <div class="hero__stat">
+                                        <p class="hero__statNumber">3+</p>
+                                        <p class="hero__statText">
+                                            Years of Experience
+                                        </p>
+                                    </div>
+                                    <div class="hero__stat">
+                                        <p class="hero__statNumber">15+</p>
+                                        <p class="hero__statText">
+                                            Projects Completed
+                                        </p>
+                                    </div>
+                                    <div class="hero__stat">
+                                        <p class="hero__statNumber">10+</p>
+                                        <p class="hero__statText">
+                                            Client Sectors
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero__sidebarWrapper hero__sidebar">
+                            <div class="hero__profile">
+                                <img
+                                    src="./assets/images/home/profile-img.png"
+                                    alt="Profile Image"
+                                    class="hero__profileImg"
+                                />
+                            </div>
+                            <div class="hero__profileContent">
+                                <p class="hero__profileName">Muskan Bhatia</p>
+                                <p class="hero__profileLocation">
+                                    Based in Delhi, India
+                                </p>
+                                <img
+                                    src="./assets/images/home/quote.svg"
+                                    alt=""
+                                    class="hero__quoteIcon"
+                                />
+                                <p class="hero__profileDescription">
+                                    I help businesses by designing human ✧
+                                    centered digital experiences ✺︎
+                                </p>
+                            </div>
+                        </div>
+                        <div class="hero__mainSecondFold">
+                            <div class="hero__mainSecondFoldText">
+                                <img
+                                    src="./assets/images/home/graphic-arrow-1.svg"
+                                    alt=""
+                                    class="hero__doodleImage"
+                                />
+                                <p class="hero__doodleTextTwo">
+                                    #The Visionary Path
+                                </p>
+                                <p class="hero__mainSecondFoldTitle">
+                                    My Design <span>Approach</span>
+                                </p>
+                            </div>
+                            <div class="hero__accordion">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button
+                                                class="accordion-button"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#collapseOne"
+                                                aria-expanded="true"
+                                                aria-controls="collapseOne"
+                                            >
+                                                AI-Enhanced Design with a
+                                                Personal Twist
+                                            </button>
+                                        </h2>
+                                        <div
+                                            id="collapseOne"
+                                            class="accordion-collapse collapse show"
+                                            data-bs-parent="#accordionExample"
+                                        >
+                                            <div class="accordion-body">
+                                                AI provides the foundation, but
+                                                it’s the personal touch that
+                                                builds the experience. I infuse
+                                                every data-driven insight with
+                                                my unique design perspective,
+                                                creating results that feel
+                                                tailored and human.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button
+                                                class="accordion-button collapsed"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#collapseTwo"
+                                                aria-expanded="false"
+                                                aria-controls="collapseTwo"
+                                            >
+                                                I Design for Empathy, Not Just
+                                                Usability
+                                            </button>
+                                        </h2>
+                                        <div
+                                            id="collapseTwo"
+                                            class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionExample"
+                                        >
+                                            <div class="accordion-body">
+                                                <strong
+                                                    >This is the second item's
+                                                    accordion body.</strong
+                                                >
+                                                It is hidden by default, until
+                                                the collapse plugin adds the
+                                                appropriate classes that we use
+                                                to style each element. These
+                                                classes control the overall
+                                                appearance, as well as the
+                                                showing and hiding via CSS
+                                                transitions. You can modify any
+                                                of this with custom CSS or
+                                                overriding our default
+                                                variables. It's also worth
+                                                noting that just about any HTML
+                                                can go within the
+                                                <code>.accordion-body</code>,
+                                                though the transition does limit
+                                                overflow.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button
+                                                class="accordion-button collapsed"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#collapseThree"
+                                                aria-expanded="false"
+                                                aria-controls="collapseThree"
+                                            >
+                                                I See Design as a Journey, Not a
+                                                Destination
+                                            </button>
+                                        </h2>
+                                        <div
+                                            id="collapseThree"
+                                            class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionExample"
+                                        >
+                                            <div class="accordion-body">
+                                                <strong
+                                                    >This is the third item's
+                                                    accordion body.</strong
+                                                >
+                                                It is hidden by default, until
+                                                the collapse plugin adds the
+                                                appropriate classes that we use
+                                                to style each element. These
+                                                classes control the overall
+                                                appearance, as well as the
+                                                showing and hiding via CSS
+                                                transitions. You can modify any
+                                                of this with custom CSS or
+                                                overriding our default
+                                                variables. It's also worth
+                                                noting that just about any HTML
+                                                can go within the
+                                                <code>.accordion-body</code>,
+                                                though the transition does limit
+                                                overflow.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button
+                                                class="accordion-button collapsed"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#collapseFour"
+                                                aria-expanded="false"
+                                                aria-controls="collapseFour"
+                                            >
+                                                I Design for Evolution, Not
+                                                Perfection
+                                            </button>
+                                        </h2>
+                                        <div
+                                            id="collapseFour"
+                                            class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionExample"
+                                        >
+                                            <div class="accordion-body">
+                                                <strong
+                                                    >This is the third item's
+                                                    accordion body.</strong
+                                                >
+                                                It is hidden by default, until
+                                                the collapse plugin adds the
+                                                appropriate classes that we use
+                                                to style each element. These
+                                                classes control the overall
+                                                appearance, as well as the
+                                                showing and hiding via CSS
+                                                transitions. You can modify any
+                                                of this with custom CSS or
+                                                overriding our default
+                                                variables. It's also worth
+                                                noting that just about any HTML
+                                                can go within the
+                                                <code>.accordion-body</code>,
+                                                though the transition does limit
+                                                overflow.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button
+                                                class="accordion-button collapsed"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#collapseFive"
+                                                aria-expanded="false"
+                                                aria-controls="collapseFive"
+                                            >
+                                                I Believe in Co-Creation with
+                                                Clients
+                                            </button>
+                                        </h2>
+                                        <div
+                                            id="collapseFive"
+                                            class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionExample"
+                                        >
+                                            <div class="accordion-body">
+                                                <strong
+                                                    >This is the third item's
+                                                    accordion body.</strong
+                                                >
+                                                It is hidden by default, until
+                                                the collapse plugin adds the
+                                                appropriate classes that we use
+                                                to style each element. These
+                                                classes control the overall
+                                                appearance, as well as the
+                                                showing and hiding via CSS
+                                                transitions. You can modify any
+                                                of this with custom CSS or
+                                                overriding our default
+                                                variables. It's also worth
+                                                noting that just about any HTML
+                                                can go within the
+                                                <code>.accordion-body</code>,
+                                                though the transition does limit
+                                                overflow.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-			<!-- Hero Section End -->
+            <!-- Hero Section End -->
 
-			<!-- Projects Section Start -->
+            <!-- Projects Section Start -->
 
-			<section class="projects">
-				<div class="projects__wrapper container">
-					<div class="projects__header">
-						<div class="projects__text">
-							<img
-								src="./assets/images/home/doodle-img.svg"
-								alt="Doodle"
-								class="projects__doodleImg"
-							/>
-							<div class="projects__textWrapper">
-								<p class="projects__doodleText">
-									#From Idea to Execution
-								</p>
-								<h2 class="projects__title">My Projects</h2>
-							</div>
-						</div>
+            <section class="projects">
+                <div class="projects__wrapper container">
+                    <div class="projects__header">
+                        <div class="projects__text">
+                            <img
+                                src="./assets/images/home/doodle-img.svg"
+                                alt="Doodle"
+                                class="projects__doodleImg"
+                            />
+                            <div class="projects__textWrapper">
+                                <p class="projects__doodleText">
+                                    #From Idea to Execution
+                                </p>
+                                <h2 class="projects__title">My Projects</h2>
+                            </div>
+                        </div>
 
-						<a
-							href="#"
-							class="projects__button projects__buttonDesktop"
-						>
-							View More Projects
-							<img
-								src="./assets/images/home/arrow-right.svg"
-								alt="My Project"
-								class="projects__buttonArrow"
-							/>
-						</a>
-					</div>
-					<div class="projects__list">
-						<div class="projects__single projects__projectOne">
-							<div class="projects__preview">
-								<img
-									src="./assets/images/home/project-img.jpg"
-									alt="Project"
-									class="projects__image"
-								/>
-								<img
-									src="./assets/images/home/project-img-mobile.png"
-									alt="Project"
-									class="projects__image projects__imageMobile"
-								/>
-							</div>
-							<div class="projects__details">
-								<img
-									src="./assets/images/home/project-logo-1.svg"
-									alt="Yatra"
-									class="projects__projectLogo"
-								/>
-								<p class="projects__projectTitle">
-									Revitalizing Yatra's User Experience.
-								</p>
-								<p class="projects__projectDesc">
-									Redesigned Yatra’s flight booking UI with a
-									modern approach to enhance user experience
-									and stay competitive.
-								</p>
-								<div class="projects__projectTags">
-									<p class="projects__projectTag">
-										#TravelAppDesign
-									</p>
-									<p class="projects__projectTag">
-										#UserExperience
-									</p>
-									<p class="projects__projectTag">
-										#UserEnagagement
-									</p>
-								</div>
-								<a href="#" class="projects__viewButton">
-									View Project
-								</a>
-							</div>
-						</div>
-						<div class="projects__single projects__projectTwo">
-							<div class="projects__preview">
-								<img
-									src="./assets/images/home/project-img-1.jpg"
-									alt="Project"
-									class="projects__image"
-								/>
-								<img
-									src="./assets/images/home/project-img-1-mobile.png"
-									alt="Project"
-									class="projects__image projects__imageMobile"
-								/>
-							</div>
-							<div class="projects__details">
-								<img
-									src="./assets/images/home/project-logo.svg"
-									alt="Yatra"
-									class="projects__projectLogo"
-								/>
-								<p class="projects__projectTitle">
-									Optimizing Livestock Nutrition with
-									Precision Data through eFeed.
-								</p>
-								<p class="projects__projectDesc">
-									A precision app designed for farmers,
-									optimizing livestock feed and reducing
-									methane emissions.
-								</p>
-								<div class="projects__projectTags">
-									<p class="projects__projectTag">
-										#LivestockManagement
-									</p>
-									<p class="projects__projectTag">
-										#AnimalNutrition
-									</p>
-									<p class="projects__projectTag">
-										#Agritech
-									</p>
-								</div>
-								<a href="#" class="projects__viewButton">
-									View Project
-								</a>
-							</div>
-						</div>
-						<!-- <div class="projects__single projects__projectThree">
+                        <a
+                            href="#"
+                            class="projects__button projects__buttonDesktop"
+                        >
+                            View More Projects
+                            <img
+                                src="./assets/images/home/arrow-right.svg"
+                                alt="My Project"
+                                class="projects__buttonArrow"
+                            />
+                        </a>
+                    </div>
+                    <div class="projects__list">
+                        <div class="projects__single projects__projectOne">
+                            <div class="projects__preview">
+                                <img
+                                    src="./assets/images/home/project-img.jpg"
+                                    alt="Project"
+                                    class="projects__image"
+                                />
+                                <img
+                                    src="./assets/images/home/project-img-mobile.png"
+                                    alt="Project"
+                                    class="projects__image projects__imageMobile"
+                                />
+                            </div>
+                            <div class="projects__details">
+                                <img
+                                    src="./assets/images/home/project-logo-1.svg"
+                                    alt="Yatra"
+                                    class="projects__projectLogo"
+                                />
+                                <p class="projects__projectTitle">
+                                    Revitalizing Yatra's User Experience.
+                                </p>
+                                <p class="projects__projectDesc">
+                                    Redesigned Yatra’s flight booking UI with a
+                                    modern approach to enhance user experience
+                                    and stay competitive.
+                                </p>
+                                <div class="projects__projectTags">
+                                    <p class="projects__projectTag">
+                                        #TravelAppDesign
+                                    </p>
+                                    <p class="projects__projectTag">
+                                        #UserExperience
+                                    </p>
+                                    <p class="projects__projectTag">
+                                        #UserEnagagement
+                                    </p>
+                                </div>
+                                <a href="#" class="projects__viewButton">
+                                    View Project
+                                </a>
+                            </div>
+                        </div>
+                        <div class="projects__single projects__projectTwo">
+                            <div class="projects__preview">
+                                <img
+                                    src="./assets/images/home/project-img-1.jpg"
+                                    alt="Project"
+                                    class="projects__image"
+                                />
+                                <img
+                                    src="./assets/images/home/project-img-1-mobile.png"
+                                    alt="Project"
+                                    class="projects__image projects__imageMobile"
+                                />
+                            </div>
+                            <div class="projects__details">
+                                <img
+                                    src="./assets/images/home/project-logo.svg"
+                                    alt="Yatra"
+                                    class="projects__projectLogo"
+                                />
+                                <p class="projects__projectTitle">
+                                    Optimizing Livestock Nutrition with
+                                    Precision Data through eFeed.
+                                </p>
+                                <p class="projects__projectDesc">
+                                    A precision app designed for farmers,
+                                    optimizing livestock feed and reducing
+                                    methane emissions.
+                                </p>
+                                <div class="projects__projectTags">
+                                    <p class="projects__projectTag">
+                                        #LivestockManagement
+                                    </p>
+                                    <p class="projects__projectTag">
+                                        #AnimalNutrition
+                                    </p>
+                                    <p class="projects__projectTag">
+                                        #Agritech
+                                    </p>
+                                </div>
+                                <a href="#" class="projects__viewButton">
+                                    View Project
+                                </a>
+                            </div>
+                        </div>
+                        <!-- <div class="projects__single projects__projectThree">
 							<div class="projects__preview">
 								<img
 									src="./assets/images/home/project-img-3.jpg"
@@ -641,979 +643,979 @@
 								</div>
 							</div>
 						</div> -->
-					</div>
+                    </div>
 
-					<a href="#" class="projects__button projects__buttonMobile">
-						View more projects
-						<img
-							src="./assets/images/home/arrow-right.svg"
-							alt="My Project"
-							class="projects__buttonArrow"
-						/>
-					</a>
-				</div>
-			</section>
+                    <a href="#" class="projects__button projects__buttonMobile">
+                        View more projects
+                        <img
+                            src="./assets/images/home/arrow-right.svg"
+                            alt="My Project"
+                            class="projects__buttonArrow"
+                        />
+                    </a>
+                </div>
+            </section>
 
-			<!-- Projects Section End -->
+            <!-- Projects Section End -->
 
-			<!-- Clients Section Start -->
+            <!-- Clients Section Start -->
 
-			<section class="clients">
-				<div class="clients__headerWrapper container">
-					<div class="clients__header">
-						<img
-							src="./assets/images/home/doodle-img-1.svg"
-							alt=""
-							class="clients__doodleImg"
-						/>
-						<p class="clients__doodleText">#My Clients</p>
-						<p class="clients__title">
-							<span>Notable Brands</span> I’ve Worked With
-						</p>
-					</div>
-				</div>
-				<div class="clients__sliderTop">
-					<div class="clients__sliders swiper-wrapper">
-						<!-- Slides -->
-						<div
-							class="clients__slide clients__slide-1 swiper-slide"
-						>
-							<img
-								src="./assets/images/home/brand-logo/pathways.svg"
-								alt=""
-								class="clients__slideLogo"
-							/>
-						</div>
-						<div
-							class="clients__slide clients__slide-2 swiper-slide"
-						>
-							<img
-								src="./assets/images/home/brand-logo/efeed.svg"
-								alt=""
-								class="clients__slideLogo"
-							/>
-						</div>
-						<div
-							class="clients__slide clients__slide-3 swiper-slide"
-						>
-							<img
-								src="./assets/images/home/brand-logo/yatra.svg"
-								alt=""
-								class="clients__slideLogo"
-							/>
-						</div>
-						<div
-							class="clients__slide clients__slide-4 swiper-slide"
-						>
-							<img
-								src="./assets/images/home/brand-logo/qsworld.svg"
-								alt=""
-								class="clients__slideLogo"
-							/>
-						</div>
-						<div
-							class="clients__slide clients__slide-5 swiper-slide"
-						>
-							<img
-								src="./assets/images/home/brand-logo/pathways.svg"
-								alt=""
-								class="clients__slideLogo"
-							/>
-						</div>
+            <section class="clients">
+                <div class="clients__headerWrapper container">
+                    <div class="clients__header">
+                        <img
+                            src="./assets/images/home/doodle-img-1.svg"
+                            alt=""
+                            class="clients__doodleImg"
+                        />
+                        <p class="clients__doodleText">#My Clients</p>
+                        <p class="clients__title">
+                            <span>Notable Brands</span> I’ve Worked With
+                        </p>
+                    </div>
+                </div>
+                <div class="clients__sliderTop">
+                    <div class="clients__sliders swiper-wrapper">
+                        <!-- Slides -->
+                        <div
+                            class="clients__slide clients__slide-1 swiper-slide"
+                        >
+                            <img
+                                src="./assets/images/home/brand-logo/pathways.svg"
+                                alt=""
+                                class="clients__slideLogo"
+                            />
+                        </div>
+                        <div
+                            class="clients__slide clients__slide-2 swiper-slide"
+                        >
+                            <img
+                                src="./assets/images/home/brand-logo/efeed.svg"
+                                alt=""
+                                class="clients__slideLogo"
+                            />
+                        </div>
+                        <div
+                            class="clients__slide clients__slide-3 swiper-slide"
+                        >
+                            <img
+                                src="./assets/images/home/brand-logo/yatra.svg"
+                                alt=""
+                                class="clients__slideLogo"
+                            />
+                        </div>
+                        <div
+                            class="clients__slide clients__slide-4 swiper-slide"
+                        >
+                            <img
+                                src="./assets/images/home/brand-logo/qsworld.svg"
+                                alt=""
+                                class="clients__slideLogo"
+                            />
+                        </div>
+                        <div
+                            class="clients__slide clients__slide-5 swiper-slide"
+                        >
+                            <img
+                                src="./assets/images/home/brand-logo/pathways.svg"
+                                alt=""
+                                class="clients__slideLogo"
+                            />
+                        </div>
 
-						<div
-							class="clients__slide clients__slide-6 swiper-slide"
-						>
-							<img
-								src="./assets/images/home/brand-logo/efeed.svg"
-								alt=""
-								class="clients__slideLogo"
-							/>
-						</div>
-						<div
-							class="clients__slide clients__slide-7 swiper-slide"
-						>
-							<img
-								src="./assets/images/home/brand-logo/yatra.svg"
-								alt=""
-								class="clients__slideLogo"
-							/>
-						</div>
-						<div
-							class="clients__slide clients__slide-8 swiper-slide"
-						>
-							<img
-								src="./assets/images/home/brand-logo/pathways.svg"
-								alt=""
-								class="clients__slideLogo"
-							/>
-						</div>
-						<div
-							class="clients__slide clients__slide-9 swiper-slide"
-						>
-							<img
-								src="./assets/images/home/brand-logo/qsworld.svg"
-								alt=""
-								class="clients__slideLogo"
-							/>
-						</div>
-						<div
-							class="clients__slide clients__slide-10 swiper-slide"
-						>
-							<img
-								src="./assets/images/home/brand-logo/pathways.svg"
-								alt=""
-								class="clients__slideLogo"
-							/>
-						</div>
-						<div
-							class="clients__slide clients__slide-11 swiper-slide"
-						>
-							<img
-								src="./assets/images/home/brand-logo/efeed.svg"
-								alt=""
-								class="clients__slideLogo"
-							/>
-						</div>
-						<div
-							class="clients__slide clients__slide-12 swiper-slide"
-						>
-							<img
-								src="./assets/images/home/brand-logo/yatra.svg"
-								alt=""
-								class="clients__slideLogo"
-							/>
-						</div>
-						<div
-							class="clients__slide clients__slide-13 swiper-slide"
-						>
-							<img
-								src="./assets/images/home/brand-logo/pathways.svg"
-								alt=""
-								class="clients__slideLogo"
-							/>
-						</div>
-						<div
-							class="clients__slide clients__slide-14 swiper-slide"
-						>
-							<img
-								src="./assets/images/home/brand-logo/qsworld.svg"
-								alt=""
-								class="clients__slideLogo"
-							/>
-						</div>
-						<div
-							class="clients__slide clients__slide-15 swiper-slide"
-						>
-							<img
-								src="./assets/images/home/brand-logo/efeed.svg"
-								alt=""
-								class="clients__slideLogo"
-							/>
-						</div>
-						<div
-							class="clients__slide clients__slide-16 swiper-slide"
-						>
-							<img
-								src="./assets/images/home/brand-logo/yatra.svg"
-								alt=""
-								class="clients__slideLogo"
-							/>
-						</div>
-						<div
-							class="clients__slide clients__slide-17 swiper-slide"
-						>
-							<img
-								src="./assets/images/home/brand-logo/pathways.svg"
-								alt=""
-								class="clients__slideLogo"
-							/>
-						</div>
-						<div
-							class="clients__slide clients__slide-18 swiper-slide"
-						>
-							<img
-								src="./assets/images/home/brand-logo/qsworld.svg"
-								alt=""
-								class="clients__slideLogo"
-							/>
-						</div>
-					</div>
-				</div>
-				<div class="clients__sliderBottom">
-					<div class="clients__sliders swiper-wrapper">
-						<!-- Slides -->
-						<div
-							class="clients__slide clients__slide-01 swiper-slide"
-						>
-							<img
-								src="./assets/images/home/brand-logo/asmita.svg"
-								alt=""
-								class="clients__slideLogo"
-							/>
-						</div>
-						<div
-							class="clients__slide clients__slide-02 swiper-slide"
-						>
-							<img
-								src="./assets/images/home/brand-logo/budwiser.svg"
-								alt=""
-								class="clients__slideLogo"
-							/>
-						</div>
-						<div
-							class="clients__slide clients__slide-03 swiper-slide"
-						>
-							<img
-								src="./assets/images/home/brand-logo/jockey.svg"
-								alt=""
-								class="clients__slideLogo"
-							/>
-						</div>
-						<div
-							class="clients__slide clients__slide-04 swiper-slide"
-						>
-							<img
-								src="./assets/images/home/brand-logo/equibuzz.svg"
-								alt=""
-								class="clients__slideLogo"
-							/>
-						</div>
-						<div
-							class="clients__slide clients__slide-05 swiper-slide"
-						>
-							<img
-								src="./assets/images/home/brand-logo/asmita.svg"
-								alt=""
-								class="clients__slideLogo"
-							/>
-						</div>
-						<div
-							class="clients__slide clients__slide-06 swiper-slide"
-						>
-							<img
-								src="./assets/images/home/brand-logo/budwiser.svg"
-								alt=""
-								class="clients__slideLogo"
-							/>
-						</div>
-						<div
-							class="clients__slide clients__slide-07 swiper-slide"
-						>
-							<img
-								src="./assets/images/home/brand-logo/jockey.svg"
-								alt=""
-								class="clients__slideLogo"
-							/>
-						</div>
-						<div
-							class="clients__slide clients__slide-08 swiper-slide"
-						>
-							<img
-								src="./assets/images/home/brand-logo/equibuzz.svg"
-								alt=""
-								class="clients__slideLogo"
-							/>
-						</div>
-						<div
-							class="clients__slide clients__slide-09 swiper-slide"
-						>
-							<img
-								src="./assets/images/home/brand-logo/asmita.svg"
-								alt=""
-								class="clients__slideLogo"
-							/>
-						</div>
-						<div
-							class="clients__slide clients__slide-010 swiper-slide"
-						>
-							<img
-								src="./assets/images/home/brand-logo/budwiser.svg"
-								alt=""
-								class="clients__slideLogo"
-							/>
-						</div>
-						<div
-							class="clients__slide clients__slide-011 swiper-slide"
-						>
-							<img
-								src="./assets/images/home/brand-logo/jockey.svg"
-								alt=""
-								class="clients__slideLogo"
-							/>
-						</div>
-						<div
-							class="clients__slide clients__slide-012 swiper-slide"
-						>
-							<img
-								src="./assets/images/home/brand-logo/equibuzz.svg"
-								alt=""
-								class="clients__slideLogo"
-							/>
-						</div>
-						<div
-							class="clients__slide clients__slide-013 swiper-slide"
-						>
-							<img
-								src="./assets/images/home/brand-logo/asmita.svg"
-								alt=""
-								class="clients__slideLogo"
-							/>
-						</div>
-						<div
-							class="clients__slide clients__slide-014 swiper-slide"
-						>
-							<img
-								src="./assets/images/home/brand-logo/budwiser.svg"
-								alt=""
-								class="clients__slideLogo"
-							/>
-						</div>
-						<div
-							class="clients__slide clients__slide-015 swiper-slide"
-						>
-							<img
-								src="./assets/images/home/brand-logo/jockey.svg"
-								alt=""
-								class="clients__slideLogo"
-							/>
-						</div>
-						<div
-							class="clients__slide clients__slide-016 swiper-slide"
-						>
-							<img
-								src="./assets/images/home/brand-logo/equibuzz.svg"
-								alt=""
-								class="clients__slideLogo"
-							/>
-						</div>
-					</div>
-				</div>
-			</section>
+                        <div
+                            class="clients__slide clients__slide-6 swiper-slide"
+                        >
+                            <img
+                                src="./assets/images/home/brand-logo/efeed.svg"
+                                alt=""
+                                class="clients__slideLogo"
+                            />
+                        </div>
+                        <div
+                            class="clients__slide clients__slide-7 swiper-slide"
+                        >
+                            <img
+                                src="./assets/images/home/brand-logo/yatra.svg"
+                                alt=""
+                                class="clients__slideLogo"
+                            />
+                        </div>
+                        <div
+                            class="clients__slide clients__slide-8 swiper-slide"
+                        >
+                            <img
+                                src="./assets/images/home/brand-logo/pathways.svg"
+                                alt=""
+                                class="clients__slideLogo"
+                            />
+                        </div>
+                        <div
+                            class="clients__slide clients__slide-9 swiper-slide"
+                        >
+                            <img
+                                src="./assets/images/home/brand-logo/qsworld.svg"
+                                alt=""
+                                class="clients__slideLogo"
+                            />
+                        </div>
+                        <div
+                            class="clients__slide clients__slide-10 swiper-slide"
+                        >
+                            <img
+                                src="./assets/images/home/brand-logo/pathways.svg"
+                                alt=""
+                                class="clients__slideLogo"
+                            />
+                        </div>
+                        <div
+                            class="clients__slide clients__slide-11 swiper-slide"
+                        >
+                            <img
+                                src="./assets/images/home/brand-logo/efeed.svg"
+                                alt=""
+                                class="clients__slideLogo"
+                            />
+                        </div>
+                        <div
+                            class="clients__slide clients__slide-12 swiper-slide"
+                        >
+                            <img
+                                src="./assets/images/home/brand-logo/yatra.svg"
+                                alt=""
+                                class="clients__slideLogo"
+                            />
+                        </div>
+                        <div
+                            class="clients__slide clients__slide-13 swiper-slide"
+                        >
+                            <img
+                                src="./assets/images/home/brand-logo/pathways.svg"
+                                alt=""
+                                class="clients__slideLogo"
+                            />
+                        </div>
+                        <div
+                            class="clients__slide clients__slide-14 swiper-slide"
+                        >
+                            <img
+                                src="./assets/images/home/brand-logo/qsworld.svg"
+                                alt=""
+                                class="clients__slideLogo"
+                            />
+                        </div>
+                        <div
+                            class="clients__slide clients__slide-15 swiper-slide"
+                        >
+                            <img
+                                src="./assets/images/home/brand-logo/efeed.svg"
+                                alt=""
+                                class="clients__slideLogo"
+                            />
+                        </div>
+                        <div
+                            class="clients__slide clients__slide-16 swiper-slide"
+                        >
+                            <img
+                                src="./assets/images/home/brand-logo/yatra.svg"
+                                alt=""
+                                class="clients__slideLogo"
+                            />
+                        </div>
+                        <div
+                            class="clients__slide clients__slide-17 swiper-slide"
+                        >
+                            <img
+                                src="./assets/images/home/brand-logo/pathways.svg"
+                                alt=""
+                                class="clients__slideLogo"
+                            />
+                        </div>
+                        <div
+                            class="clients__slide clients__slide-18 swiper-slide"
+                        >
+                            <img
+                                src="./assets/images/home/brand-logo/qsworld.svg"
+                                alt=""
+                                class="clients__slideLogo"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="clients__sliderBottom">
+                    <div class="clients__sliders swiper-wrapper">
+                        <!-- Slides -->
+                        <div
+                            class="clients__slide clients__slide-01 swiper-slide"
+                        >
+                            <img
+                                src="./assets/images/home/brand-logo/asmita.svg"
+                                alt=""
+                                class="clients__slideLogo"
+                            />
+                        </div>
+                        <div
+                            class="clients__slide clients__slide-02 swiper-slide"
+                        >
+                            <img
+                                src="./assets/images/home/brand-logo/budwiser.svg"
+                                alt=""
+                                class="clients__slideLogo"
+                            />
+                        </div>
+                        <div
+                            class="clients__slide clients__slide-03 swiper-slide"
+                        >
+                            <img
+                                src="./assets/images/home/brand-logo/jockey.svg"
+                                alt=""
+                                class="clients__slideLogo"
+                            />
+                        </div>
+                        <div
+                            class="clients__slide clients__slide-04 swiper-slide"
+                        >
+                            <img
+                                src="./assets/images/home/brand-logo/equibuzz.svg"
+                                alt=""
+                                class="clients__slideLogo"
+                            />
+                        </div>
+                        <div
+                            class="clients__slide clients__slide-05 swiper-slide"
+                        >
+                            <img
+                                src="./assets/images/home/brand-logo/asmita.svg"
+                                alt=""
+                                class="clients__slideLogo"
+                            />
+                        </div>
+                        <div
+                            class="clients__slide clients__slide-06 swiper-slide"
+                        >
+                            <img
+                                src="./assets/images/home/brand-logo/budwiser.svg"
+                                alt=""
+                                class="clients__slideLogo"
+                            />
+                        </div>
+                        <div
+                            class="clients__slide clients__slide-07 swiper-slide"
+                        >
+                            <img
+                                src="./assets/images/home/brand-logo/jockey.svg"
+                                alt=""
+                                class="clients__slideLogo"
+                            />
+                        </div>
+                        <div
+                            class="clients__slide clients__slide-08 swiper-slide"
+                        >
+                            <img
+                                src="./assets/images/home/brand-logo/equibuzz.svg"
+                                alt=""
+                                class="clients__slideLogo"
+                            />
+                        </div>
+                        <div
+                            class="clients__slide clients__slide-09 swiper-slide"
+                        >
+                            <img
+                                src="./assets/images/home/brand-logo/asmita.svg"
+                                alt=""
+                                class="clients__slideLogo"
+                            />
+                        </div>
+                        <div
+                            class="clients__slide clients__slide-010 swiper-slide"
+                        >
+                            <img
+                                src="./assets/images/home/brand-logo/budwiser.svg"
+                                alt=""
+                                class="clients__slideLogo"
+                            />
+                        </div>
+                        <div
+                            class="clients__slide clients__slide-011 swiper-slide"
+                        >
+                            <img
+                                src="./assets/images/home/brand-logo/jockey.svg"
+                                alt=""
+                                class="clients__slideLogo"
+                            />
+                        </div>
+                        <div
+                            class="clients__slide clients__slide-012 swiper-slide"
+                        >
+                            <img
+                                src="./assets/images/home/brand-logo/equibuzz.svg"
+                                alt=""
+                                class="clients__slideLogo"
+                            />
+                        </div>
+                        <div
+                            class="clients__slide clients__slide-013 swiper-slide"
+                        >
+                            <img
+                                src="./assets/images/home/brand-logo/asmita.svg"
+                                alt=""
+                                class="clients__slideLogo"
+                            />
+                        </div>
+                        <div
+                            class="clients__slide clients__slide-014 swiper-slide"
+                        >
+                            <img
+                                src="./assets/images/home/brand-logo/budwiser.svg"
+                                alt=""
+                                class="clients__slideLogo"
+                            />
+                        </div>
+                        <div
+                            class="clients__slide clients__slide-015 swiper-slide"
+                        >
+                            <img
+                                src="./assets/images/home/brand-logo/jockey.svg"
+                                alt=""
+                                class="clients__slideLogo"
+                            />
+                        </div>
+                        <div
+                            class="clients__slide clients__slide-016 swiper-slide"
+                        >
+                            <img
+                                src="./assets/images/home/brand-logo/equibuzz.svg"
+                                alt=""
+                                class="clients__slideLogo"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-			<!-- Clients Section End -->
+            <!-- Clients Section End -->
 
-			<!-- Feedback Section Start -->
+            <!-- Feedback Section Start -->
 
-			<section class="feedback">
-				<div class="feedback__ribbon">
-					<div class="feedback__ribbonWrapper swiper-wrapper">
-						<div class="feedback__ribbonSingle swiper-slide">
-							<img
-								src="./assets/images/home/Star.svg"
-								alt="Star"
-								class="feedback__ribbonIcon"
-							/>
-							<p class="feedback__ribbonText">UX Design</p>
-						</div>
-						<div class="feedback__ribbonSingle swiper-slide">
-							<img
-								src="./assets/images/home/Star.svg"
-								alt="Star"
-								class="feedback__ribbonIcon"
-							/>
-							<p class="feedback__ribbonText">App Design</p>
-						</div>
-						<div class="feedback__ribbonSingle swiper-slide">
-							<img
-								src="./assets/images/home/Star.svg"
-								alt="Star"
-								class="feedback__ribbonIcon"
-							/>
-							<p class="feedback__ribbonText">Dashboard</p>
-						</div>
-						<div class="feedback__ribbonSingle swiper-slide">
-							<img
-								src="./assets/images/home/Star.svg"
-								alt="Star"
-								class="feedback__ribbonIcon"
-							/>
-							<p class="feedback__ribbonText">Wireframe</p>
-						</div>
-						<div class="feedback__ribbonSingle swiper-slide">
-							<img
-								src="./assets/images/home/Star.svg"
-								alt="Star"
-								class="feedback__ribbonIcon"
-							/>
-							<p class="feedback__ribbonText">User Research</p>
-						</div>
-						<div class="feedback__ribbonSingle swiper-slide">
-							<img
-								src="./assets/images/home/Star.svg"
-								alt="Star"
-								class="feedback__ribbonIcon"
-							/>
-							<p class="feedback__ribbonText">UX Design</p>
-						</div>
-						<div class="feedback__ribbonSingle swiper-slide">
-							<img
-								src="./assets/images/home/Star.svg"
-								alt="Star"
-								class="feedback__ribbonIcon"
-							/>
-							<p class="feedback__ribbonText">App Design</p>
-						</div>
-						<div class="feedback__ribbonSingle swiper-slide">
-							<img
-								src="./assets/images/home/Star.svg"
-								alt="Star"
-								class="feedback__ribbonIcon"
-							/>
-							<p class="feedback__ribbonText">Dashboard</p>
-						</div>
-						<div class="feedback__ribbonSingle swiper-slide">
-							<img
-								src="./assets/images/home/Star.svg"
-								alt="Star"
-								class="feedback__ribbonIcon"
-							/>
-							<p class="feedback__ribbonText">Wireframe</p>
-						</div>
-						<div class="feedback__ribbonSingle swiper-slide">
-							<img
-								src="./assets/images/home/Star.svg"
-								alt="Star"
-								class="feedback__ribbonIcon"
-							/>
-							<p class="feedback__ribbonText">User Research</p>
-						</div>
-					</div>
-				</div>
-				<div class="feedback__wrapper conatiner">
-					<div class="feedback__header">
-						<img
-							src="./assets/images/home/quote-left.svg"
-							alt="Feedback Quote Icon"
-							class="feedback__quote"
-						/>
-						<div class="feedback__text">
-							<p class="feedback__doodleText">
-								#Words of Appreciation
-							</p>
-							<p class="feedback__title">
-								Feedback From The Field
-							</p>
-						</div>
-						<img
-							src="./assets/images/home/doodle-img-2.svg"
-							alt=""
-							class="feedback__doodleImg"
-						/>
-					</div>
-					<div class="feedback__slider">
-						<div class="feedback__slides swiper-wrapper">
-							<div class="feedback__slide swiper-slide">
-								<img
-									src="./assets/images/home/feedback-img3.jpg"
-									alt=""
-									class="feedback__slideImg"
-								/>
-								<p class="feedback__slideDesc">
-									Her proactive approach to problem-solving
-									and her collaborative nature made her an
-									invaluable asset to our team. She truly
-									excels at balancing creativity with
-									practicality.
-								</p>
-								<p class="feedback__slideName">
-									Raghuchandra K R
-								</p>
-								<p class="feedback__slidePost">
-									ex Co-Founder & CTO @ AgriFi @ ex CropIn
-								</p>
-							</div>
-							<div class="feedback__slide swiper-slide">
-								<img
-									src="./assets/images/home/feedback-img1.jpg"
-									alt=""
-									class="feedback__slideImg"
-								/>
-								<p class="feedback__slideDesc">
-									She is very hard working, accountable, and
-									good at working with strict timelines. Her
-									curiosity to understand a design task is one
-									of her biggest skills.
-								</p>
-								<p class="feedback__slideName">Dhwani Kikani</p>
-								<p class="feedback__slidePost">
-									UX Lead @ Redbaton
-								</p>
-							</div>
-							<div class="feedback__slide swiper-slide">
-								<img
-									src="./assets/images/home/feedback-img2.jpg"
-									alt=""
-									class="feedback__slideImg"
-								/>
-								<p class="feedback__slideDesc">
-									Muskan grew to be a highly passionate
-									designer with a great aesthetic sense from
-									an intern to a senior in the UX department.
-									She is a great team player, extremely honest
-									and transparent.
-								</p>
-								<p class="feedback__slideName">
-									Siddharth Bajpai
-								</p>
-								<p class="feedback__slidePost">
-									Head of Design @ 3MindsDigial
-								</p>
-							</div>
-						</div>
-						<div class="swiper-button-next"></div>
-						<div class="swiper-button-prev"></div>
-					</div>
-				</div>
-			</section>
+            <section class="feedback">
+                <div class="feedback__ribbon">
+                    <div class="feedback__ribbonWrapper swiper-wrapper">
+                        <div class="feedback__ribbonSingle swiper-slide">
+                            <img
+                                src="./assets/images/home/Star.svg"
+                                alt="Star"
+                                class="feedback__ribbonIcon"
+                            />
+                            <p class="feedback__ribbonText">UX Design</p>
+                        </div>
+                        <div class="feedback__ribbonSingle swiper-slide">
+                            <img
+                                src="./assets/images/home/Star.svg"
+                                alt="Star"
+                                class="feedback__ribbonIcon"
+                            />
+                            <p class="feedback__ribbonText">App Design</p>
+                        </div>
+                        <div class="feedback__ribbonSingle swiper-slide">
+                            <img
+                                src="./assets/images/home/Star.svg"
+                                alt="Star"
+                                class="feedback__ribbonIcon"
+                            />
+                            <p class="feedback__ribbonText">Dashboard</p>
+                        </div>
+                        <div class="feedback__ribbonSingle swiper-slide">
+                            <img
+                                src="./assets/images/home/Star.svg"
+                                alt="Star"
+                                class="feedback__ribbonIcon"
+                            />
+                            <p class="feedback__ribbonText">Wireframe</p>
+                        </div>
+                        <div class="feedback__ribbonSingle swiper-slide">
+                            <img
+                                src="./assets/images/home/Star.svg"
+                                alt="Star"
+                                class="feedback__ribbonIcon"
+                            />
+                            <p class="feedback__ribbonText">User Research</p>
+                        </div>
+                        <div class="feedback__ribbonSingle swiper-slide">
+                            <img
+                                src="./assets/images/home/Star.svg"
+                                alt="Star"
+                                class="feedback__ribbonIcon"
+                            />
+                            <p class="feedback__ribbonText">UX Design</p>
+                        </div>
+                        <div class="feedback__ribbonSingle swiper-slide">
+                            <img
+                                src="./assets/images/home/Star.svg"
+                                alt="Star"
+                                class="feedback__ribbonIcon"
+                            />
+                            <p class="feedback__ribbonText">App Design</p>
+                        </div>
+                        <div class="feedback__ribbonSingle swiper-slide">
+                            <img
+                                src="./assets/images/home/Star.svg"
+                                alt="Star"
+                                class="feedback__ribbonIcon"
+                            />
+                            <p class="feedback__ribbonText">Dashboard</p>
+                        </div>
+                        <div class="feedback__ribbonSingle swiper-slide">
+                            <img
+                                src="./assets/images/home/Star.svg"
+                                alt="Star"
+                                class="feedback__ribbonIcon"
+                            />
+                            <p class="feedback__ribbonText">Wireframe</p>
+                        </div>
+                        <div class="feedback__ribbonSingle swiper-slide">
+                            <img
+                                src="./assets/images/home/Star.svg"
+                                alt="Star"
+                                class="feedback__ribbonIcon"
+                            />
+                            <p class="feedback__ribbonText">User Research</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback__wrapper conatiner">
+                    <div class="feedback__header">
+                        <img
+                            src="./assets/images/home/quote-left.svg"
+                            alt="Feedback Quote Icon"
+                            class="feedback__quote"
+                        />
+                        <div class="feedback__text">
+                            <p class="feedback__doodleText">
+                                #Words of Appreciation
+                            </p>
+                            <p class="feedback__title">
+                                Feedback From The Field
+                            </p>
+                        </div>
+                        <img
+                            src="./assets/images/home/doodle-img-2.svg"
+                            alt=""
+                            class="feedback__doodleImg"
+                        />
+                    </div>
+                    <div class="feedback__slider">
+                        <div class="feedback__slides swiper-wrapper">
+                            <div class="feedback__slide swiper-slide">
+                                <img
+                                    src="./assets/images/home/feedback-img3.jpg"
+                                    alt=""
+                                    class="feedback__slideImg"
+                                />
+                                <p class="feedback__slideDesc">
+                                    Her proactive approach to problem-solving
+                                    and her collaborative nature made her an
+                                    invaluable asset to our team. She truly
+                                    excels at balancing creativity with
+                                    practicality.
+                                </p>
+                                <p class="feedback__slideName">
+                                    Raghuchandra K R
+                                </p>
+                                <p class="feedback__slidePost">
+                                    ex Co-Founder & CTO @ AgriFi @ ex CropIn
+                                </p>
+                            </div>
+                            <div class="feedback__slide swiper-slide">
+                                <img
+                                    src="./assets/images/home/feedback-img1.jpg"
+                                    alt=""
+                                    class="feedback__slideImg"
+                                />
+                                <p class="feedback__slideDesc">
+                                    She is very hard working, accountable, and
+                                    good at working with strict timelines. Her
+                                    curiosity to understand a design task is one
+                                    of her biggest skills.
+                                </p>
+                                <p class="feedback__slideName">Dhwani Kikani</p>
+                                <p class="feedback__slidePost">
+                                    UX Lead @ Redbaton
+                                </p>
+                            </div>
+                            <div class="feedback__slide swiper-slide">
+                                <img
+                                    src="./assets/images/home/feedback-img2.jpg"
+                                    alt=""
+                                    class="feedback__slideImg"
+                                />
+                                <p class="feedback__slideDesc">
+                                    Muskan grew to be a highly passionate
+                                    designer with a great aesthetic sense from
+                                    an intern to a senior in the UX department.
+                                    She is a great team player, extremely honest
+                                    and transparent.
+                                </p>
+                                <p class="feedback__slideName">
+                                    Siddharth Bajpai
+                                </p>
+                                <p class="feedback__slidePost">
+                                    Head of Design @ 3MindsDigial
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </section>
 
-			<!-- Feedback Section End -->
+            <!-- Feedback Section End -->
 
-			<!-- Princinples Section Start -->
+            <!-- Princinples Section Start -->
 
-			<section class="principles">
-				<div class="principles__wrapper container">
-					<div class="principles__header">
-						<img
-							src="./assets/images/home/principles-doodle.svg"
-							alt=""
-							class="principles__doodleImg"
-						/>
-						<p class="principles__doodleText">#My Core Values</p>
-						<p class="principles__title">
-							Principles That <span>Shape My Vision</span>
-						</p>
-					</div>
-					<div class="principles__list">
-						<div class="principles__single">
-							<img
-								src="./assets/images/home/semi-crl-left.svg"
-								alt=""
-								class="principles__image1"
-							/>
-							<div class="principles__inner">
-								<p
-									class="principles__doodleText1 principles__doodleText"
-								>
-									Empathy
-								</p>
-								<img
-									src="./assets/images/home/Empathy-doodle.svg"
-									alt=""
-									class="principles__doodleImage2"
-								/>
-								<img
-									src="./assets/images/home/Empathy.svg"
-									alt=""
-									class="principles__image1"
-								/>
-							</div>
-							<img
-								src="./assets/images/home/semi-crl-right.svg"
-								alt=""
-								class="principles__image1"
-							/>
-						</div>
-						<div class="principles__single">
-							<img
-								src="./assets/images/home/semi-crl-left.svg"
-								alt=""
-								class="principles__image1"
-							/>
-							<div class="principles__inner">
-								<p
-									class="principles__doodleText2 principles__doodleText"
-								>
-									Attention to Detail
-								</p>
-								<img
-									src="./assets/images/home/Attention-doodle.svg"
-									alt=""
-									class="principles__doodleImage2"
-								/>
-								<img
-									src="./assets/images/home/Attention.svg"
-									alt=""
-									class="principles__image1"
-								/>
-							</div>
-							<img
-								src="./assets/images/home/semi-crl-right.svg"
-								alt=""
-								class="principles__image1"
-							/>
-						</div>
-						<div class="principles__single">
-							<img
-								src="./assets/images/home/semi-crl-left.svg"
-								alt=""
-								class="principles__image1"
-							/>
-							<div class="principles__inner">
-								<p
-									class="principles__doodleText3 principles__doodleText"
-								>
-									Kaizen
-								</p>
-								<img
-									src="./assets/images/home/Kaizen-doodle.svg"
-									alt=""
-									class="principles__doodleImage2"
-								/>
-								<img
-									src="./assets/images/home/Kaizen.svg"
-									alt=""
-									class="principles__image1"
-								/>
-							</div>
-						</div>
-						<div class="principles__single">
-							<img
-								src="./assets/images/home/semi-crl-left.svg"
-								alt=""
-								class="principles__image1"
-							/>
-							<div class="principles__inner">
-								<p
-									class="principles__doodleText4 principles__doodleText"
-								>
-									Adaptability
-								</p>
-								<img
-									src="./assets/images/home/Adaptability-doodle.svg"
-									alt=""
-									class="principles__doodleImage2"
-								/>
-								<img
-									src="./assets/images/home/Adaptability.svg"
-									alt=""
-									class="principles__image1"
-								/>
-							</div>
-							<img
-								src="./assets/images/home/semi-crl-right.svg"
-								alt=""
-								class="principles__image1"
-							/>
-						</div>
-					</div>
-				</div>
-			</section>
+            <section class="principles">
+                <div class="principles__wrapper container">
+                    <div class="principles__header">
+                        <img
+                            src="./assets/images/home/principles-doodle.svg"
+                            alt=""
+                            class="principles__doodleImg"
+                        />
+                        <p class="principles__doodleText">#My Core Values</p>
+                        <p class="principles__title">
+                            Principles That <span>Shape My Vision</span>
+                        </p>
+                    </div>
+                    <div class="principles__list">
+                        <div class="principles__single">
+                            <img
+                                src="./assets/images/home/semi-crl-left.svg"
+                                alt=""
+                                class="principles__image1"
+                            />
+                            <div class="principles__inner">
+                                <p
+                                    class="principles__doodleText1 principles__doodleText"
+                                >
+                                    Empathy
+                                </p>
+                                <img
+                                    src="./assets/images/home/Empathy-doodle.svg"
+                                    alt=""
+                                    class="principles__doodleImage2"
+                                />
+                                <img
+                                    src="./assets/images/home/Empathy.svg"
+                                    alt=""
+                                    class="principles__image1"
+                                />
+                            </div>
+                            <img
+                                src="./assets/images/home/semi-crl-right.svg"
+                                alt=""
+                                class="principles__image1"
+                            />
+                        </div>
+                        <div class="principles__single">
+                            <img
+                                src="./assets/images/home/semi-crl-left.svg"
+                                alt=""
+                                class="principles__image1"
+                            />
+                            <div class="principles__inner">
+                                <p
+                                    class="principles__doodleText2 principles__doodleText"
+                                >
+                                    Attention to Detail
+                                </p>
+                                <img
+                                    src="./assets/images/home/Attention-doodle.svg"
+                                    alt=""
+                                    class="principles__doodleImage2"
+                                />
+                                <img
+                                    src="./assets/images/home/Attention.svg"
+                                    alt=""
+                                    class="principles__image1"
+                                />
+                            </div>
+                            <img
+                                src="./assets/images/home/semi-crl-right.svg"
+                                alt=""
+                                class="principles__image1"
+                            />
+                        </div>
+                        <div class="principles__single">
+                            <img
+                                src="./assets/images/home/semi-crl-left.svg"
+                                alt=""
+                                class="principles__image1"
+                            />
+                            <div class="principles__inner">
+                                <p
+                                    class="principles__doodleText3 principles__doodleText"
+                                >
+                                    Kaizen
+                                </p>
+                                <img
+                                    src="./assets/images/home/Kaizen-doodle.svg"
+                                    alt=""
+                                    class="principles__doodleImage2"
+                                />
+                                <img
+                                    src="./assets/images/home/Kaizen.svg"
+                                    alt=""
+                                    class="principles__image1"
+                                />
+                            </div>
+                        </div>
+                        <div class="principles__single">
+                            <img
+                                src="./assets/images/home/semi-crl-left.svg"
+                                alt=""
+                                class="principles__image1"
+                            />
+                            <div class="principles__inner">
+                                <p
+                                    class="principles__doodleText4 principles__doodleText"
+                                >
+                                    Adaptability
+                                </p>
+                                <img
+                                    src="./assets/images/home/Adaptability-doodle.svg"
+                                    alt=""
+                                    class="principles__doodleImage2"
+                                />
+                                <img
+                                    src="./assets/images/home/Adaptability.svg"
+                                    alt=""
+                                    class="principles__image1"
+                                />
+                            </div>
+                            <img
+                                src="./assets/images/home/semi-crl-right.svg"
+                                alt=""
+                                class="principles__image1"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-			<!-- Princinples Section End -->
+            <!-- Princinples Section End -->
 
-			<!-- Blogs Section Start -->
+            <!-- Blogs Section Start -->
 
-			<section class="blogs">
-				<div class="blogs__wrapper container">
-					<p class="blogs__doodleText">#Blogging My Journey</p>
-					<p class="blogs__title">From Mind to Matter</p>
-					<div class="blogs__list">
-						<div class="blogs__blog">
-							<img
-								src="./assets/images/home/blog_1.jpg"
-								alt=""
-								class="blogs__image"
-							/>
-							<div class="blogs__details">
-								<div class="blogs__stats">
-									<div class="blogs__tags">
-										<p class="blogs__tag">Technology</p>
-										<p class="blogs__tag">Technology</p>
-									</div>
-									<p class="blogs__readTime">4 min read</p>
-								</div>
-								<p class="blogs__blogTitle">
-									How to tackle 24-Hour UX/UI Design Task!
-								</p>
-								<p class="blogs__desc">
-									The design task is a pivotal moment in the
-									interview process, offering a unique
-									opportunity for both the interviewer and the
-									candidate to connect on a deepe...
-								</p>
-								<a
-									href="https://medium.com/@muskanbhatia.design/24-hour-ux-ui-design-task-for-interviews-3e4c3b6ebb40"
-									class="blogs__link"
-									>Read Article
-									<img
-										src="./assets/images/home/arrow-right-dark.svg"
-										alt=""
-										class="blogs__linkArrow"
-									/>
-								</a>
-							</div>
-						</div>
-						<div class="blogs__blog">
-							<img
-								src="./assets/images/home/blog_2.jpg"
-								alt=""
-								class="blogs__image"
-							/>
-							<div class="blogs__details">
-								<div class="blogs__stats">
-									<div class="blogs__tags">
-										<p class="blogs__tag">Technology</p>
-										<p class="blogs__tag">Technology</p>
-									</div>
-									<p class="blogs__readTime">4 min read</p>
-								</div>
-								<p class="blogs__blogTitle">
-									The Role of Information Architecture in UX
-									Design!
-								</p>
-								<p class="blogs__desc">
-									The design task is a pivotal moment in the
-									interview process, offering a unique
-									opportunity for both the interviewer and the
-									candidate to connect on a deepe...
-								</p>
-								<a
-									href="https://medium.com/@muskanbhatia.design/the-role-of-information-architecture-in-ux-design-turning-chaos-into-clarity-d59526f4e241"
-									class="blogs__link"
-									>Read Article
-									<img
-										src="./assets/images/home/arrow-right-dark.svg"
-										alt=""
-										class="blogs__linkArrow"
-									/>
-								</a>
-							</div>
-						</div>
-						<div class="blogs__blog">
-							<img
-								src="./assets/images/home/blog_3.jpg"
-								alt=""
-								class="blogs__image"
-							/>
-							<div class="blogs__details">
-								<div class="blogs__stats">
-									<div class="blogs__tags">
-										<p class="blogs__tag">Technology</p>
-										<p class="blogs__tag">Technology</p>
-									</div>
-									<p class="blogs__readTime">4 min read</p>
-								</div>
-								<p class="blogs__blogTitle">
-									Keeping Up with Design Trends: A Practical
-									Approach for PD’s.
-								</p>
-								<p class="blogs__desc">
-									The design task is a pivotal moment in the
-									interview process, offering a unique
-									opportunity for both the interviewer and the
-									candidate to connect on a deepe...
-								</p>
-								<a href="#" class="blogs__link"
-									>Read Article
-									<img
-										src="./assets/images/home/arrow-right-dark.svg"
-										alt=""
-										class="blogs__linkArrow"
-									/>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+            <section class="blogs">
+                <div class="blogs__wrapper container">
+                    <p class="blogs__doodleText">#Blogging My Journey</p>
+                    <p class="blogs__title">From Mind to Matter</p>
+                    <div class="blogs__list">
+                        <div class="blogs__blog">
+                            <img
+                                src="./assets/images/home/blog_1.jpg"
+                                alt=""
+                                class="blogs__image"
+                            />
+                            <div class="blogs__details">
+                                <div class="blogs__stats">
+                                    <div class="blogs__tags">
+                                        <p class="blogs__tag">Technology</p>
+                                        <p class="blogs__tag">Technology</p>
+                                    </div>
+                                    <p class="blogs__readTime">4 min read</p>
+                                </div>
+                                <p class="blogs__blogTitle">
+                                    How to tackle 24-Hour UX/UI Design Task!
+                                </p>
+                                <p class="blogs__desc">
+                                    The design task is a pivotal moment in the
+                                    interview process, offering a unique
+                                    opportunity for both the interviewer and the
+                                    candidate to connect on a deepe...
+                                </p>
+                                <a
+                                    href="https://medium.com/@muskanbhatia.design/24-hour-ux-ui-design-task-for-interviews-3e4c3b6ebb40"
+                                    class="blogs__link"
+                                    >Read Article
+                                    <img
+                                        src="./assets/images/home/arrow-right-dark.svg"
+                                        alt=""
+                                        class="blogs__linkArrow"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="blogs__blog">
+                            <img
+                                src="./assets/images/home/blog_2.jpg"
+                                alt=""
+                                class="blogs__image"
+                            />
+                            <div class="blogs__details">
+                                <div class="blogs__stats">
+                                    <div class="blogs__tags">
+                                        <p class="blogs__tag">Technology</p>
+                                        <p class="blogs__tag">Technology</p>
+                                    </div>
+                                    <p class="blogs__readTime">4 min read</p>
+                                </div>
+                                <p class="blogs__blogTitle">
+                                    The Role of Information Architecture in UX
+                                    Design!
+                                </p>
+                                <p class="blogs__desc">
+                                    The design task is a pivotal moment in the
+                                    interview process, offering a unique
+                                    opportunity for both the interviewer and the
+                                    candidate to connect on a deepe...
+                                </p>
+                                <a
+                                    href="https://medium.com/@muskanbhatia.design/the-role-of-information-architecture-in-ux-design-turning-chaos-into-clarity-d59526f4e241"
+                                    class="blogs__link"
+                                    >Read Article
+                                    <img
+                                        src="./assets/images/home/arrow-right-dark.svg"
+                                        alt=""
+                                        class="blogs__linkArrow"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="blogs__blog">
+                            <img
+                                src="./assets/images/home/blog_3.jpg"
+                                alt=""
+                                class="blogs__image"
+                            />
+                            <div class="blogs__details">
+                                <div class="blogs__stats">
+                                    <div class="blogs__tags">
+                                        <p class="blogs__tag">Technology</p>
+                                        <p class="blogs__tag">Technology</p>
+                                    </div>
+                                    <p class="blogs__readTime">4 min read</p>
+                                </div>
+                                <p class="blogs__blogTitle">
+                                    Keeping Up with Design Trends: A Practical
+                                    Approach for PD’s.
+                                </p>
+                                <p class="blogs__desc">
+                                    The design task is a pivotal moment in the
+                                    interview process, offering a unique
+                                    opportunity for both the interviewer and the
+                                    candidate to connect on a deepe...
+                                </p>
+                                <a href="#" class="blogs__link"
+                                    >Read Article
+                                    <img
+                                        src="./assets/images/home/arrow-right-dark.svg"
+                                        alt=""
+                                        class="blogs__linkArrow"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-			<!-- Blogs Section End -->
+            <!-- Blogs Section End -->
 
-			<!-- Footer Section Start -->
+            <!-- Footer Section Start -->
 
-			<footer class="footer">
-				<div class="footer__wrapper container">
-					<div class="footer__main">
-						<div class="footer__left">
-							<p class="footer__qoute">
-								<span>
-									Why Settle for Ordinary?
-									<img
-										src="./assets/images/footer/footer-logo1.svg"
-										alt=""
-										class="footer__logo footer__logo1"
-									/>
-								</span>
-								<span>
-									Let’s build
-									<img
-										src="./assets/images/footer/footer-logo2.svg"
-										alt=""
-										class="footer__logo footer__logo2"
-									/>
-									something groundbreaking
-									<img
-										src="./assets/images/footer/footer-logo3.svg"
-										alt=""
-										class="footer__logo footer__logo3"
-									/>
-								</span>
-								<span>
-									that users love!
-									<img
-										src="./assets/images/footer/footer-logo4.svg"
-										alt=""
-										class="footer__logo footer__logo4"
-									/>
-								</span>
-							</p>
-							<div class="footer__bottom footer__bottomMobile">
-								<ul class="footer__bottomLinks">
-									<li
-										class="footer__bottomLink footer__connect"
-									>
-										<a href="#"> Connect </a>
-									</li>
-									<li class="footer__bottomLink">
-										<a href="#">
-											<span>LinkedIn</span>
-											<img
-												src="./assets/images/footer/arrow-angle.svg"
-												alt=""
-												class="footer_linkIcon"
-											/>
-										</a>
-									</li>
-									<li class="footer__bottomLink">
-										<a href="#">
-											<span>Medium</span>
-											<img
-												src="./assets/images/footer/arrow-angle.svg"
-												alt=""
-												class="footer_linkIcon"
-											/>
-										</a>
-									</li>
-									<li class="footer__bottomLink">
-										<a href="#">
-											<span>Behance</span>
-											<img
-												src="./assets/images/footer/arrow-angle.svg"
-												alt=""
-												class="footer_linkIcon"
-											/>
-										</a>
-									</li>
-								</ul>
-							</div>
-							<div class="footer__right footer__rightMobile">
-								<img
-									src="./assets/images/footer/profile-img.png"
-									alt=""
-									class="footer__profileImg"
-								/>
-								<img
-									src="./assets/images/footer/footer__roundTest.svg"
-									alt=""
-									class="footer__roundTextImg"
-								/>
-							</div>
-							<p class="footer__title">
-								<span class="footer__titleFirst">Let’s</span>
-								<span>W</span>ork Together!
-							</p>
-							<div class="footer__copyEmailWrapper">
-								<input
-									type="text"
-									class="footer__email"
-									value="muskanbhatia.design@gmail.com"
-									readonly
-								/>
-								<button
-									class="footer__copyLink"
-									id="copyButton"
-								>
-									<img
-										src="./assets/images/footer/copy-email.svg"
-										alt=""
-										class="footer__copyLinkIcon"
-									/>
-								</button>
-								<span class="footer__copiedText">Copied!</span>
-							</div>
-							<a href="#" class="footer__link"
-								>Let’s Collaborate
-								<img
-									src="./assets/images/footer/arrow-right.svg"
-									alt=""
-									class="footer__linkIcon"
-							/></a>
-						</div>
-						<div class="footer__right footer__rightDesktop">
-							<img
-								src="./assets/images/footer/profile-img.png"
-								alt=""
-								class="footer__profileImg"
-							/>
-							<img
-								src="./assets/images/footer/footer__roundTest.svg"
-								alt=""
-								class="footer__roundTextImg"
-							/>
-						</div>
-					</div>
-					<div class="footer__bottom footer__bottomDesktop">
-						<p class="footer__copyRights">
-							© Copyright 2024. Muskan Bhatia. All rights
-							reserved. <span>|</span> Design by Muskan
-						</p>
-						<ul class="footer__bottomLinks">
-							<li class="footer__bottomLink footer__connect">
-								<a href="#"> Connect </a>
-							</li>
-							<li class="footer__bottomLink">
-								<a href="#">
-									<span>LinkedIn</span>
-									<img
-										src="./assets/images/footer/arrow-angle.svg"
-										alt=""
-										class="footer_linkIcon"
-									/>
-								</a>
-							</li>
-							<li class="footer__bottomLink">
-								<a href="#">
-									<span>Medium</span>
-									<img
-										src="./assets/images/footer/arrow-angle.svg"
-										alt=""
-										class="footer_linkIcon"
-									/>
-								</a>
-							</li>
-							<li class="footer__bottomLink">
-								<a href="#">
-									<span>Behance</span>
-									<img
-										src="./assets/images/footer/arrow-angle.svg"
-										alt=""
-										class="footer_linkIcon"
-									/>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</footer>
+            <footer class="footer">
+                <div class="footer__wrapper container">
+                    <div class="footer__main">
+                        <div class="footer__left">
+                            <p class="footer__qoute">
+                                <span>
+                                    Why Settle for Ordinary?
+                                    <img
+                                        src="./assets/images/footer/footer-logo1.svg"
+                                        alt=""
+                                        class="footer__logo footer__logo1"
+                                    />
+                                </span>
+                                <span>
+                                    Let’s build
+                                    <img
+                                        src="./assets/images/footer/footer-logo2.svg"
+                                        alt=""
+                                        class="footer__logo footer__logo2"
+                                    />
+                                    something groundbreaking
+                                    <img
+                                        src="./assets/images/footer/footer-logo3.svg"
+                                        alt=""
+                                        class="footer__logo footer__logo3"
+                                    />
+                                </span>
+                                <span>
+                                    that users love!
+                                    <img
+                                        src="./assets/images/footer/footer-logo4.svg"
+                                        alt=""
+                                        class="footer__logo footer__logo4"
+                                    />
+                                </span>
+                            </p>
+                            <div class="footer__bottom footer__bottomMobile">
+                                <ul class="footer__bottomLinks">
+                                    <li
+                                        class="footer__bottomLink footer__connect"
+                                    >
+                                        <a href="#"> Connect </a>
+                                    </li>
+                                    <li class="footer__bottomLink">
+                                        <a href="#">
+                                            <span>LinkedIn</span>
+                                            <img
+                                                src="./assets/images/footer/arrow-angle.svg"
+                                                alt=""
+                                                class="footer_linkIcon"
+                                            />
+                                        </a>
+                                    </li>
+                                    <li class="footer__bottomLink">
+                                        <a href="#">
+                                            <span>Medium</span>
+                                            <img
+                                                src="./assets/images/footer/arrow-angle.svg"
+                                                alt=""
+                                                class="footer_linkIcon"
+                                            />
+                                        </a>
+                                    </li>
+                                    <li class="footer__bottomLink">
+                                        <a href="#">
+                                            <span>Behance</span>
+                                            <img
+                                                src="./assets/images/footer/arrow-angle.svg"
+                                                alt=""
+                                                class="footer_linkIcon"
+                                            />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer__right footer__rightMobile">
+                                <img
+                                    src="./assets/images/footer/profile-img.png"
+                                    alt=""
+                                    class="footer__profileImg"
+                                />
+                                <img
+                                    src="./assets/images/footer/footer__roundTest.svg"
+                                    alt=""
+                                    class="footer__roundTextImg"
+                                />
+                            </div>
+                            <p class="footer__title">
+                                <span class="footer__titleFirst">Let’s</span>
+                                <span>W</span>ork Together!
+                            </p>
+                            <div class="footer__copyEmailWrapper">
+                                <input
+                                    type="text"
+                                    class="footer__email"
+                                    value="muskanbhatia.design@gmail.com"
+                                    readonly
+                                />
+                                <button
+                                    class="footer__copyLink"
+                                    id="copyButton"
+                                >
+                                    <img
+                                        src="./assets/images/footer/copy-email.svg"
+                                        alt=""
+                                        class="footer__copyLinkIcon"
+                                    />
+                                </button>
+                                <span class="footer__copiedText">Copied!</span>
+                            </div>
+                            <a href="#" class="footer__link"
+                                >Let’s Collaborate
+                                <img
+                                    src="./assets/images/footer/arrow-right.svg"
+                                    alt=""
+                                    class="footer__linkIcon"
+                            /></a>
+                        </div>
+                        <div class="footer__right footer__rightDesktop">
+                            <img
+                                src="./assets/images/footer/profile-img.png"
+                                alt=""
+                                class="footer__profileImg"
+                            />
+                            <img
+                                src="./assets/images/footer/footer__roundTest.svg"
+                                alt=""
+                                class="footer__roundTextImg"
+                            />
+                        </div>
+                    </div>
+                    <div class="footer__bottom footer__bottomDesktop">
+                        <p class="footer__copyRights">
+                            © Copyright 2024. Muskan Bhatia. All rights
+                            reserved. <span>|</span> Design by Muskan
+                        </p>
+                        <ul class="footer__bottomLinks">
+                            <li class="footer__bottomLink footer__connect">
+                                <a href="#"> Connect </a>
+                            </li>
+                            <li class="footer__bottomLink">
+                                <a href="#">
+                                    <span>LinkedIn</span>
+                                    <img
+                                        src="./assets/images/footer/arrow-angle.svg"
+                                        alt=""
+                                        class="footer_linkIcon"
+                                    />
+                                </a>
+                            </li>
+                            <li class="footer__bottomLink">
+                                <a href="#">
+                                    <span>Medium</span>
+                                    <img
+                                        src="./assets/images/footer/arrow-angle.svg"
+                                        alt=""
+                                        class="footer_linkIcon"
+                                    />
+                                </a>
+                            </li>
+                            <li class="footer__bottomLink">
+                                <a href="#">
+                                    <span>Behance</span>
+                                    <img
+                                        src="./assets/images/footer/arrow-angle.svg"
+                                        alt=""
+                                        class="footer_linkIcon"
+                                    />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
 
-			<!-- Footer Section End -->
-		</main>
+            <!-- Footer Section End -->
+        </main>
 
-		<!-- Jquery Script -->
-		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <!-- Jquery Script -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
-		<!-- Bootstrap JS -->
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-			crossorigin="anonymous"
-		></script>
+        <!-- Bootstrap JS -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"
+        ></script>
 
-		<!-- Swiper JS -->
-		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-		<!-- Main JS -->
-		<script src="./assets/dist/js/app.js"></script>
-	</body>
+        <!-- Main JS -->
+        <script src="./assets/dist/js/app.js"></script>
+    </body>
 </html>
