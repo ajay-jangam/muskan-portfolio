@@ -2443,6 +2443,13 @@ body:before {
   background-color: #fff;
 }
 
+.about-me .feedback__ribbon {
+  display: none;
+}
+.about-me .feedback__header {
+  margin: 6rem auto -2rem;
+}
+
 .about {
   background-image: url("../../images/about-me/bg-image.jpg");
   background-repeat: no-repeat;
@@ -2715,7 +2722,7 @@ body:before {
   transition: all 0.2s ease;
 }
 .details__cardTitle {
-  font-family: "Lato";
+  font-family: "Lato Bold";
   font-size: 18px;
   font-weight: 900;
   letter-spacing: -0.18px;
@@ -2729,4 +2736,100 @@ body:before {
   letter-spacing: 0.16px;
   text-align: left;
   color: #2e3047;
+}
+
+.snapshots {
+  padding: 7rem 0;
+  background-color: #242531;
+}
+.snapshots__header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin: 0 auto 3rem;
+  position: relative;
+}
+.snapshots__doodleImg {
+  position: absolute;
+  left: -5rem;
+  top: -1rem;
+}
+.snapshots__doodleText {
+  font-family: "Brownist";
+  font-size: 26px;
+  text-align: left;
+  color: #e9d2f4;
+  margin-bottom: 0;
+  letter-spacing: 1.28px;
+  line-height: 1;
+}
+.snapshots__title {
+  font-family: "Georgia";
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 0.32px;
+  text-align: left;
+  color: #16bac5;
+}
+.snapshots__items {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+.snapshots__itemInner {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.snapshots__item {
+  width: auto;
+}
+.snapshots__itemLink {
+  background-position: center;
+  background-size: 100% 105%;
+  border-radius: 20px;
+  width: 255px;
+  display: flex;
+  position: relative;
+}
+.snapshots__itemLink .snapshots__itemImg {
+  position: absolute;
+  z-index: -1;
+  border-radius: 22px;
+}
+.snapshots__itemLinkImgPink {
+  width: 100%;
+}
+.snapshots__itemLinkImgBlue {
+  width: 100%;
+}
+.snapshots__itemImg {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.snapshots__link {
+  font-family: "Lato";
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.41;
+  letter-spacing: 0.18px;
+  text-align: left;
+  color: #2e3047;
+  text-decoration: none;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+  position: absolute;
+}
+.snapshots__linkProjects {
+  color: #fff;
+  align-items: flex-end;
 }
