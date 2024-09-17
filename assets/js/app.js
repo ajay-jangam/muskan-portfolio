@@ -1,4 +1,8 @@
 $(document).ready(() => {
+    // Hamburger Menu
+    $(".navbar").click(function () {
+        $(this).toggleClass("hamburgerMenu");
+    });
     // Sliders
     const clientsSliderOptionsPara = {
         // Optional parameters
