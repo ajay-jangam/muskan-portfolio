@@ -9,9 +9,10 @@ $(document).ready(() => {
         loop: true,
         slidesPerView: "auto",
         speed: 2000,
-        grabCursor: false,
-        mousewheelControl: false,
-        keyboardControl: true,
+        parallax: true,
+        // grabCursor: false,
+        // mousewheelControl: false,
+        // keyboardControl: true,
     };
     const clientsSliderTop = new Swiper(".clients__sliderTop", {
         ...clientsSliderOptionsPara,
@@ -26,13 +27,13 @@ $(document).ready(() => {
         autoplay: {
             delay: 0,
             reverseDirection: true,
-            disableOnInteraction: true,
+            // disableOnInteraction: false,
         },
     });
 
     const feedbackRibbonSlider = new Swiper(".feedback__ribbon", {
         ...clientsSliderOptionsPara,
-        // speed: 4000,
+        speed: 1000,
         autoplay: {
             delay: 0,
             disableOnInteraction: true,

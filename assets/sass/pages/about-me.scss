@@ -35,6 +35,7 @@
     &__slider {
         overflow-x: hidden;
         .swiper-wrapper {
+            transition-timing-function: linear;
         }
         .swiper-slide {
         }
@@ -44,6 +45,7 @@
 
     &__slides {
         gap: 2rem;
+        transition-timing-function: linear;
     }
 
     // .about__slide
@@ -191,7 +193,7 @@
         margin: 2rem 0 2.5rem;
         line-height: 1.25;
         span {
-            font-family: $lato-bold;
+            font-family: $lato;
             font-weight: bold;
             display: block;
         }
@@ -224,7 +226,7 @@
     // .about__profileStatNum
 
     &__profileStatNum {
-        font-family: $lato-bold;
+        font-family: $lato;
         font-size: 26.7px;
         font-weight: bold;
         text-align: center;

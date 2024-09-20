@@ -545,6 +545,7 @@ body:before {
 }
 @media (max-width: 31.24em) {
   .footer__bottomLinks {
+    gap: 0.7rem;
     margin-top: 1rem;
   }
 }
@@ -1532,6 +1533,7 @@ body:before {
 }
 .feedback__ribbonWrapper {
   gap: 1rem;
+  transition-timing-function: linear;
 }
 @media (max-width: 31.24em) {
   .feedback__ribbonWrapper {
@@ -2407,7 +2409,8 @@ body:before {
 }
 .collaborate__cards {
   display: flex;
-  gap: 1.5rem;
+  gap: 1.25rem;
+  justify-content: space-between;
 }
 @media (max-width: 48.0525em) {
   .collaborate__cards {
@@ -2416,10 +2419,11 @@ body:before {
 }
 .collaborate__card {
   height: 300px;
+  max-width: 270px;
   display: flex;
   flex-direction: column;
   border-radius: 12px;
-  padding: 1.8rem;
+  padding: 1.5rem;
   transition: all 0.2s ease;
   cursor: pointer;
 }
@@ -2466,7 +2470,6 @@ body:before {
   text-align: left;
   color: #2e3047;
   margin-bottom: auto;
-  padding-right: 1.5rem;
 }
 @media (max-width: 31.24em) {
   .collaborate__cardDesc {
@@ -2545,8 +2548,12 @@ body:before {
 .about__slider {
   overflow-x: hidden;
 }
+.about__slider .swiper-wrapper {
+  transition-timing-function: linear;
+}
 .about__slides {
   gap: 2rem;
+  transition-timing-function: linear;
 }
 .about__slide {
   width: auto;
@@ -2671,7 +2678,7 @@ body:before {
   line-height: 1.25;
 }
 .about__text span {
-  font-family: "Lato Bold";
+  font-family: "Lato";
   font-weight: bold;
   display: block;
 }
@@ -2696,7 +2703,7 @@ body:before {
   background-color: #b7fbc8;
 }
 .about__profileStatNum {
-  font-family: "Lato Bold";
+  font-family: "Lato";
   font-size: 26.7px;
   font-weight: bold;
   text-align: center;
@@ -3120,4 +3127,206 @@ body:before {
 .snapshots__linkProjects {
   color: #fff;
   align-items: flex-end;
+}
+
+.project {
+  padding: 9rem 0 3rem;
+  background-image: url("../../images/project-detail/project-bg.png");
+  background-size: contain;
+}
+@media (max-width: 31.24em) {
+  .project {
+    padding: 8rem 0 3rem;
+  }
+}
+@media (max-width: 31.24em) {
+  .project__wrapper {
+    padding: 0 1.5rem;
+  }
+}
+.project__title {
+  font-family: "Lato Semi-Bold";
+  font-size: 38px;
+  font-weight: bold;
+  line-height: 1.11;
+  text-align: left;
+  color: #2e3047;
+}
+@media (max-width: 31.24em) {
+  .project__title {
+    font-size: 28px;
+    max-width: 90%;
+  }
+}
+.project__desc {
+  font-family: "Lato";
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 0.4px;
+  text-align: left;
+  color: #2e3047;
+  margin: 2rem 0 4rem;
+  max-width: 600px;
+}
+@media (max-width: 31.24em) {
+  .project__desc {
+    font-size: 14px;
+    max-width: 85%;
+  }
+}
+.project__stats {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 48.0525em) {
+  .project__stats {
+    flex-wrap: wrap;
+    row-gap: 2rem;
+  }
+}
+@media (max-width: 48.0525em) {
+  .project__stat {
+    flex-basis: 32%;
+  }
+}
+@media (max-width: 31.24em) {
+  .project__stat {
+    flex-basis: 45%;
+  }
+}
+.project__statName {
+  font-family: "Lato";
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0.4px;
+  text-align: left;
+  color: #2e3047;
+  margin-bottom: 0.8rem;
+}
+.project__statValue {
+  font-family: "Lato Semi-Bold";
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 0.4px;
+  text-align: left;
+  color: #2e3047;
+}
+.project__imageWrapper {
+  margin-top: 4rem;
+}
+.project__image {
+  width: 100%;
+}
+
+.explore {
+  padding: 3rem 0;
+}
+@media (max-width: 31.24em) {
+  .explore__wrapper {
+    padding: 0 1.5rem;
+  }
+}
+.explore__header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin: 0 auto 3rem;
+  position: relative;
+}
+@media (max-width: 31.24em) {
+  .explore__header {
+    margin: 0 auto 2rem 2.5rem;
+  }
+}
+.explore__doodleImg {
+  position: absolute;
+  left: -4.5rem;
+  top: 1rem;
+}
+@media (max-width: 31.24em) {
+  .explore__doodleImg {
+    left: -2.5rem;
+    top: 0.5rem;
+    width: 40px;
+  }
+}
+.explore__doodleText {
+  font-family: "Brownist";
+  font-size: 26px;
+  letter-spacing: 0.52px;
+  text-align: left;
+  color: #16bac5;
+  letter-spacing: 1.28px;
+  line-height: 1;
+  margin-bottom: 0;
+}
+@media (max-width: 31.24em) {
+  .explore__doodleText {
+    font-size: 14px;
+  }
+}
+.explore__title {
+  font-family: "Georgia";
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 0.32px;
+  text-align: left;
+  color: #1873f2;
+}
+@media (max-width: 31.24em) {
+  .explore__title {
+    font-size: 24px;
+    max-width: 160px;
+  }
+}
+.explore__title span {
+  color: #2e3047;
+}
+.explore__cards {
+  display: flex;
+  gap: 1.5rem;
+}
+@media (max-width: 31.24em) {
+  .explore__cards {
+    gap: 2rem;
+    flex-direction: column;
+  }
+}
+.explore__card {
+  flex-basis: 32%;
+}
+.explore__cardImg {
+  width: 100%;
+}
+.explore__cardTitle {
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.31;
+  text-align: left;
+  color: #000;
+  margin: 1.5rem 0 0.5rem;
+}
+@media (max-width: 31.24em) {
+  .explore__cardTitle {
+    font-size: 16px;
+  }
+}
+.explore__cardDesc {
+  font-family: "Lato Light";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.43;
+  letter-spacing: 0.14px;
+  text-align: left;
+  color: #2e3047;
+  max-width: 330px;
+}
+@media (max-width: 31.24em) {
+  .explore__cardDesc {
+    font-size: 14px;
+  }
 }
