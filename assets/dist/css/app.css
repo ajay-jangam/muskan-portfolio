@@ -224,6 +224,11 @@ body:before {
   transform: translateY(-5px) rotate(-45deg);
 }
 
+.page,
+.post {
+  margin: 0;
+}
+
 .footer {
   background-color: #e9d2f4;
   padding: 6rem 0 2rem;
