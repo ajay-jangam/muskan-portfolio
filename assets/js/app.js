@@ -1,6 +1,8 @@
 $(document).ready(() => {
     // Hamburger Menu
     $(".navbar").click(function () {
+        console.log("kjndlkjn");
+
         $(this).toggleClass("hamburgerMenu");
     });
     // Sliders
@@ -10,9 +12,9 @@ $(document).ready(() => {
         slidesPerView: "auto",
         speed: 2000,
         parallax: true,
-        // grabCursor: false,
-        // mousewheelControl: false,
-        // keyboardControl: true,
+        grabCursor: false,
+        mousewheelControl: false,
+        keyboardControl: true,
     };
     const clientsSliderTop = new Swiper(".clients__sliderTop", {
         ...clientsSliderOptionsPara,
@@ -27,7 +29,7 @@ $(document).ready(() => {
         autoplay: {
             delay: 0,
             reverseDirection: true,
-            // disableOnInteraction: false,
+            disableOnInteraction: false,
         },
     });
 
@@ -75,18 +77,42 @@ $(document).ready(() => {
             prevEl: ".swiper-button-prev",
         },
     });
+    console.log("working");
 
     // Copy email functionality
-    $(".footer__copyLink").click(() => {
+    function handleCopy() {
         let copyText = $(".footer__email").val();
-        navigator.clipboard
-            .writeText(copyText)
-            .then(() => {
-                $(".footer__copyLink").remove();
-                $(".footer__copiedText").show();
-            })
-            .catch((err) => {
-                alert("Failed to copy the link: ", err);
-            });
-    });
+        console.log("hdkha");
+
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(copyText).then(success).catch(fail);
+        } else {
+            let $tempInput = $("<textarea>")
+                .val(copyText)
+                .appendTo("body")
+                .select();
+            try {
+                document.execCommand("copy");
+                success();
+            } catch (err) {
+                fail(err);
+            }
+            $tempInput.remove();
+        }
+    }
+
+    function success() {
+        $(".footer__copyLink").hide();
+        $(".footer__copiedText").show();
+        setTimeout(() => {
+            $(".footer__copyLink").show();
+            $(".footer__copiedText").hide();
+        }, 3000);
+    }
+
+    function fail(err) {
+        alert("Failed to copy: " + err);
+    }
+
+    $(".footer__copyLink").on("click", handleCopy);
 });

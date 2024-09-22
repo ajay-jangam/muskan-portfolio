@@ -134,13 +134,7 @@
                                 data-bs-parent="#accordionExample"
                             >
                                 <div class="accordion-body">
-                                    AI provides the foundation, but
-                                    it’s the personal touch that
-                                    builds the experience. I infuse
-                                    every data-driven insight with
-                                    my unique design perspective,
-                                    creating results that feel
-                                    tailored and human.
+                                   AI drives the data, but my design adds the human touch. Together, they create personalized, impactful experiences.
                                 </div>
                             </div>
                         </div>
@@ -164,26 +158,7 @@
                                 data-bs-parent="#accordionExample"
                             >
                                 <div class="accordion-body">
-                                    <strong
-                                        >This is the second item's
-                                        accordion body.</strong
-                                    >
-                                    It is hidden by default, until
-                                    the collapse plugin adds the
-                                    appropriate classes that we use
-                                    to style each element. These
-                                    classes control the overall
-                                    appearance, as well as the
-                                    showing and hiding via CSS
-                                    transitions. You can modify any
-                                    of this with custom CSS or
-                                    overriding our default
-                                    variables. It's also worth
-                                    noting that just about any HTML
-                                    can go within the
-                                    <code>.accordion-body</code>,
-                                    though the transition does limit
-                                    overflow.
+                                    Usability is a baseline. True design goes beyond that, it understands users’ emotions, needs, and frustrations. I design with empathy, creating solutions that connect on a human level.
                                 </div>
                             </div>
                         </div>
@@ -250,26 +225,7 @@
                                 data-bs-parent="#accordionExample"
                             >
                                 <div class="accordion-body">
-                                    <strong
-                                        >This is the third item's
-                                        accordion body.</strong
-                                    >
-                                    It is hidden by default, until
-                                    the collapse plugin adds the
-                                    appropriate classes that we use
-                                    to style each element. These
-                                    classes control the overall
-                                    appearance, as well as the
-                                    showing and hiding via CSS
-                                    transitions. You can modify any
-                                    of this with custom CSS or
-                                    overriding our default
-                                    variables. It's also worth
-                                    noting that just about any HTML
-                                    can go within the
-                                    <code>.accordion-body</code>,
-                                    though the transition does limit
-                                    overflow.
+                                    Perfection doesn’t exist, evolution does. I design with flexibility in mind, creating designs that grow and adapt as users’ needs and expectations change over time.
                                 </div>
                             </div>
                         </div>
@@ -293,26 +249,7 @@
                                 data-bs-parent="#accordionExample"
                             >
                                 <div class="accordion-body">
-                                    <strong
-                                        >This is the third item's
-                                        accordion body.</strong
-                                    >
-                                    It is hidden by default, until
-                                    the collapse plugin adds the
-                                    appropriate classes that we use
-                                    to style each element. These
-                                    classes control the overall
-                                    appearance, as well as the
-                                    showing and hiding via CSS
-                                    transitions. You can modify any
-                                    of this with custom CSS or
-                                    overriding our default
-                                    variables. It's also worth
-                                    noting that just about any HTML
-                                    can go within the
-                                    <code>.accordion-body</code>,
-                                    though the transition does limit
-                                    overflow.
+                                    Collaboration is at the heart of my design process. I don’t just design for clients. I design with them, ensuring every product is a shared vision brought to life.
                                 </div>
                             </div>
                         </div>

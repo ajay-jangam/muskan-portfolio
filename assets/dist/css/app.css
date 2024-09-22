@@ -31,6 +31,10 @@ body {
   src: url("../../fonts/georgia/georgia.ttf");
 }
 @font-face {
+  font-family: "Georgia Bold";
+  src: url("../../fonts/georgia/georgiab.ttf");
+}
+@font-face {
   font-family: "Brownist";
   src: url("../../fonts/brownist/Brownist.otf");
 }
@@ -101,6 +105,7 @@ body:before {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0.5rem 1rem;
 }
 @media (max-width: 48.0525em) {
   .navbar .container {
@@ -158,7 +163,7 @@ body:before {
 }
 .navbar-nav .nav-link {
   font-family: "Lato";
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.58;
   letter-spacing: 0.16px;
   text-align: left;
@@ -180,7 +185,7 @@ body:before {
 }
 .navbar-nav .resume-link .nav-link {
   font-weight: bold;
-  border-radius: 22px;
+  border-radius: 50px;
   background-color: #e9d2f4;
   padding: 0.5rem 1.5rem;
   position: relative;
@@ -188,6 +193,7 @@ body:before {
   display: flex;
   gap: 5px;
   align-items: center;
+  height: 48px;
 }
 .navbar-nav .resume-link .nav-link::before {
   content: "";
@@ -399,13 +405,14 @@ body:before {
   color: #f7f4f9;
   border-radius: 56px;
   background-color: #1873f2;
-  padding: 1.25rem 2.5rem;
+  padding: 0.5rem 2rem;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
   line-height: 1;
   gap: 10px;
   position: relative;
+  height: 48px;
 }
 @media (max-width: 31.24em) {
   .footer__link {
@@ -647,7 +654,7 @@ body:before {
   margin-top: -2rem;
 }
 .hero__profileName {
-  font-family: "Georgia";
+  font-family: "Georgia Bold";
   font-size: 26px;
   font-weight: bold;
   color: #1873f2;
@@ -886,7 +893,7 @@ body:before {
   }
 }
 .hero__mainSecondFoldTitle {
-  font-family: "Georgia";
+  font-family: "Georgia Bold";
   font-size: 32px;
   font-weight: bold;
   letter-spacing: 0.32px;
@@ -916,6 +923,7 @@ body:before {
   padding: 2rem 1rem 0.5rem;
   border-color: rgba(238, 238, 238, 0.93);
   background-color: rgba(0, 0, 0, 0);
+  text-transform: lowercase;
 }
 @media (max-width: 31.24em) {
   .hero__accordion .accordion-button {
@@ -1023,7 +1031,7 @@ body:before {
   }
 }
 .projects__title {
-  font-family: "Georgia";
+  font-family: "Georgia Bold";
   font-size: 32px;
   font-weight: bold;
   letter-spacing: 0.32px;
@@ -1044,13 +1052,14 @@ body:before {
   color: #f7f4f9;
   border-radius: 56px;
   background-color: #1873f2;
-  padding: 1.5rem 2.5rem;
+  padding: 0.5rem 2rem;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
   line-height: 1;
   gap: 10px;
   position: relative;
+  height: 48px;
 }
 .projects__button::before {
   content: "";
@@ -1349,7 +1358,7 @@ body:before {
   }
 }
 .clients__title {
-  font-family: "Georgia";
+  font-family: "Georgia Bold";
   font-size: 32px;
   font-weight: bold;
   letter-spacing: 0.32px;
@@ -1637,7 +1646,7 @@ body:before {
   }
 }
 .feedback__title {
-  font-family: "Georgia";
+  font-family: "Georgia Bold";
   font-size: 32px;
   font-weight: bold;
   letter-spacing: 0.32px;
@@ -1664,8 +1673,8 @@ body:before {
 .feedback__slider {
   margin: 0 auto;
   overflow: hidden;
-  width: 440px;
-  min-height: 400px;
+  width: 415px;
+  max-height: 424px;
   position: relative;
   /* Reset rotation for active slides */
   /* Rotate next slide clockwise */
@@ -1680,6 +1689,26 @@ body:before {
   .feedback__slider {
     width: 290px;
   }
+}
+.feedback__slider::before {
+  position: absolute;
+  content: url("../../images/home/slide-left.png");
+  top: 0;
+  left: -26rem;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  transform: scale(0.75) translateY(-70px);
+}
+.feedback__slider::after {
+  position: absolute;
+  content: url("../../images/home/slide-right.png");
+  top: 0;
+  right: -26rem;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  transform: scale(0.75) translateY(-70px);
 }
 .feedback__slider .swiper-button-next {
   top: 7.25rem;
@@ -1733,7 +1762,7 @@ body:before {
   transform: rotate(-90deg); /* Rotate 90 degrees counterclockwise */
 }
 .feedback__slides {
-  min-height: 400px;
+  max-height: 424px;
 }
 @media (max-width: 48.0525em) {
   .feedback__slides {
@@ -1743,11 +1772,11 @@ body:before {
 .feedback__slide {
   border-radius: 12px;
   background-color: #fff;
-  padding: 3rem 2rem;
+  padding: 3rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 400px;
+  max-height: 424px;
   transform-origin: bottom center; /* Set the pivot point at the bottom */
   transition: transform 0.4s ease; /* Smooth transition for rotation */
 }
@@ -1780,6 +1809,8 @@ body:before {
   line-height: 1.53;
   text-align: center;
   color: #2e3047;
+  max-width: 300px;
+  margin-bottom: 0.5rem;
 }
 @media (max-width: 31.24em) {
   .feedback__slideDesc {
@@ -1787,7 +1818,7 @@ body:before {
   }
 }
 .feedback__slideName {
-  font-family: "Georgia";
+  font-family: "Georgia Bold";
   font-size: 16px;
   font-weight: bold;
   line-height: 1.53;
@@ -1867,7 +1898,7 @@ body:before {
   letter-spacing: 1.04px;
 }
 .principles__title {
-  font-family: "Georgia";
+  font-family: "Georgia Bold";
   font-size: 32px;
   font-weight: bold;
   letter-spacing: 0.32px;
@@ -2028,7 +2059,7 @@ body:before {
   }
 }
 .blogs__title {
-  font-family: "Georgia";
+  font-family: "Georgia Bold";
   font-size: 32px;
   font-weight: bold;
   letter-spacing: 0.32px;

@@ -179,3 +179,71 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+
+// Portfolio Posts
+function create_portfolio_post_type() {
+    $labels = array(
+        'name'               => __('Portfolios'),
+        'singular_name'      => __('Portfolio'),
+        'menu_name'          => __('Portfolios'),
+        'name_admin_bar'     => __('Portfolio'),
+        'add_new'            => __('Add New'),
+        'add_new_item'       => __('Add New Portfolio'),
+        'new_item'           => __('New Portfolio'),
+        'edit_item'          => __('Edit Portfolio'),
+        'view_item'          => __('View Portfolio'),
+        'all_items'          => __('All Portfolios'),
+        'search_items'       => __('Search Portfolios'),
+        'parent_item_colon'  => __('Parent Portfolios:'),
+        'not_found'          => __('No portfolios found.'),
+        'not_found_in_trash' => __('No portfolios found in Trash.'),
+    );
+
+    $args = array(
+        'labels'             => $labels,
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'query_var'          => true,
+        'rewrite'            => array('slug' => 'portfolio'),
+        'capability_type'    => 'post',
+        'has_archive'        => true,
+        'hierarchical'       => false,
+        'menu_position'      => 5,
+        'menu_icon'          => 'dashicons-portfolio',
+        'supports'           => array('title', 'editor', 'thumbnail', 'excerpt', 'comments'),
+    );
+
+    register_post_type('portfolio', $args);
+}
+add_action('init', 'create_portfolio_post_type');
+
+// Register Custom Taxonomy for Portfolios
+function create_portfolio_taxonomy() {
+    $labels = array(
+        'name'              => _x('Portfolio Categories', 'taxonomy general name'),
+        'singular_name'     => _x('Portfolio Category', 'taxonomy singular name'),
+        'search_items'      => __('Search Portfolio Categories'),
+        'all_items'         => __('All Portfolio Categories'),
+        'parent_item'       => __('Parent Portfolio Category'),
+        'parent_item_colon' => __('Parent Portfolio Category:'),
+        'edit_item'         => __('Edit Portfolio Category'),
+        'update_item'       => __('Update Portfolio Category'),
+        'add_new_item'      => __('Add New Portfolio Category'),
+        'new_item_name'     => __('New Portfolio Category Name'),
+        'menu_name'         => __('Portfolio Categories'),
+    );
+
+    $args = array(
+        'hierarchical'      => true,
+        'labels'            => $labels,
+        'show_ui'           => true,
+        'show_admin_column' => true,
+        'query_var'         => true,
+        'rewrite'           => array('slug' => 'portfolio-category'),
+    );
+
+    register_taxonomy('portfolio_category', array('portfolio'), $args);
+}
+add_action('init', 'create_portfolio_taxonomy');

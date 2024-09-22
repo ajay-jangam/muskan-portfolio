@@ -14,16 +14,16 @@ $mq-responsive: true;
 // across team members. It will improve communication between
 // stakeholders, designers, developers, and testers.
 $mq-breakpoints: (
-	small: 350px,
-	mobile: 500px,
-	mini: 769px,
-	pro: 1025px,
-	desktop: 1280px,
-	wide: 1300px,
+    small: 350px,
+    mobile: 500px,
+    mini: 769px,
+    pro: 1025px,
+    desktop: 1280px,
+    wide: 1300px,
 
-	// Tweakpoints
-	desktopAd: 810px,
-	mobileLandscape: 480px,
+    // Tweakpoints
+    desktopAd: 810px,
+    mobileLandscape: 480px,
 );
 
 // Define the breakpoint from the $mq-breakpoints list that should
@@ -45,38 +45,43 @@ $green: #10ae75;
 // Fonts
 
 @font-face {
-	font-family: "Lato Light";
-	src: url("../../fonts/lato/Lato-Light.ttf");
+    font-family: "Lato Light";
+    src: url("../../fonts/lato/Lato-Light.ttf");
 }
 
 @font-face {
-	font-family: "Lato";
-	src: url("../../fonts/lato/Lato-Regular.ttf");
+    font-family: "Lato";
+    src: url("../../fonts/lato/Lato-Regular.ttf");
 }
 
 @font-face {
-	font-family: "Lato Semi-Bold";
-	src: url("../../fonts/lato/Lato-Bold.ttf");
+    font-family: "Lato Semi-Bold";
+    src: url("../../fonts/lato/Lato-Bold.ttf");
 }
 
 @font-face {
-	font-family: "Lato Bold";
-	src: url("../../fonts/lato/Lato-Black.ttf");
+    font-family: "Lato Bold";
+    src: url("../../fonts/lato/Lato-Black.ttf");
 }
 
 @font-face {
-	font-family: "Georgia";
-	src: url("../../fonts/georgia/georgia.ttf");
+    font-family: "Georgia";
+    src: url("../../fonts/georgia/georgia.ttf");
 }
 
 @font-face {
-	font-family: "Brownist";
-	src: url("../../fonts/brownist/Brownist.otf");
+    font-family: "Georgia Bold";
+    src: url("../../fonts/georgia/georgiab.ttf");
 }
 
 @font-face {
-	font-family: "Lufga";
-	src: url("../../fonts/lufga/LufgaRegular.ttf");
+    font-family: "Brownist";
+    src: url("../../fonts/brownist/Brownist.otf");
+}
+
+@font-face {
+    font-family: "Lufga";
+    src: url("../../fonts/lufga/LufgaRegular.ttf");
 }
 
 $lato: "Lato";
@@ -84,5 +89,6 @@ $lato-light: "Lato Light";
 $lato-semi-bold: "Lato Semi-Bold";
 $lato-bold: "Lato Bold";
 $georgia: "Georgia";
+$georgia-bold: "Georgia Bold";
 $brownist: "Brownist";
 $lufga: "Lufga";

@@ -204,13 +204,14 @@
         color: #f7f4f9;
         border-radius: 56px;
         background-color: #1873f2;
-        padding: 1.25rem 2.5rem;
+        padding: 0.5rem 2rem;
         text-decoration: none;
         display: inline-flex;
         align-items: center;
         line-height: 1;
         gap: 10px;
         position: relative;
+        height: 48px;
 
         @include mq($until: mobile) {
             font-size: 14px;

@@ -85,7 +85,7 @@
     // .hero__profileName
 
     &__profileName {
-        font-family: $georgia;
+        font-family: $georgia-bold;
         font-size: 26px;
         font-weight: bold;
         color: #1873f2;
@@ -356,7 +356,7 @@
     // .hero__mainSecondFoldTitle
 
     &__mainSecondFoldTitle {
-        font-family: $georgia;
+        font-family: $georgia-bold;
         font-size: 32px;
         font-weight: bold;
         letter-spacing: 0.32px;
@@ -393,7 +393,7 @@
             padding: 2rem 1rem 0.5rem;
             border-color: rgba(238, 238, 238, 0.93);
             background-color: #0000;
-
+            text-transform: lowercase;
             @include mq($until: mobile) {
                 font-size: 14px;
                 padding: 2rem 0.5rem 0.5rem;
@@ -523,7 +523,7 @@
     // .projects__title
 
     &__title {
-        font-family: $georgia;
+        font-family: $georgia-bold;
         font-size: 32px;
         font-weight: bold;
         letter-spacing: 0.32px;
@@ -546,14 +546,14 @@
         color: #f7f4f9;
         border-radius: 56px;
         background-color: #1873f2;
-        padding: 1.5rem 2.5rem;
+        padding: 0.5rem 2rem;
         text-decoration: none;
         display: inline-flex;
         align-items: center;
         line-height: 1;
         gap: 10px;
         position: relative;
-
+        height: 48px;
         &::before {
             content: "";
             position: absolute;
@@ -932,7 +932,7 @@
     // .clients__title
 
     &__title {
-        font-family: $georgia;
+        font-family: $georgia-bold;
         font-size: 32px;
         font-weight: bold;
         letter-spacing: 0.32px;
@@ -1350,7 +1350,7 @@
     // .feedback__title
 
     &__title {
-        font-family: $georgia;
+        font-family: $georgia-bold;
         font-size: 32px;
         font-weight: bold;
         letter-spacing: 0.32px;
@@ -1380,8 +1380,8 @@
     &__slider {
         margin: 0 auto;
         overflow: hidden;
-        width: 440px;
-        min-height: 400px;
+        width: 415px;
+        max-height: 424px;
         position: relative;
 
         @include mq($until: mini) {
@@ -1390,6 +1390,28 @@
 
         @include mq($until: mobile) {
             width: 290px;
+        }
+
+        &::before {
+            position: absolute;
+            content: url("../../images/home/slide-left.png");
+            top: 0;
+            left: -26rem;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            transform: scale(0.75) translateY(-70px);
+        }
+
+        &::after {
+            position: absolute;
+            content: url("../../images/home/slide-right.png");
+            top: 0;
+            right: -26rem;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            transform: scale(0.75) translateY(-70px);
         }
         .swiper-button-next {
             top: 7.25rem;
@@ -1450,7 +1472,7 @@
     // .feedback__slides
 
     &__slides {
-        min-height: 400px;
+        max-height: 424px;
         @include mq($until: mini) {
             min-height: unset;
         }
@@ -1461,11 +1483,11 @@
     &__slide {
         border-radius: 12px;
         background-color: #fff;
-        padding: 3rem 2rem;
+        padding: 3rem 0;
         display: flex;
         flex-direction: column;
         align-items: center;
-        min-height: 400px;
+        max-height: 424px;
         transform-origin: bottom center; /* Set the pivot point at the bottom */
         transition: transform 0.4s ease; /* Smooth transition for rotation */
 
@@ -1500,7 +1522,8 @@
         line-height: 1.53;
         text-align: center;
         color: #2e3047;
-
+        max-width: 300px;
+        margin-bottom: 0.5rem;
         @include mq($until: mobile) {
             font-size: 12px;
         }
@@ -1509,7 +1532,7 @@
     // .feedback__slideName
 
     &__slideName {
-        font-family: $georgia;
+        font-family: $georgia-bold;
         font-size: 16px;
         font-weight: bold;
         line-height: 1.53;
@@ -1601,7 +1624,7 @@
     // .principles__title
 
     &__title {
-        font-family: $georgia;
+        font-family: $georgia-bold;
         font-size: 32px;
         font-weight: bold;
         letter-spacing: 0.32px;
@@ -1792,7 +1815,7 @@
     // .blogs__title
 
     &__title {
-        font-family: $georgia;
+        font-family: $georgia-bold;
         font-size: 32px;
         font-weight: bold;
         letter-spacing: 0.32px;
