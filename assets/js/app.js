@@ -1,16 +1,16 @@
 $(document).ready(() => {
     // Hamburger Menu
-    $(".navbar").click(function () {
+    $(".navbar .navbar-toggler").click(function () {
         console.log("kjndlkjn");
 
-        $(this).toggleClass("hamburgerMenu");
+        $(".navbar").toggleClass("hamburgerMenu");
     });
     // Sliders
     const clientsSliderOptionsPara = {
         // Optional parameters
         loop: true,
         slidesPerView: "auto",
-        speed: 2000,
+        speed: 1500,
         parallax: true,
         grabCursor: false,
         mousewheelControl: false,
@@ -47,6 +47,7 @@ $(document).ready(() => {
         speed: 1000,
         autoplay: {
             delay: 0,
+            pauseOnMouseEnter: true,
             disableOnInteraction: false,
         },
     });

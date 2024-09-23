@@ -93,7 +93,7 @@
             <div class="details__card">
                 <div class="details__cardIconWrapper">
                     <img
-                        src="<?php echo get_template_directory_uri(); ?>/assets/images/about-me/Narrative-Designer.svg"
+                        src="<?php echo get_template_directory_uri(); ?>/assets/images/about-me/narrative.png"
                         alt=""
                         class="details__cardIcon"
                     />

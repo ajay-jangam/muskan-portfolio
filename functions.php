@@ -247,3 +247,12 @@ function create_portfolio_taxonomy() {
     register_taxonomy('portfolio_category', array('portfolio'), $args);
 }
 add_action('init', 'create_portfolio_taxonomy');
+
+function add_custom_body_class($classes) {
+    if (is_page(25)) $classes[] = 'about-me'; // Page ID 42
+    if (is_page(27)) $classes[] = 'contact-us'; // Page ID 42
+    if (is_page(23)) $classes[] = 'home'; // Page ID 42
+    return $classes;
+}
+add_filter('body_class', 'add_custom_body_class');
+

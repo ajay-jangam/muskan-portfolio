@@ -91,7 +91,7 @@
             </div>
         </div>
     </div>
-    <div class="feedback__wrapper conatiner">
+    <div class="feedback__wrapper container">
         <div class="feedback__header">
             <img
                 src="<?php echo get_template_directory_uri(); ?>/assets/images/home/quote-left.svg"

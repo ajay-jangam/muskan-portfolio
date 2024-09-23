@@ -92,7 +92,7 @@ body:before {
 }
 @media (max-width: 48.0525em) {
   .navbar {
-    width: 85%;
+    width: 90%;
   }
 }
 .navbar .navbar-wrapper {
@@ -161,6 +161,9 @@ body:before {
   align-items: center;
   gap: 1.5rem;
 }
+.navbar-nav .nav-item:nth-child(2) .nav-link {
+  pointer-events: none;
+}
 .navbar-nav .nav-link {
   font-family: "Lato";
   font-size: 16px;
@@ -168,6 +171,11 @@ body:before {
   letter-spacing: 0.16px;
   text-align: left;
   color: #2e3047;
+}
+@media (max-width: 48.0525em) {
+  .navbar-nav .nav-link {
+    font-size: 18px;
+  }
 }
 .navbar-nav .nav-link.active {
   position: relative;
@@ -182,6 +190,11 @@ body:before {
   height: 2px;
   border-radius: 1rem;
   background-color: #1873f2;
+}
+@media (max-width: 31.24em) {
+  .navbar-nav .nav-link.active::after {
+    left: 0;
+  }
 }
 .navbar-nav .resume-link .nav-link {
   font-weight: bold;
@@ -217,7 +230,7 @@ body:before {
   position: relative;
 }
 .navbar.hamburgerMenu .navbar-wrapper {
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
 }
 .navbar.hamburgerMenu .navbar-wrapper .container .hamburger .line:nth-child(2) {
@@ -279,7 +292,7 @@ body:before {
 }
 @media (max-width: 31.24em) {
   .footer__qoute {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 .footer__logo {
@@ -300,7 +313,7 @@ body:before {
 }
 @media (max-width: 31.24em) {
   .footer__logo2 {
-    margin-right: 60%;
+    margin-right: 55%;
   }
 }
 .footer__logo3 {
@@ -351,9 +364,9 @@ body:before {
   font-size: 20px;
   font-weight: 500;
   text-align: left;
-  color: #2e3047;
+  color: #2e3047 !important;
   background: rgba(0, 0, 0, 0);
-  border: none;
+  border: none !important;
   width: 300px;
 }
 .footer__email:focus-visible {
@@ -570,6 +583,8 @@ body:before {
 .footer__bottomLink a {
   color: #2e3047;
   text-decoration: none;
+  display: flex;
+  gap: 3px;
 }
 .footer__bottomLink span {
   opacity: 0.6;
@@ -751,7 +766,7 @@ body:before {
   }
 }
 .hero__title {
-  font-family: "Georgia";
+  font-family: "Georgia Bold";
   font-size: 100px;
   font-weight: bold;
   text-align: left;
@@ -796,7 +811,7 @@ body:before {
 @media (max-width: 31.24em) {
   .hero__subTitle {
     font-size: 14px;
-    max-width: 300px;
+    max-width: 340px;
   }
 }
 .hero__stats {
@@ -866,6 +881,11 @@ body:before {
 .hero__mainSecondFoldText {
   position: relative;
   margin-bottom: 1rem;
+}
+@media (max-width: 31.24em) {
+  .hero__mainSecondFoldText {
+    margin: 0 0 1rem 1rem;
+  }
 }
 .hero__doodleImage {
   position: absolute;
@@ -1585,6 +1605,29 @@ body:before {
     margin: 0 0 0 5px;
   }
 }
+.feedback__wrapper {
+  position: relative;
+}
+.feedback__wrapper::before {
+  position: absolute;
+  content: url("../../images/home/slide-left.png");
+  top: 7rem;
+  left: -4%;
+  z-index: 2;
+  width: auto;
+  height: auto;
+  transform: scale(0.6) translateY(-70px);
+}
+.feedback__wrapper::after {
+  position: absolute;
+  content: url("../../images/home/slide-right.png");
+  top: 7rem;
+  left: 65%;
+  z-index: 2;
+  width: auto;
+  height: auto;
+  transform: scale(0.6) translateY(-70px);
+}
 .feedback__header {
   position: relative;
   max-width: 750px;
@@ -1617,7 +1660,7 @@ body:before {
 @media (max-width: 31.24em) {
   .feedback__quote {
     width: 65px;
-    transform: translate(-115px, 35px);
+    transform: translate(-18px, 35px);
   }
 }
 @media (max-width: 48.0525em) {
@@ -1627,8 +1670,8 @@ body:before {
 }
 @media (max-width: 31.24em) {
   .feedback__text {
-    max-width: 170px;
-    margin-left: -7rem;
+    max-width: 210px;
+    margin: 0 0 1rem 0;
   }
 }
 .feedback__doodleText {
@@ -1687,28 +1730,8 @@ body:before {
 }
 @media (max-width: 31.24em) {
   .feedback__slider {
-    width: 290px;
+    width: 250px;
   }
-}
-.feedback__slider::before {
-  position: absolute;
-  content: url("../../images/home/slide-left.png");
-  top: 0;
-  left: -26rem;
-  z-index: 2;
-  width: 100%;
-  height: 100%;
-  transform: scale(0.75) translateY(-70px);
-}
-.feedback__slider::after {
-  position: absolute;
-  content: url("../../images/home/slide-right.png");
-  top: 0;
-  right: -26rem;
-  z-index: 2;
-  width: 100%;
-  height: 100%;
-  transform: scale(0.75) translateY(-70px);
 }
 .feedback__slider .swiper-button-next {
   top: 7.25rem;
@@ -1716,8 +1739,8 @@ body:before {
 }
 @media (max-width: 31.24em) {
   .feedback__slider .swiper-button-next {
-    top: 5.5rem;
-    right: 3.5rem;
+    top: 4.5rem;
+    right: 3rem;
   }
 }
 .feedback__slider .swiper-button-next::after {
@@ -1734,8 +1757,8 @@ body:before {
 }
 @media (max-width: 31.24em) {
   .feedback__slider .swiper-button-prev {
-    top: 5.5rem;
-    left: 3rem;
+    top: 4.5rem;
+    left: 2.5rem;
   }
 }
 .feedback__slider .swiper-button-prev::after {
@@ -1788,7 +1811,7 @@ body:before {
 }
 @media (max-width: 31.24em) {
   .feedback__slide {
-    padding: 3rem 2rem;
+    padding: 2rem 0;
   }
 }
 .feedback__slideImg {
@@ -1814,6 +1837,7 @@ body:before {
 }
 @media (max-width: 31.24em) {
   .feedback__slideDesc {
+    max-width: 190px;
     font-size: 12px;
   }
 }
@@ -1829,6 +1853,7 @@ body:before {
 @media (max-width: 31.24em) {
   .feedback__slideName {
     font-size: 12px;
+    margin: 1rem 0 0;
   }
 }
 .feedback__slidePost {
@@ -1847,7 +1872,7 @@ body:before {
 
 .principles {
   padding: 10rem 0 15rem;
-  background-image: url("../../images/home/principles_background.png");
+  background-image: url("../../images/home/Bg-Principles.png");
   background-size: cover;
 }
 @media (max-width: 48.0525em) {
@@ -1932,6 +1957,9 @@ body:before {
   }
   .principles__list:nth-child(3n+2) .principles__single .principles__image1 {
     transform: rotate(90deg);
+  }
+  .principles__list:nth-child(3) .principles__single .principles__doodleImage2 {
+    left: 5rem;
   }
 }
 @media (max-width: 31.24em) {
@@ -2212,7 +2240,7 @@ body:before {
 }
 
 .contact-us {
-  background-image: url("../../images/home/principles_background.png");
+  background-image: url("../../images/home/Bg-Principles.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -2280,7 +2308,7 @@ body:before {
   }
 }
 .contact__title {
-  font-family: "Georgia";
+  font-family: "Georgia Bold";
   font-size: 74px;
   font-weight: bold;
   font-style: italic;
@@ -2319,7 +2347,7 @@ body:before {
   justify-content: center;
 }
 .contact__email {
-  font-family: "Lato Semi-Bold";
+  font-family: "Lato";
   font-size: 20px;
   font-weight: 500;
   color: #2e3047;
@@ -2425,7 +2453,7 @@ body:before {
   }
 }
 .collaborate__doodleTitle {
-  font-family: "Georgia";
+  font-family: "Georgia Bold";
   font-size: 32px;
   font-weight: bold;
   letter-spacing: 0.32px;
@@ -2440,7 +2468,7 @@ body:before {
 @media (max-width: 31.24em) {
   .collaborate__doodleTitle {
     font-size: 24px;
-    max-width: 240px;
+    max-width: 280px;
   }
 }
 .collaborate__cards {
@@ -2455,7 +2483,7 @@ body:before {
 }
 .collaborate__card {
   height: 300px;
-  max-width: 270px;
+  width: 25%;
   display: flex;
   flex-direction: column;
   border-radius: 12px;
@@ -2473,6 +2501,7 @@ body:before {
 @media (max-width: 31.24em) {
   .collaborate__card {
     width: 100%;
+    height: 280px;
   }
 }
 .collaborate__card:nth-child(1) {
@@ -2491,7 +2520,7 @@ body:before {
   box-shadow: 0 18px 37px 0 rgba(58, 73, 249, 0.05);
 }
 .collaborate__cardTitle {
-  font-family: "Lato";
+  font-family: "Lato Semi-Bold";
   font-size: 22px;
   font-weight: bold;
   line-height: 1.25;
@@ -2569,7 +2598,7 @@ body:before {
   position: relative;
   overflow-y: hidden;
   z-index: 0;
-  padding: 30rem 0 15rem;
+  padding: 24rem 0 17rem;
 }
 @media (max-width: 48.0525em) {
   .about {
@@ -2610,14 +2639,18 @@ body:before {
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: -26rem;
+  bottom: -12rem;
   left: 0;
   right: 0;
-  z-index: 1;
+  z-index: 2;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
 }
 @media (max-width: 48.0525em) {
   .about__connect {
     bottom: -13rem;
+    width: 100%;
   }
 }
 .about__title {
@@ -2626,7 +2659,7 @@ body:before {
   font-weight: bold;
   text-align: left;
   color: #2e3047;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .about__title span {
   font-family: "Georgia";
@@ -2635,6 +2668,17 @@ body:before {
   font-style: italic;
   text-align: left;
   color: #1873f2;
+}
+.about__titleFive {
+  position: relative;
+  top: -10px;
+  left: 7px;
+}
+@media (max-width: 31.24em) {
+  .about__titleFive {
+    top: -5px;
+    left: 5px;
+  }
 }
 .about__titleMobile {
   display: none;
@@ -2664,15 +2708,16 @@ body:before {
 }
 .about__connectWrapper {
   position: relative;
+  width: 420px;
 }
 @media (max-width: 48.0525em) {
   .about__connectWrapper {
-    width: 50%;
+    width: 440px;
   }
 }
 @media (max-width: 31.24em) {
   .about__connectWrapper {
-    width: 80%;
+    width: 350px;
   }
 }
 @media (max-width: 48.0525em) {
@@ -2689,6 +2734,7 @@ body:before {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 @media (max-width: 31.24em) {
   .about__content {
@@ -2777,7 +2823,7 @@ body:before {
   color: #f7f4f9;
   border-radius: 56px;
   background-color: #1873f2;
-  padding: 1.25rem 2.5rem;
+  padding: 1rem 2rem;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
@@ -2785,12 +2831,17 @@ body:before {
   gap: 10px;
   position: relative;
   margin: 3rem 0 0;
+  height: 48px;
 }
 @media (max-width: 31.24em) {
   .about__connectBtn {
     font-size: 14px;
     margin: 2rem 0 0;
     padding: 1rem 1.5rem;
+    height: 34px;
+  }
+  .about__connectBtn svg {
+    width: 15px;
   }
 }
 .about__connectBtn::before {
@@ -2807,7 +2858,7 @@ body:before {
   background-image: linear-gradient(to bottom, #fff 0%, rgba(255, 255, 255, 0));
 }
 .details {
-  background-image: url("../../images/about-me/details-bg.jpg");
+  background-image: url("../../images/about-me/Bg-What-I-am-good-at.png");
   background-size: contain;
   padding: 5rem 0;
 }
@@ -2958,7 +3009,12 @@ body:before {
 @media (max-width: 48.0525em) {
   .details__card {
     max-width: 330px;
+    box-shadow: 0 7px 37.5px 0 rgba(0, 43, 181, 0.1);
+    background-color: #fff;
   }
+}
+.details__card:nth-child(3) .details__cardIcon {
+  width: 27px;
 }
 .details__cardIconWrapper {
   border-radius: 27px;

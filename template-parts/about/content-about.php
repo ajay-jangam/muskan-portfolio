@@ -9,7 +9,7 @@
 
 <section class="about">
     <h2 class="about__title about__titleMobile">
-        About me in <span>5 sec!</span>
+        About me in <span class="about__titleFive">5</span><span> sec!</span>
     </h2>
     <div class="about__slider">
         <div class="swiper-wrapper about__slides">
@@ -157,12 +157,12 @@
     </div>
     <div class="about__connect">
         <h2 class="about__title about__titleDesktop">
-            About me in <span>5 sec!</span>
+            About me in <span class="about__titleFive">5</span><span> sec!</span>
         </h2>
         <div class="about__connectWrapper">
             <img
-                src="<?php echo get_template_directory_uri(); ?>/assets/images/about-me/mobile-body.png"
-                alt=""
+                src="<?php echo get_template_directory_uri(); ?>/assets/images/about-me/mobile-body-img.png"
+                alt="gkhvkh"
                 class="about__mobileBody"
             />
             <div class="about__content">

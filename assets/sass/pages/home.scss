@@ -200,7 +200,7 @@
     // .hero__title
 
     &__title {
-        font-family: $georgia;
+        font-family: $georgia-bold;
         font-size: 100px;
         font-weight: bold;
         text-align: left;
@@ -244,7 +244,7 @@
 
         @include mq($until: mobile) {
             font-size: 14px;
-            max-width: 300px;
+            max-width: 340px;
         }
     }
 
@@ -323,6 +323,10 @@
     &__mainSecondFoldText {
         position: relative;
         margin-bottom: 1rem;
+
+        @include mq($until: mobile) {
+            margin: 0 0 1rem 1rem;
+        }
     }
 
     // .hero__doodleImage
@@ -1282,6 +1286,29 @@
     // .feedback__wrapper
 
     &__wrapper {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: url("../../images/home/slide-left.png");
+            top: 7rem;
+            left: -4%;
+            z-index: 2;
+            width: auto;
+            height: auto;
+            transform: scale(0.6) translateY(-70px);
+        }
+
+        &::after {
+            position: absolute;
+            content: url("../../images/home/slide-right.png");
+            top: 7rem;
+            left: 65%;
+            z-index: 2;
+            width: auto;
+            height: auto;
+            transform: scale(0.6) translateY(-70px);
+        }
     }
 
     // .feedback__header
@@ -1316,7 +1343,7 @@
         }
         @include mq($until: mobile) {
             width: 65px;
-            transform: translate(-115px, 35px);
+            transform: translate(-18px, 35px);
         }
     }
 
@@ -1327,8 +1354,8 @@
             max-width: 240px;
         }
         @include mq($until: mobile) {
-            max-width: 170px;
-            margin-left: -7rem;
+            max-width: 210px;
+            margin: 0 0 1rem 0;
         }
     }
 
@@ -1389,37 +1416,16 @@
         }
 
         @include mq($until: mobile) {
-            width: 290px;
+            width: 250px;
         }
 
-        &::before {
-            position: absolute;
-            content: url("../../images/home/slide-left.png");
-            top: 0;
-            left: -26rem;
-            z-index: 2;
-            width: 100%;
-            height: 100%;
-            transform: scale(0.75) translateY(-70px);
-        }
-
-        &::after {
-            position: absolute;
-            content: url("../../images/home/slide-right.png");
-            top: 0;
-            right: -26rem;
-            z-index: 2;
-            width: 100%;
-            height: 100%;
-            transform: scale(0.75) translateY(-70px);
-        }
         .swiper-button-next {
             top: 7.25rem;
             right: 5.5rem;
 
             @include mq($until: mobile) {
-                top: 5.5rem;
-                right: 3.5rem;
+                top: 4.5rem;
+                right: 3rem;
             }
 
             &::after {
@@ -1434,8 +1440,8 @@
             top: 7.25rem;
             left: 5rem;
             @include mq($until: mobile) {
-                top: 5.5rem;
-                left: 3rem;
+                top: 4.5rem;
+                left: 2.5rem;
             }
             &::after {
                 content: url("../../images/home/bi_arrow-left.svg");
@@ -1497,7 +1503,7 @@
         }
 
         @include mq($until: mobile) {
-            padding: 3rem 2rem;
+            padding: 2rem 0;
         }
     }
 
@@ -1525,6 +1531,7 @@
         max-width: 300px;
         margin-bottom: 0.5rem;
         @include mq($until: mobile) {
+            max-width: 190px;
             font-size: 12px;
         }
     }
@@ -1542,6 +1549,7 @@
 
         @include mq($until: mobile) {
             font-size: 12px;
+            margin: 1rem 0 0;
         }
     }
 
@@ -1565,7 +1573,7 @@
 
 .principles {
     padding: 10rem 0 15rem;
-    background-image: url("../../images/home/principles_background.png");
+    background-image: url("../../images/home/Bg-Principles.png");
     background-size: cover;
 
     @include mq($until: mini) {
@@ -1663,6 +1671,14 @@
                 .principles__single {
                     .principles__image1 {
                         transform: rotate(90deg);
+                    }
+                }
+            }
+
+            &:nth-child(3) {
+                .principles__single {
+                    .principles__doodleImage2 {
+                        left: 5rem;
                     }
                 }
             }

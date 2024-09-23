@@ -8,7 +8,7 @@
     max-width: 950px;
     margin: 0.5rem auto 0;
     @include mq($until: mini) {
-        width: 85%;
+        width: 90%;
     }
 
     .navbar-wrapper {
@@ -97,6 +97,11 @@
         .nav {
             // .nav-item
             &-item {
+                &:nth-child(2) {
+                    .nav-link {
+                        pointer-events: none;
+                    }
+                }
             }
 
             // .nav-link
@@ -107,6 +112,10 @@
                 letter-spacing: 0.16px;
                 text-align: left;
                 color: #2e3047;
+
+                @include mq($until: mini) {
+                    font-size: 18px;
+                }
             }
         }
         .nav-link.active {
@@ -122,6 +131,10 @@
                 height: 2px;
                 border-radius: 1rem;
                 background-color: #1873f2;
+
+                @include mq($until: mobile) {
+                    left: 0;
+                }
             }
         }
         .resume-link {
@@ -167,7 +180,7 @@
     position: relative;
 
     .navbar-wrapper {
-        width: 85%;
+        width: 90%;
         margin: 0 auto;
         .container {
             .hamburger {

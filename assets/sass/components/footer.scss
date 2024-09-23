@@ -46,7 +46,7 @@
             font-size: 28px;
         }
         @include mq($until: mobile) {
-            font-size: 20px;
+            font-size: 22px;
         }
     }
 
@@ -73,7 +73,7 @@
     &__logo2 {
         background-color: #800080;
         @include mq($until: mobile) {
-            margin-right: 60%;
+            margin-right: 55%;
         }
     }
 
@@ -139,9 +139,9 @@
         font-size: 20px;
         font-weight: 500;
         text-align: left;
-        color: #2e3047;
+        color: #2e3047 !important;
         background: #0000;
-        border: none;
+        border: none !important;
         width: 300px;
 
         &:focus-visible {
@@ -392,6 +392,8 @@
         a {
             color: #2e3047;
             text-decoration: none;
+            display: flex;
+            gap: 3px;
         }
         span {
             opacity: 0.6;
