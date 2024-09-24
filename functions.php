@@ -256,3 +256,16 @@ function add_custom_body_class($classes) {
 }
 add_filter('body_class', 'add_custom_body_class');
 
+function add_active_class_to_menu($items) {
+    $current_url = home_url(add_query_arg(array(), $wp->request)); // Get current URL
+
+    foreach ($items as &$item) {
+        if ($item->url === $current_url) {
+            $item->classes[] = 'active'; // Add your custom active class
+        }
+    }
+
+    return $items;
+}
+add_filter('wp_nav_menu_objects', 'add_active_class_to_menu');
+

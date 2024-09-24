@@ -161,9 +161,6 @@ body:before {
   align-items: center;
   gap: 1.5rem;
 }
-.navbar-nav .nav-item:nth-child(2) .nav-link {
-  pointer-events: none;
-}
 .navbar-nav .nav-link {
   font-family: "Lato";
   font-size: 16px;
@@ -2581,9 +2578,6 @@ body:before {
   background-color: #fff;
 }
 
-.about-me .feedback__ribbon {
-  display: none;
-}
 .about-me .feedback__header {
   margin: 6rem auto -2rem;
 }
@@ -3389,6 +3383,7 @@ body:before {
 }
 .explore__card {
   flex-basis: 32%;
+  text-decoration: none;
 }
 .explore__cardImg {
   width: 100%;

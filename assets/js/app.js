@@ -116,4 +116,17 @@ $(document).ready(() => {
     }
 
     $(".footer__copyLink").on("click", handleCopy);
+
+    // Get current URL
+    var currentUrl = window.location.href;
+
+    // Loop through each menu item
+    $(".navbar-nav li a.nav-link").each(function () {
+        var menuItemUrl = $(this).attr("href");
+
+        // Check if the current URL matches the menu item URL
+        if (currentUrl === menuItemUrl) {
+            $(this).parent().addClass("active"); // Add the active class
+        }
+    });
 });
