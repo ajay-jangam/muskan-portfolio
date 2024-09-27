@@ -100,7 +100,7 @@
 													$project_name = get_sub_field( 'project_name' );
 													$project_description = get_sub_field( 'project_description');
 													?>
-													<a href="<?php echo get_template_directory_uri();the_sub_field( 'project_link' ); ?>" class="explore__card">
+													<a href="<?php echo the_sub_field( 'project_link' ); ?>" class="explore__card">
 														<?php if ( $project_image ) : ?>
 															<img
 																src="<?php echo esc_url( $project_image ); ?>"

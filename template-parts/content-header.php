@@ -50,7 +50,7 @@
 					<li class="nav-item">
 						<a
 							class="nav-link"
-							href="/portfolio/yatra-flight-booking-revamp/"
+							href="/projects"
 							>My projects</a
 						>
 					</li>

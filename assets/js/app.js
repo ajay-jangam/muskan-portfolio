@@ -33,6 +33,33 @@ $(document).ready(() => {
         },
     });
 
+    const clientsSliderLeft = new Swiper(".projectHero__sliderLeft", {
+        direction: "vertical",
+        slidesPerView: 5,
+        speed: 1000,
+        mousewheel: true,
+        grabCursor: true,
+        loop: true,
+        autoplay: {
+            delay: 0,
+            disableOnInteraction: false,
+        },
+    });
+
+    const clientsSlider = new Swiper(".projectHero__sliderRight", {
+        direction: "vertical",
+        slidesPerView: 5,
+        speed: 1000,
+        mousewheel: true,
+        grabCursor: true,
+        loop: true,
+        autoplay: {
+            delay: 0,
+            reverseDirection: true,
+            disableOnInteraction: false,
+        },
+    });
+
     const feedbackRibbonSlider = new Swiper(".feedback__ribbon", {
         ...clientsSliderOptionsPara,
         speed: 1000,
