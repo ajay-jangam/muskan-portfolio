@@ -67,7 +67,7 @@
 					<li class="nav-item resume-link">
 						<a
 							class="nav-link"
-							href="./assets/resume/MuskanBhatia_Resume_2024.pdf"
+							href="<?php echo get_template_directory_uri(); ?>/assets/resume/MuskanBhatia_Resume_2024.pdf"
 							target="_blank"
 							>Get My Resume
 							<img
