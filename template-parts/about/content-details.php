@@ -85,9 +85,7 @@
                 </div>
                 <p class="details__cardTitle">Continuous Learner</p>
                 <p class="details__cardDesc">
-                    I stay at the forefront of design trends,
-                    constantly learning and evolving to bring fresh,
-                    innovative ideas to every project.
+                    I embrace growth and actively explore new design trends to enhance my skills and create better user experiences, fueled by my Leo curiosity.
                 </p>
             </div>
             <div class="details__card">
@@ -98,11 +96,9 @@
                         class="details__cardIcon"
                     />
                 </div>
-                <p class="details__cardTitle">Narrative Designer</p>
+                <p class="details__cardTitle">Agile Design Thinker</p>
                 <p class="details__cardDesc">
-                    I craft compelling design stories that turn
-                    complex concepts into intuitive and engaging
-                    experiences, bridging vision with reality.
+                    I excel at adaptability, swiftly incorporating feedback to shape designs that meet evolving needs and elevate user experiences.
                 </p>
             </div>
             <div class="details__card">
@@ -114,12 +110,10 @@
                     />
                 </div>
                 <p class="details__cardTitle">
-                    Innovative Problem Solver
+                    Strategic Experience Designer
                 </p>
                 <p class="details__cardDesc">
-                    I approach challenges with creative solutions,
-                    combining strategic thinking with practical
-                    design skills to achieve effective results.
+                    As a Leo, I thrive on connecting with people and designing user journeys that blend functionality with storytelling. to create engaging expereinces.
                 </p>
             </div>
         </div>

@@ -23,16 +23,13 @@
                             <p class="blogs__tag">Technology</p>
                             <p class="blogs__tag">Technology</p>
                         </div>
-                        <p class="blogs__readTime">4 min read</p>
+                        <p class="blogs__readTime">5 min read</p>
                     </div>
                     <p class="blogs__blogTitle">
-                        How to tackle 24-Hour UX/UI Design Task!
+                        How to excel as a Sole Designer at an early startup?
                     </p>
                     <p class="blogs__desc">
-                        The design task is a pivotal moment in the
-                        interview process, offering a unique
-                        opportunity for both the interviewer and the
-                        candidate to connect on a deepe...
+                        As the sole designer at a startup, you’re in for a thrilling ride filled with both excitement and challenges. It’s a unique position where you get to...
                     </p>
                     <a
                         href="https://medium.com/@muskanbhatia.design/24-hour-ux-ui-design-task-for-interviews-3e4c3b6ebb40"
@@ -84,7 +81,7 @@
             </div>
             <div class="blogs__blog">
                 <img
-                    src="<?php echo get_template_directory_uri(); ?>/assets/images/home/blog_3.jpg"
+                    src="<?php echo get_template_directory_uri(); ?>/assets/images/home/blog_3.png"
                     alt=""
                     class="blogs__image"
                 />
@@ -94,7 +91,7 @@
                             <p class="blogs__tag">Technology</p>
                             <p class="blogs__tag">Technology</p>
                         </div>
-                        <p class="blogs__readTime">4 min read</p>
+                        <p class="blogs__readTime">8 min read</p>
                     </div>
                     <p class="blogs__blogTitle">
                         Keeping Up with Design Trends: A Practical
@@ -106,7 +103,7 @@
                         opportunity for both the interviewer and the
                         candidate to connect on a deepe...
                     </p>
-                    <a href="#" class="blogs__link"
+                    <a href="https://medium.com/@muskanbhatia.design/sole-designer-at-a-startup-26ded3978656" class="blogs__link"
                         >Read Article
                         <img
                             src="<?php echo get_template_directory_uri(); ?>/assets/images/home/arrow-right-dark.svg"

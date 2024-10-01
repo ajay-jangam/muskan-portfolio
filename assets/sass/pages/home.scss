@@ -397,10 +397,13 @@
             padding: 2rem 1rem 0.5rem;
             border-color: rgba(238, 238, 238, 0.93);
             background-color: #0000;
-            text-transform: lowercase;
             @include mq($until: mobile) {
                 font-size: 14px;
                 padding: 2rem 0.5rem 0.5rem;
+            }
+
+            &::first-letter {
+                text-transform: uppercase;
             }
 
             &:is(.collapsed) {
@@ -478,6 +481,10 @@
         justify-content: space-between;
         @include mq($until: mini) {
             justify-content: center;
+        }
+        @include mq($until: mobile) {
+            flex-direction: column;
+            gap: 2rem;
         }
     }
 
@@ -601,6 +608,25 @@
         }
     }
 
+    // .projects__count
+
+    &__count {
+        font-family: $georgia-bold;
+        font-size: 22px;
+        font-weight: bold;
+        letter-spacing: 0.22px;
+        text-align: left;
+        color: #f7f4f9;
+        margin-bottom: 0;
+        span {
+            position: relative;
+            bottom: 4px;
+        }
+        @include mq($until: mobile) {
+            font-size: 16px;
+        }
+    }
+
     // .projects__buttonArrow
 
     &__buttonArrow {
@@ -647,13 +673,16 @@
             }
         }
 
-        &:nth-child(3) {
+        &:nth-child(2) {
             .projects__details {
                 background-color: #e4f0e0;
             }
             .projects__projectTag {
                 background-color: rgba(67, 79, 62, 0.15);
             }
+        }
+        &:nth-last-child(-n + 3) {
+            // display: none;
         }
     }
 
@@ -776,6 +805,9 @@
                 width: 80%;
             }
         }
+        @include mq($until: mini) {
+            padding: 2rem 1rem;
+        }
 
         &:hover {
             .projects__viewButton {
@@ -847,7 +879,7 @@
         margin-bottom: 0;
         border-radius: 25px;
         background-color: #f8d8d8;
-        padding: 3px 10px;
+        padding: 3px 5px;
 
         @include mq($until: mobile) {
             font-size: 8px;
@@ -901,7 +933,7 @@
 
     &__header {
         position: relative;
-        max-width: 500px;
+        // max-width: 500px;
     }
 
     // .clients__doodleImg
@@ -1297,6 +1329,9 @@
             width: auto;
             height: auto;
             transform: scale(0.6) translateY(-70px);
+            @include mq($until: mini) {
+                display: none;
+            }
         }
 
         &::after {
@@ -1308,6 +1343,9 @@
             width: auto;
             height: auto;
             transform: scale(0.6) translateY(-70px);
+            @include mq($until: mini) {
+                display: none;
+            }
         }
     }
 
@@ -1408,7 +1446,7 @@
         margin: 0 auto;
         overflow: hidden;
         width: 415px;
-        max-height: 424px;
+        max-height: 450px;
         position: relative;
 
         @include mq($until: mini) {
@@ -1478,7 +1516,7 @@
     // .feedback__slides
 
     &__slides {
-        max-height: 424px;
+        // max-height: 424px;
         @include mq($until: mini) {
             min-height: unset;
         }

@@ -27,8 +27,7 @@
                     Full-Time Design!
                 </p>
                 <p class="collaborate__cardDesc">
-                    Empowering brands with innovative and precise
-                    design solutions.
+                    Committed to enhancing your team with consistent, high-quality design solutions.
                 </p>
                 <a href="#" class="collaborate__cardLink"
                     >Let’s discuss
@@ -81,8 +80,7 @@
                     Startups, Let’s Grow!
                 </p>
                 <p class="collaborate__cardDesc">
-                    I’m ready to help your vision come to life with
-                    innovative design.
+                    Eager to transform your ideas into reality with strategic design expertise.
                 </p>
                 <a href="#" class="collaborate__cardLink"
                     >Partner with me

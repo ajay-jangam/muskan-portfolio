@@ -46,24 +46,42 @@
 									<p class="project__statValue"><?php the_field( 'year' ); ?></p>
 								</div>
 							</div>
-							<div class="project__imageWrapper">
-								<?php if ( have_rows( 'snapshots' ) ) : ?>
-									<?php while ( have_rows( 'snapshots' ) ) : the_row(); ?>
-										<?php
-										// Loop through snapshot fields from 1 to 8
-										for ( $i = 1; $i <= 8; $i++ ) :
-											$snapshot = get_sub_field( 'snapshot_' . $i );
-											if ( $snapshot ) :
-										?>
-											<img src="<?php echo esc_url( $snapshot ); ?>" class="project__image" alt="Snapshot <?php echo $i; ?>" />
-										<?php
-											endif;
-										endfor;
-										?>
-									<?php endwhile; ?>
-								<?php endif; ?>
+						</div>
+						<div class="project__imageWrapper">
+							<?php if ( have_rows( 'snapshots' ) ) : ?>
+								<?php while ( have_rows( 'snapshots' ) ) : the_row(); ?>
+									<?php
+									// Counter to track the first image
+									$first_image = true;
 
-							</div>
+									// Loop through snapshot fields from 1 to 8
+									for ( $i = 1; $i <= 8; $i++ ) :
+										$snapshot = get_sub_field( 'snapshot_' . $i );
+										if ( $snapshot ) :
+
+											// If it's the first image, wrap it in a container div
+											if ( $first_image ) :
+									?>
+												<div class="container">
+													<img src="<?php echo esc_url( $snapshot ); ?>" class="project__image" alt="Snapshot <?php echo $i; ?>" />
+												</div>
+									<?php
+												// Set $first_image to false after the first image is processed
+												$first_image = false;
+											else :
+									?>
+												<img src="<?php echo esc_url( $snapshot ); ?>" class="project__image" alt="Snapshot <?php echo $i; ?>" />
+									<?php
+											endif;
+
+										endif;
+									endfor;
+									?>
+								<?php endwhile; ?>
+							<?php endif; ?>
+						</div>
+
+
 						</div>
 					</section>
 

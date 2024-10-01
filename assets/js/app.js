@@ -34,7 +34,6 @@ $(document).ready(() => {
     });
 
     const clientsSliderLeft = new Swiper(".projectHero__sliderLeft", {
-        direction: "vertical",
         slidesPerView: 5,
         speed: 1000,
         mousewheel: true,
@@ -43,6 +42,14 @@ $(document).ready(() => {
         autoplay: {
             delay: 0,
             disableOnInteraction: false,
+        },
+        breakpoints: {
+            300: {
+                direction: "horizontal",
+            },
+            769: {
+                direction: "vertical",
+            },
         },
     });
 
@@ -57,6 +64,14 @@ $(document).ready(() => {
             delay: 0,
             reverseDirection: true,
             disableOnInteraction: false,
+        },
+        breakpoints: {
+            300: {
+                direction: "horizontal",
+            },
+            769: {
+                direction: "vertical",
+            },
         },
     });
 
@@ -156,4 +171,21 @@ $(document).ready(() => {
             $(this).parent().addClass("active"); // Add the active class
         }
     });
+
+    // Projects Singles count
+
+    if ($("body").hasClass("project-listing")) {
+        console.log("aflknaskj");
+
+        // Count the number of elements with the class '.projects__single'
+        let projectsCount = $(".projects__single").length;
+
+        // Remove the existing '.projects__buttonDesktop' element
+        $(".projects__buttonDesktop").remove();
+
+        // Create a new <p> tag with the count and add it to the DOM
+        $(
+            `<p class="projects__count"><span>${projectsCount}</span> Projects</p>`
+        ).appendTo(".projects__header");
+    }
 });

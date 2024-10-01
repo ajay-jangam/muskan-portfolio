@@ -28,8 +28,7 @@
                     class="hero__quoteIcon"
                 />
                 <p class="hero__profileDescription">
-                    I help businesses by designing human ✧ centered
-                    digital experiences ✺︎
+                    Helping businesses by designing human ✧ centered digital experiences ✺︎
                 </p>
             </div>
             <!-- </div> -->
@@ -124,8 +123,7 @@
                                     aria-expanded="true"
                                     aria-controls="collapseOne"
                                 >
-                                    AI-Enhanced Design with a
-                                    Personal Twist
+                                    AI-Enhanced design with a personal twist
                                 </button>
                             </h2>
                             <div
@@ -148,8 +146,7 @@
                                     aria-expanded="false"
                                     aria-controls="collapseTwo"
                                 >
-                                    I Design for Empathy, Not Just
-                                    Usability
+                                    I design for empathy, not just usability
                                 </button>
                             </h2>
                             <div
@@ -172,8 +169,7 @@
                                     aria-expanded="false"
                                     aria-controls="collapseThree"
                                 >
-                                    I See Design as a Journey, Not a
-                                    Destination
+                                   I see design as a journey, not a destination
                                 </button>
                             </h2>
                             <div
@@ -196,8 +192,7 @@
                                     aria-expanded="false"
                                     aria-controls="collapseFour"
                                 >
-                                    I Design for Evolution, Not
-                                    Perfection
+                                    I design for evolution, not perfection
                                 </button>
                             </h2>
                             <div
@@ -220,8 +215,7 @@
                                     aria-expanded="false"
                                     aria-controls="collapseFive"
                                 >
-                                    I Believe in Co-Creation with
-                                    Clients
+                                    I believe in co-creation with clients
                                 </button>
                             </h2>
                             <div

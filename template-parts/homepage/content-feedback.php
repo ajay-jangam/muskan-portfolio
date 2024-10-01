@@ -116,6 +116,22 @@
             <div class="feedback__slides swiper-wrapper">
                 <div class="feedback__slide swiper-slide">
                     <img
+                        src="<?php echo get_template_directory_uri(); ?>/assets/images/home/feedback-img4.jpg"
+                        alt=""
+                        class="feedback__slideImg"
+                    />
+                    <p class="feedback__slideDesc">
+                        Muskan is a highly talented designer with an eye for perfection, delivering designs that are both beautiful and functional. Her curiosity and drive for continuous learning bring fresh, innovative ideas to every project. 
+                    </p>
+                    <p class="feedback__slideName">
+                        Kumar Ranjan
+                    </p>
+                    <p class="feedback__slidePost">
+                        Founder & CEO @eFeed
+                    </p>
+                </div>
+                <div class="feedback__slide swiper-slide">
+                    <img
                         src="<?php echo get_template_directory_uri(); ?>/assets/images/home/feedback-img3.jpg"
                         alt=""
                         class="feedback__slideImg"
@@ -171,6 +187,23 @@
                         Head of Design @ 3MindsDigial
                     </p>
                 </div>
+                <div class="feedback__slide swiper-slide">
+                    <img
+                        src="<?php echo get_template_directory_uri(); ?>/assets/images/home/feedback-img5.jpg"
+                        alt=""
+                        class="feedback__slideImg"
+                    />
+                    <p class="feedback__slideDesc">
+                        I've seen Muskan grow with every project we've worked on together. It's always been a pleasure collaborating with her, as she consistently brings unique ideas and a user-centered approach. 
+                    </p>
+                    <p class="feedback__slideName">
+                        Urvashi Jain
+                    </p>
+                    <p class="feedback__slidePost">
+                        UI/UX Strategist @Spinx Digital
+                    </p>
+                </div>
+
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>

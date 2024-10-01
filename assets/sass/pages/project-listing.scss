@@ -1,3 +1,17 @@
+.project-listing {
+    .projects__list {
+        .projects__single {
+            &:nth-last-child(-n + 3) {
+                display: flex;
+            }
+        }
+    }
+
+    .projects__buttonMobile {
+        display: none;
+    }
+}
+
 .projectHero {
     // .projectHero__wrapper
 
@@ -5,6 +19,12 @@
         display: flex;
         height: 80vh;
         overflow: hidden;
+
+        @include mq($until: mini) {
+            height: unset;
+            flex-direction: column;
+            padding: 8rem 0 0;
+        }
     }
 
     // .projectHero__left
@@ -14,6 +34,9 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        @include mq($until: mini) {
+            align-items: center;
+        }
     }
 
     // .projectHero__title
@@ -26,10 +49,23 @@
         text-align: left;
         color: #2e3047;
         margin-bottom: 0.5rem;
+
+        @include mq($until: mini) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @include mq($until: mobile) {
+            font-size: 34px;
+        }
         span {
             font-family: Georgia;
             font-style: italic;
             letter-spacing: 0.43px;
+            @include mq($until: mini) {
+                display: block;
+            }
         }
     }
 
@@ -41,6 +77,10 @@
         list-style: none;
         padding: 0;
         margin: 2rem 0 0;
+        @include mq($until: mini) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
 
     // .projectHero__socialLink
@@ -53,6 +93,14 @@
         color: #2e304799;
         display: flex;
         gap: 5px;
+        @include mq($until: mini) {
+            width: 45%;
+            justify-content: center;
+        }
+        @include mq($until: mobile) {
+            width: 28%;
+            font-size: 14px;
+        }
     }
 
     // .projectHero__sociaLinkIcon
@@ -67,12 +115,20 @@
         gap: 1.5rem;
         flex-basis: 50%;
         justify-content: flex-end;
+        @include mq($until: mini) {
+            display: block;
+            margin: 3rem 0;
+        }
     }
 
     // .projectHero__sliderLeft
 
     &__sliderLeft {
         width: 180px;
+        @include mq($until: mini) {
+            width: 100%;
+            height: 100px;
+        }
     }
 
     // .projectHero__sliders
@@ -80,6 +136,9 @@
     &__sliders {
         gap: 1.5rem;
         transition-timing-function: linear;
+        @include mq($until: mini) {
+            gap: 1rem;
+        }
     }
 
     // .projectHero__slide
@@ -94,7 +153,7 @@
         border-radius: 12px;
         overflow: hidden;
 
-        @include mq($until: mobile) {
+        @include mq($until: mini) {
             padding: 0;
         }
     }
@@ -110,8 +169,13 @@
     &__slideLogo {
         object-fit: contain;
         aspect-ratio: 5/4;
+        @include mq($until: mini) {
+            aspect-ratio: unset;
+            width: 60%;
+        }
+
         @include mq($until: mobile) {
-            transform: scale(0.6);
+            // transform: scale(0.6);
         }
     }
 
@@ -220,6 +284,11 @@
 
     &__sliderRight {
         width: 180px;
+        @include mq($until: mini) {
+            width: 100%;
+            height: 100px;
+            margin-top: 1rem;
+        }
 
         @include mq($until: mobile) {
             height: 110px;
@@ -320,5 +389,146 @@
 
     &__slide-016 {
         background-color: rgba(4, 120, 255, 0.1);
+    }
+}
+
+.experiments {
+    padding: 8rem 0;
+    @include mq($until: mobile) {
+        padding: 4rem 0;
+    }
+
+    // .experiments__wrapper
+
+    &__wrapper {
+    }
+
+    // .experiments__header
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: max-content;
+        margin: 0 0 3rem 4.5rem;
+        position: relative;
+
+        @include mq($until: mini) {
+            max-width: 300px;
+            margin: 0 auto 2rem;
+        }
+        @include mq($until: mobile) {
+            font-size: 14px;
+            max-width: 260px;
+        }
+    }
+
+    // .experiments__doodleImg
+
+    &__doodleImg {
+        position: absolute;
+        left: -4.5rem;
+        top: 1rem;
+        @include mq($until: mobile) {
+            left: -2.5rem;
+            top: 0.5rem;
+            width: 40px;
+        }
+    }
+
+    // .experiments__doodleText
+
+    &__doodleText {
+        font-family: $brownist;
+        font-size: 26px;
+        text-align: left;
+        color: #16bac5;
+        line-height: 1;
+        margin-bottom: 0;
+        letter-spacing: 1.04px;
+        @include mq($until: mobile) {
+            font-size: 14px;
+        }
+    }
+
+    // .experiments__title
+
+    &__title {
+        font-family: $georgia-bold;
+        font-size: 32px;
+        font-weight: bold;
+        letter-spacing: 0.32px;
+        text-align: left;
+        color: #1873f2;
+
+        @include mq($until: mini) {
+            line-height: 1.2;
+        }
+        @include mq($until: mobile) {
+            font-size: 24px;
+        }
+
+        span {
+            color: #2e3047;
+        }
+    }
+
+    // .experiments__cards
+
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+
+        @include mq($until: mini) {
+            padding-bottom: 2rem;
+            overflow: scroll;
+            gap: 1rem;
+        }
+    }
+
+    // .experiments__card
+
+    &__card {
+        width: 32%;
+        text-decoration: none;
+        @include mq($until: mini) {
+            min-width: 65%;
+        }
+    }
+
+    // .experiments__cardImg
+
+    &__cardImg {
+    }
+
+    // .experiments__cardTitle
+
+    &__cardTitle {
+        font-family: $lato-semi-bold;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 1.31;
+        text-align: left;
+        color: #000;
+        margin: 0.5rem 0;
+    }
+
+    // .experiments__cardDesc
+
+    &__cardDesc {
+        font-family: $lato-light;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.43;
+        letter-spacing: 0.14px;
+        text-align: left;
+        color: #2e3047;
+        margin-bottom: 0;
+        @include mq($until: mini) {
+            padding-right: 2.5rem;
+        }
+        @include mq($until: mobile) {
+            padding-right: 0.5rem;
+        }
     }
 }
