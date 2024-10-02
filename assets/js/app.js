@@ -23,6 +23,14 @@ $(document).ready(() => {
 			disableOnInteraction: false,
 		},
 	});
+	const clientsSliderBottom = new Swiper(".clients__sliderBottom", {
+		...clientsSliderOptionsPara,
+		autoplay: {
+			delay: 0,
+			reverseDirection: true,
+			disableOnInteraction: false,
+		},
+	});
 
 	const clientsSliderLeft = new Swiper(".projectHero__sliderLeft", {
 		slidesPerView: 5,
@@ -1140,14 +1148,4 @@ $(document).ready(function () {
 		else if (linkPath !== "/" && currentPage.indexOf(linkPath) !== -1)
 			$(this).addClass("active");
 	});
-
-	// Projects Singles count
-	if ($("body").hasClass("project-listing")) {
-		let projectsCount = $(".projects__single").length;
-		$(".projects__buttonDesktop").remove();
-
-		$(
-			`<p class="projects__count"><span>${projectsCount}</span> Projects</p>`
-		).appendTo(".projects__header");
-	}
 });
