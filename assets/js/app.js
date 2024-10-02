@@ -863,16 +863,13 @@ $(document).ready(function () {
 				duration: 0.5,
 			},
 			"-=1"
-		)
-		.from(
-			".footer__copyRights",
-			{
-				y: 20,
-				opacity: 0,
-				duration: 0.5,
-			},
-			"-=1"
 		);
+
+	gsap.from(".footer__copyRights", {
+		y: 20,
+		opacity: 0,
+		duration: 0.5,
+	});
 
 	// Hover animations remain unchanged as they're not scroll-triggered
 	$(".projects__single").hover(
