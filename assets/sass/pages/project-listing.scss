@@ -80,6 +80,7 @@
         @include mq($until: mini) {
             flex-wrap: wrap;
             justify-content: center;
+            width: 190px;
         }
     }
 
@@ -93,12 +94,13 @@
         color: #2e304799;
         display: flex;
         gap: 5px;
+        text-decoration: none;
         @include mq($until: mini) {
-            width: 45%;
+            // width: 45%;
             justify-content: center;
         }
         @include mq($until: mobile) {
-            width: 28%;
+            // width: 28%;
             font-size: 14px;
         }
     }

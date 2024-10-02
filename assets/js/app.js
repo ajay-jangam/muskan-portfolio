@@ -10,17 +10,18 @@ $(document).ready(() => {
         // Optional parameters
         loop: true,
         slidesPerView: "auto",
-        speed: 1500,
         parallax: true,
         grabCursor: false,
         mousewheelControl: false,
         keyboardControl: true,
+        speed: 1500,
+        allowTouchMove: false,
     };
     const clientsSliderTop = new Swiper(".clients__sliderTop", {
         ...clientsSliderOptionsPara,
         autoplay: {
             delay: 0,
-            disableOnInteraction: true,
+            disableOnInteraction: false,
         },
     });
 
@@ -159,31 +160,22 @@ $(document).ready(() => {
 
     $(".footer__copyLink").on("click", handleCopy);
 
-    // Get current URL
-    var currentUrl = window.location.href;
+    // Active class functionality
+    const currentPage = window.location.pathname;
 
-    // Loop through each menu item
     $(".navbar-nav li a.nav-link").each(function () {
-        var menuItemUrl = $(this).attr("href");
+        const linkPath = $(this).attr("href");
 
-        // Check if the current URL matches the menu item URL
-        if (currentUrl === menuItemUrl) {
-            $(this).parent().addClass("active"); // Add the active class
-        }
+        if (linkPath === "/" && currentPage === "/") $(this).addClass("active");
+        else if (linkPath !== "/" && currentPage.indexOf(linkPath) !== -1)
+            $(this).addClass("active");
     });
 
     // Projects Singles count
-
     if ($("body").hasClass("project-listing")) {
-        console.log("aflknaskj");
-
-        // Count the number of elements with the class '.projects__single'
         let projectsCount = $(".projects__single").length;
-
-        // Remove the existing '.projects__buttonDesktop' element
         $(".projects__buttonDesktop").remove();
 
-        // Create a new <p> tag with the count and add it to the DOM
         $(
             `<p class="projects__count"><span>${projectsCount}</span> Projects</p>`
         ).appendTo(".projects__header");

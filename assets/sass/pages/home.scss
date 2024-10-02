@@ -1002,6 +1002,9 @@
 
     &__sliders {
         gap: 1.5rem;
+        width: auto; /* Or a fixed width depending on your design */
+        backface-visibility: hidden;
+        will-change: transform;
         transition-timing-function: linear;
     }
 
