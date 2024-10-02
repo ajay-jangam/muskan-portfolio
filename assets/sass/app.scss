@@ -1,13 +1,13 @@
-@import "base";
-@import "variables";
-@import "mixins";
-@import "helpers";
+@import 'base';
+@import 'variables';
+@import 'mixins';
+@import 'helpers';
 
-@import "components/navbar";
-@import "components/footer";
+@import 'components/navbar';
+@import 'components/footer';
 
-@import "pages/home";
-@import "pages/contact-us";
-@import "pages/about-me";
-@import "pages/project-detail";
-@import "pages/project-listing";
+@import 'pages/home';
+@import 'pages/contact-us';
+@import 'pages/about-me';
+@import 'pages/project-detail';
+@import 'pages/project-listing';

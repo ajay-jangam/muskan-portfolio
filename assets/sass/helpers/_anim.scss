@@ -1,0 +1,22 @@
+.hide-init {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.navbar-wrapper {
+	clip-path: inset(0 0 0 0);
+}
+
+.nav-item {
+	opacity: 0;
+	transform-origin: top;
+}
+
+.navbar-brand img {
+	transform-origin: left center;
+}
+
+.line {
+	transform-origin: center;
+	transform: scaleX(0);
+}
