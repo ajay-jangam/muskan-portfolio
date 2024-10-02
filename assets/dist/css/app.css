@@ -86,24 +86,6 @@ body:before {
   visibility: hidden;
 }
 
-.navbar-wrapper {
-  clip-path: inset(0 0 0 0);
-}
-
-.nav-item {
-  opacity: 0;
-  transform-origin: top;
-}
-
-.navbar-brand img {
-  transform-origin: left center;
-}
-
-.line {
-  transform-origin: center;
-  transform: scaleX(0);
-}
-
 .navbar {
   position: fixed;
   left: 0;

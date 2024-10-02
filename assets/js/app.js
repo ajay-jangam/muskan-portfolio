@@ -1,8 +1,6 @@
 $(document).ready(() => {
 	// Hamburger Menu
 	$(".navbar .navbar-toggler").click(function () {
-		console.log("kjndlkjn");
-
 		$(".navbar").toggleClass("hamburgerMenu");
 	});
 	// Sliders
@@ -550,17 +548,6 @@ $(document).ready(function () {
 
 	navTl
 		.fromTo(
-			".navbar-wrapper",
-			{
-				clipPath: "inset(0 100% 0 0)",
-			},
-			{
-				clipPath: "inset(0 0% 0 0)",
-				duration: 1.2,
-				ease: "power4.inOut",
-			}
-		)
-		.fromTo(
 			".navbar-brand img",
 			{
 				scale: 0,
@@ -571,8 +558,7 @@ $(document).ready(function () {
 				rotation: 0,
 				duration: 0.8,
 				ease: "back.out(1.7)",
-			},
-			"-=0.8"
+			}
 		)
 		.fromTo(
 			".nav-item",
@@ -604,18 +590,6 @@ $(document).ready(function () {
 				ease: "back.out(1.7)",
 			},
 			"-=0.2"
-		)
-		.fromTo(
-			".line",
-			{
-				scaleX: 0,
-			},
-			{
-				scaleX: 1,
-				stagger: 0.1,
-				duration: 0.4,
-			},
-			"-=0.6"
 		);
 
 	// Resume link hover
@@ -861,15 +835,15 @@ $(document).ready(function () {
 			},
 			"-=0.5"
 		)
-		.from(
-			".footer__copyEmailWrapper",
-			{
-				y: 30,
-				opacity: 0,
-				duration: 0.5,
-			},
-			"-=0.3"
-		)
+		// .from(
+		// 	".footer__copyEmailWrapper",
+		// 	{
+		// 		y: 30,
+		// 		opacity: 0,
+		// 		duration: 0.5,
+		// 	},
+		// 	"-=0.3"
+		// )
 		.from(
 			".footer__link",
 			{
@@ -941,7 +915,6 @@ $(document).ready(function () {
 		.from(
 			".about__slider",
 			{
-				x: -100,
 				opacity: 0,
 				duration: 1,
 				ease: "power3.out",
@@ -949,6 +922,16 @@ $(document).ready(function () {
 			"-=0.5"
 		)
 		// Animate profile section
+		.from(
+			".about__mobileBody",
+			{
+				y: 200,
+				opacity: 0,
+				duration: 0.8,
+				ease: "back.out(1.7)",
+			},
+			"-=0.5"
+		)
 		.from(
 			".about__profileImg",
 			{
@@ -969,33 +952,24 @@ $(document).ready(function () {
 			"-=0.3"
 		)
 		.from(
-			".about__profileStats",
+			".about__profileStats .about__profileStat",
 			{
 				x: 30,
 				opacity: 0,
 				duration: 0.5,
-				stagger: 0.2,
+				stagger: 0.4,
+			},
+			"-=0.5"
+		)
+		.from(
+			".about__connectBtn",
+			{
+				y: 30,
+				opacity: 0,
+				duration: 0.5,
 			},
 			"-=0.3"
 		);
-
-	// Stats counter animation
-	$(".about__profileStatNum").each(function () {
-		let $this = $(this);
-		let countTo = $this.text().replace("+", "");
-
-		gsap.to($this, {
-			scrollTrigger: {
-				trigger: $this,
-				start: "top 80%",
-				toggleActions: "play none none reverse",
-			},
-			duration: 2,
-			innerText: countTo,
-			snap: { innerText: 1 },
-			ease: "power2.out",
-		});
-	});
 
 	// Details section animations
 	gsap.from(".details__text", {
@@ -1025,18 +999,6 @@ $(document).ready(function () {
 		ease: "power2.out",
 	});
 
-	// Cards animation
-	$(".details__card").each(function (index) {
-		let $this = $(this);
-		gsap.from($this, {
-			y: 100,
-			opacity: 0,
-			duration: 0.8,
-			ease: "power2.out",
-			delay: index * 0.2,
-		});
-	});
-
 	// Doodle animation
 	gsap.from(".details__doodle", {
 		scrollTrigger: {
@@ -1049,5 +1011,136 @@ $(document).ready(function () {
 		opacity: 0,
 		duration: 1,
 		ease: "elastic.out(1, 0.5)",
+	});
+});
+
+// Make sure to include these scripts in your HTML
+// <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+// <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+// <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+$(document).ready(function () {
+	gsap.registerPlugin(ScrollTrigger);
+
+	// Contact section animations
+	const contactTl = gsap.timeline();
+
+	contactTl
+		.from(".contact__profileImg", {
+			scale: 0,
+			rotation: 360,
+			duration: 1,
+			ease: "back.out(1.7)",
+		})
+		.from(
+			".contact__title",
+			{
+				y: 50,
+				opacity: 0,
+				duration: 0.8,
+				stagger: 0.1,
+				ease: "power3.out",
+			},
+			"-=0.5"
+		)
+		.from(
+			".contact__socialLink",
+			{
+				scale: 0,
+				opacity: 0,
+				duration: 0.5,
+				stagger: 0.1,
+				ease: "back.out(1.7)",
+			},
+			"-=0.3"
+		)
+		.from(
+			".contact__copyEmailWrapper",
+			{
+				y: 30,
+				opacity: 0,
+				duration: 0.5,
+				ease: "power2.out",
+			},
+			"-=0.2"
+		);
+
+	// Collaborate section animations
+	const collaborateTl = gsap.timeline();
+
+	collaborateTl
+		.from(".collaborate__doodleText", {
+			x: -50,
+			opacity: 0,
+			duration: 0.8,
+			ease: "power3.out",
+		})
+		.from(
+			".collaborate__doodleImg",
+			{
+				scale: 0,
+				rotation: -180,
+				duration: 0.8,
+				ease: "back.out(1.7)",
+			},
+			"-=0.4"
+		)
+		.from(
+			".collaborate__doodleTitle",
+			{
+				y: 30,
+				opacity: 0,
+				duration: 0.5,
+				stagger: 0.2,
+				ease: "power2.out",
+			},
+			"-=0.4"
+		);
+
+	// Collaborate cards staggered animation
+	gsap.from(".collaborate__card", {
+		y: 100,
+		opacity: 0,
+		duration: 0.8,
+		ease: "power3.out",
+	});
+
+	// Card hover animations
+	$(".collaborate__card").hover(
+		function () {
+			gsap.to($(this), {
+				y: -10,
+				boxShadow: "0 10px 20px rgba(0,0,0,0.1)",
+				duration: 0.3,
+				ease: "power2.out",
+			});
+			gsap.to($(this).find(".collaborate__cardLink svg"), {
+				x: 5,
+				duration: 0.3,
+				ease: "power2.out",
+			});
+		},
+		function () {
+			gsap.to($(this), {
+				y: 0,
+				boxShadow: "0 5px 15px rgba(0,0,0,0.05)",
+				duration: 0.3,
+				ease: "power2.out",
+			});
+			gsap.to($(this).find(".collaborate__cardLink svg"), {
+				x: 0,
+				duration: 0.3,
+				ease: "power2.out",
+			});
+		}
+	);
+
+	// Add floating animation to profile image
+	gsap.to(".contact__profileImg", {
+		x: -10,
+		duration: 2,
+		repeat: -1,
+		yoyo: true,
+		ease: "power1.inOut",
 	});
 });
