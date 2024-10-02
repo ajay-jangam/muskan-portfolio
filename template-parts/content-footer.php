@@ -119,7 +119,7 @@
 					</button>
 					<span class="footer__copiedText">Copied!</span>
 				</div>
-				<a href="#" class="footer__link"
+				<a href="/contact-us" class="footer__link"
 					>Let’s Collaborate
 					<img
 						src="<?php echo get_template_directory_uri(); ?>/assets/images/footer/arrow-right.svg"

@@ -3843,6 +3843,9 @@ body:before {
     min-width: 65%;
   }
 }
+.experiments__cardImg {
+  border-radius: 22px;
+}
 .experiments__cardTitle {
   font-family: "Lato Semi-Bold";
   font-size: 16px;
