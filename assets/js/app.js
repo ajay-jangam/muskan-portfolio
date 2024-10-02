@@ -845,17 +845,14 @@ $(document).ready(function () {
 				duration: 0.5,
 			},
 			"-=0.1"
-		)
-		.from(
-			".footer__bottomLinks li",
-			{
-				y: 20,
-				opacity: 0,
-				stagger: 0.1,
-				duration: 0.5,
-			},
-			"-=1"
 		);
+
+	gsap.from(".footer__bottomLinks li", {
+		y: 20,
+		opacity: 0,
+		stagger: 0.1,
+		duration: 0.5,
+	});
 
 	gsap.from(".footer__copyRights", {
 		y: 20,
