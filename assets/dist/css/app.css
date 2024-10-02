@@ -2973,7 +2973,7 @@ body:before {
   font-size: 14px;
   line-height: 1.7;
   text-align: left;
-  color: hsla(235, 21.7391304348%, 23%, 0.6);
+  color: hwb(235deg 18% 72%/60%);
   text-decoration: none;
 }
 .details__right {
