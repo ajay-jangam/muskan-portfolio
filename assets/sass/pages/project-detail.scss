@@ -1,260 +1,270 @@
 .project {
-    padding: 9rem 0 0;
-    background-image: url("../../images/project-detail/project-bg.png");
-    background-size: contain;
+	padding: 9rem 0 0;
+	background-image: url("../../images/project-detail/project-bg.png");
+	background-size: contain;
 
-    @include mq($until: mobile) {
-        padding: 8rem 0 3rem;
-    }
-    // .project__wrapper
+	@include mq($until: mobile) {
+		padding: 8rem 0 3rem;
+	}
+	// .project__wrapper
 
-    &__wrapper {
-        @include mq($until: mobile) {
-            padding: 0 1.5rem;
-        }
-    }
+	&__wrapper {
+		@include mq($until: mobile) {
+			padding: 0 1.5rem;
+		}
+	}
 
-    // .project__header
+	// .project__header
 
-    &__header {
-        display: flex;
-        justify-content: space-between;
-    }
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		@include mq($until: mini) {
+			flex-direction: column;
+			margin-bottom: 5rem;
+		}
+	}
 
-    // .project__title
+	// .project__title
 
-    &__title {
-        font-family: $lato-semi-bold;
-        font-size: 38px;
-        font-weight: bold;
-        line-height: 1.11;
-        text-align: left;
-        color: #2e3047;
-        @include mq($until: mobile) {
-            font-size: 28px;
-            max-width: 90%;
-        }
-    }
+	&__title {
+		font-family: $lato-semi-bold;
+		font-size: 38px;
+		font-weight: bold;
+		line-height: 1.11;
+		text-align: left;
+		color: #2e3047;
+		@include mq($until: mobile) {
+			font-size: 28px;
+			max-width: 90%;
+		}
+	}
 
-    // .project__desc
+	// .project__desc
 
-    &__desc {
-        font-family: $lato;
-        font-size: 20px;
-        line-height: 1.4;
-        letter-spacing: 0.4px;
-        text-align: left;
-        color: #2e3047;
-        margin: 2rem 0 4rem;
-        max-width: 600px;
-        @include mq($until: mobile) {
-            font-size: 14px;
-            max-width: 85%;
-        }
-    }
+	&__desc {
+		font-family: $lato;
+		font-size: 20px;
+		line-height: 1.4;
+		letter-spacing: 0.4px;
+		text-align: left;
+		color: #2e3047;
+		margin: 2rem 0 4rem;
+		max-width: 600px;
+		@include mq($until: mini) {
+			margin: 2rem 0 1rem;
+		}
+		@include mq($until: mobile) {
+			font-size: 14px;
+			max-width: 85%;
+		}
+	}
 
-    // .project__headerLink
+	// .project__headerLink
 
-    &__headerLink {
-        font-family: $lato;
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 23.8px;
-        text-align: left;
-        color: #2e304799;
-        text-decoration: none;
-        height: min-content;
-        min-width: max-content;
-        display: flex;
-        gap: 5px;
-    }
+	&__headerLink {
+		font-family: $lato;
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 23.8px;
+		text-align: left;
+		color: #2e304799;
+		text-decoration: none;
+		height: min-content;
+		min-width: max-content;
+		display: flex;
+		gap: 5px;
+		@include mq($until: mobile) {
+			font-size: 14px;
+		}
+	}
 
-    // .project__stats
+	// .project__stats
 
-    &__stats {
-        display: flex;
-        justify-content: space-between;
+	&__stats {
+		display: flex;
+		justify-content: space-between;
 
-        @include mq($until: mini) {
-            flex-wrap: wrap;
-            row-gap: 2rem;
-        }
-    }
+		@include mq($until: mini) {
+			flex-wrap: wrap;
+			row-gap: 2rem;
+		}
+	}
 
-    // .project__stat
+	// .project__stat
 
-    &__stat {
-        @include mq($until: mini) {
-            flex-basis: 32%;
-        }
-        @include mq($until: mobile) {
-            flex-basis: 45%;
-        }
-    }
+	&__stat {
+		@include mq($until: mini) {
+			flex-basis: 32%;
+		}
+		@include mq($until: mobile) {
+			flex-basis: 45%;
+		}
+	}
 
-    // .project__statName
+	// .project__statName
 
-    &__statName {
-        font-family: $lato;
-        font-size: 20px;
-        line-height: 1;
-        letter-spacing: 0.4px;
-        text-align: left;
-        color: #2e3047;
-        margin-bottom: 0.8rem;
-    }
+	&__statName {
+		font-family: $lato;
+		font-size: 20px;
+		line-height: 1;
+		letter-spacing: 0.4px;
+		text-align: left;
+		color: #2e3047;
+		margin-bottom: 0.8rem;
+	}
 
-    // .project__statValue
+	// .project__statValue
 
-    &__statValue {
-        font-family: $lato-semi-bold;
-        font-size: 20px;
-        font-weight: bold;
-        line-height: 1;
-        letter-spacing: 0.4px;
-        text-align: left;
-        color: #2e3047;
-    }
+	&__statValue {
+		font-family: $lato-semi-bold;
+		font-size: 20px;
+		font-weight: bold;
+		line-height: 1;
+		letter-spacing: 0.4px;
+		text-align: left;
+		color: #2e3047;
+	}
 
-    // .project__imageWrapper
+	// .project__imageWrapper
 
-    &__imageWrapper {
-        margin-top: 4rem;
-    }
+	&__imageWrapper {
+		margin-top: 4rem;
+	}
 
-    // .project__image
+	// .project__image
 
-    &__image {
-        width: 100%;
-    }
+	&__image {
+		width: 100%;
+	}
 }
 
 .explore {
-    padding: 3rem 0;
+	padding: 3rem 0;
 
-    // .explore__wrapper
+	// .explore__wrapper
 
-    &__wrapper {
-        @include mq($until: mobile) {
-            padding: 0 1.5rem;
-        }
-    }
+	&__wrapper {
+		@include mq($until: mobile) {
+			padding: 0 1.5rem;
+		}
+	}
 
-    // .explore__header
+	// .explore__header
 
-    &__header {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        max-width: max-content;
-        margin: 0 auto 3rem;
-        position: relative;
-        @include mq($until: mobile) {
-            margin: 0 auto 2rem 2.5rem;
-        }
-    }
+	&__header {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		max-width: max-content;
+		margin: 0 auto 3rem;
+		position: relative;
+		@include mq($until: mobile) {
+			margin: 0 auto 2rem 2.5rem;
+		}
+	}
 
-    // .explore__doodleImg
+	// .explore__doodleImg
 
-    &__doodleImg {
-        position: absolute;
-        left: -4.5rem;
-        top: 1rem;
-        @include mq($until: mobile) {
-            left: -2.5rem;
-            top: 0.5rem;
-            width: 40px;
-        }
-    }
+	&__doodleImg {
+		position: absolute;
+		left: -4.5rem;
+		top: 1rem;
+		@include mq($until: mobile) {
+			left: -2.5rem;
+			top: 0.5rem;
+			width: 40px;
+		}
+	}
 
-    // .explore__doodleText
+	// .explore__doodleText
 
-    &__doodleText {
-        font-family: $brownist;
-        font-size: 26px;
-        letter-spacing: 0.52px;
-        text-align: left;
-        color: #16bac5;
-        letter-spacing: 1.28px;
-        line-height: 1;
-        margin-bottom: 0;
+	&__doodleText {
+		font-family: $brownist;
+		font-size: 26px;
+		letter-spacing: 0.52px;
+		text-align: left;
+		color: #16bac5;
+		letter-spacing: 1.28px;
+		line-height: 1;
+		margin-bottom: 0;
 
-        @include mq($until: mobile) {
-            font-size: 14px;
-        }
-    }
+		@include mq($until: mobile) {
+			font-size: 14px;
+		}
+	}
 
-    // .explore__title
+	// .explore__title
 
-    &__title {
-        font-family: $georgia;
-        font-size: 32px;
-        font-weight: bold;
-        letter-spacing: 0.32px;
-        text-align: left;
-        color: #1873f2;
-        @include mq($until: mobile) {
-            font-size: 24px;
-            max-width: 160px;
-        }
+	&__title {
+		font-family: $georgia;
+		font-size: 32px;
+		font-weight: bold;
+		letter-spacing: 0.32px;
+		text-align: left;
+		color: #1873f2;
+		@include mq($until: mobile) {
+			font-size: 24px;
+			max-width: 160px;
+		}
 
-        span {
-            color: #2e3047;
-        }
-    }
+		span {
+			color: #2e3047;
+		}
+	}
 
-    // .explore__cards
+	// .explore__cards
 
-    &__cards {
-        display: flex;
-        gap: 1.5rem;
-        @include mq($until: mobile) {
-            gap: 2rem;
-            flex-direction: column;
-        }
-    }
+	&__cards {
+		display: flex;
+		gap: 1.5rem;
+		@include mq($until: mobile) {
+			gap: 2rem;
+			flex-direction: column;
+		}
+	}
 
-    // .explore__card
+	// .explore__card
 
-    &__card {
-        flex-basis: 32%;
-        text-decoration: none;
-    }
+	&__card {
+		flex-basis: 32%;
+		text-decoration: none;
+	}
 
-    // .explore__cardImg
+	// .explore__cardImg
 
-    &__cardImg {
-        width: 100%;
-    }
+	&__cardImg {
+		width: 100%;
+	}
 
-    // .explore__cardTitle
+	// .explore__cardTitle
 
-    &__cardTitle {
-        font-family: $lato;
-        font-size: 16px;
-        font-weight: bold;
-        line-height: 1.31;
-        text-align: left;
-        color: #000;
-        margin: 1.5rem 0 0.5rem;
-        @include mq($until: mobile) {
-            font-size: 16px;
-        }
-    }
+	&__cardTitle {
+		font-family: $lato;
+		font-size: 16px;
+		font-weight: bold;
+		line-height: 1.31;
+		text-align: left;
+		color: #000;
+		margin: 1.5rem 0 0.5rem;
+		@include mq($until: mobile) {
+			font-size: 16px;
+		}
+	}
 
-    // .explore__cardDesc
+	// .explore__cardDesc
 
-    &__cardDesc {
-        font-family: $lato-light;
-        font-size: 14px;
-        font-weight: 300;
-        line-height: 1.43;
-        letter-spacing: 0.14px;
-        text-align: left;
-        color: #2e3047;
-        max-width: 330px;
-        @include mq($until: mobile) {
-            font-size: 14px;
-        }
-    }
+	&__cardDesc {
+		font-family: $lato-light;
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 1.43;
+		letter-spacing: 0.14px;
+		text-align: left;
+		color: #2e3047;
+		max-width: 330px;
+		@include mq($until: mobile) {
+			font-size: 14px;
+		}
+	}
 }

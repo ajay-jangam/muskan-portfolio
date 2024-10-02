@@ -3280,6 +3280,12 @@ body:before {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 48.0525em) {
+  .project__header {
+    flex-direction: column;
+    margin-bottom: 5rem;
+  }
+}
 .project__title {
   font-family: "Lato Semi-Bold";
   font-size: 38px;
@@ -3304,6 +3310,11 @@ body:before {
   margin: 2rem 0 4rem;
   max-width: 600px;
 }
+@media (max-width: 48.0525em) {
+  .project__desc {
+    margin: 2rem 0 1rem;
+  }
+}
 @media (max-width: 31.24em) {
   .project__desc {
     font-size: 14px;
@@ -3324,6 +3335,11 @@ body:before {
   min-width: max-content;
   display: flex;
   gap: 5px;
+}
+@media (max-width: 31.24em) {
+  .project__headerLink {
+    font-size: 14px;
+  }
 }
 .project__stats {
   display: flex;
