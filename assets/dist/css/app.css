@@ -1439,6 +1439,9 @@ body:before {
 }
 .clients__sliders {
   gap: 1.5rem;
+  width: auto; /* Or a fixed width depending on your design */
+  backface-visibility: hidden;
+  will-change: transform;
   transition-timing-function: linear;
 }
 .clients__slide {
@@ -2895,12 +2898,13 @@ body:before {
 }
 .details {
   background-image: url("../../images/about-me/Bg-What-I-am-good-at.png");
-  background-size: contain;
+  background-size: cover;
   padding: 5rem 0;
 }
 @media (max-width: 31.24em) {
   .details {
     padding: 2rem 0;
+    background-size: contain;
   }
 }
 .details__wrapper {
@@ -3272,6 +3276,10 @@ body:before {
     padding: 0 1.5rem;
   }
 }
+.project__header {
+  display: flex;
+  justify-content: space-between;
+}
 .project__title {
   font-family: "Lato Semi-Bold";
   font-size: 38px;
@@ -3301,6 +3309,21 @@ body:before {
     font-size: 14px;
     max-width: 85%;
   }
+}
+.project__headerLink {
+  font-family: "Lato";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23.8px;
+  text-align: left;
+  color: rgba(46, 48, 71, 0.6);
+  text-decoration: none;
+  height: -moz-min-content;
+  height: min-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  display: flex;
+  gap: 5px;
 }
 .project__stats {
   display: flex;
@@ -3532,6 +3555,7 @@ body:before {
   .projectHero__socialLinks {
     flex-wrap: wrap;
     justify-content: center;
+    width: 190px;
   }
 }
 .projectHero__socialLink {
@@ -3542,16 +3566,15 @@ body:before {
   color: rgba(46, 48, 71, 0.6);
   display: flex;
   gap: 5px;
+  text-decoration: none;
 }
 @media (max-width: 48.0525em) {
   .projectHero__socialLink {
-    width: 45%;
     justify-content: center;
   }
 }
 @media (max-width: 31.24em) {
   .projectHero__socialLink {
-    width: 28%;
     font-size: 14px;
   }
 }
@@ -3824,6 +3847,9 @@ body:before {
   .experiments__card {
     min-width: 65%;
   }
+}
+.experiments__cardImg {
+  border-radius: 22px;
 }
 .experiments__cardTitle {
   font-family: "Lato Semi-Bold";

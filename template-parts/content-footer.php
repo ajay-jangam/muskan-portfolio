@@ -53,7 +53,7 @@
 							<a href="#"> Connect </a>
 						</li>
 						<li class="footer__bottomLink">
-							<a href="#">
+							<a href="https://www.linkedin.com/in/muskan-bhatia20/">
 								<span>LinkedIn</span>
 								<img
 									src="<?php echo get_template_directory_uri(); ?>/assets/images/footer/arrow-angle.svg"
@@ -63,7 +63,7 @@
 							</a>
 						</li>
 						<li class="footer__bottomLink">
-							<a href="#">
+							<a href="https://medium.com/@muskanbhatia.design">
 								<span>Medium</span>
 								<img
 									src="<?php echo get_template_directory_uri(); ?>/assets/images/footer/arrow-angle.svg"
@@ -73,7 +73,7 @@
 							</a>
 						</li>
 						<li class="footer__bottomLink">
-							<a href="#">
+							<a href="https://www.behance.net/bhatiamuskan20">
 								<span>Behance</span>
 								<img
 									src="<?php echo get_template_directory_uri(); ?>/assets/images/footer/arrow-angle.svg"
@@ -119,7 +119,7 @@
 					</button>
 					<span class="footer__copiedText">Copied!</span>
 				</div>
-				<a href="#" class="footer__link"
+				<a href="/contact-us" class="footer__link"
 					>Let’s Collaborate
 					<img
 						src="<?php echo get_template_directory_uri(); ?>/assets/images/footer/arrow-right.svg"
@@ -150,7 +150,7 @@
 					<a href="#"> Connect </a>
 				</li>
 				<li class="footer__bottomLink">
-					<a href="#">
+					<a href="https://www.linkedin.com/in/muskan-bhatia20/">
 						<span>LinkedIn</span>
 						<img
 							src="<?php echo get_template_directory_uri(); ?>/assets/images/footer/arrow-angle.svg"
@@ -160,7 +160,7 @@
 					</a>
 				</li>
 				<li class="footer__bottomLink">
-					<a href="#">
+					<a href="https://medium.com/@muskanbhatia.design">
 						<span>Medium</span>
 						<img
 							src="<?php echo get_template_directory_uri(); ?>/assets/images/footer/arrow-angle.svg"
@@ -170,7 +170,7 @@
 					</a>
 				</li>
 				<li class="footer__bottomLink">
-					<a href="#">
+					<a href="https://www.behance.net/bhatiamuskan20">
 						<span>Behance</span>
 						<img
 							src="<?php echo get_template_directory_uri(); ?>/assets/images/footer/arrow-angle.svg"

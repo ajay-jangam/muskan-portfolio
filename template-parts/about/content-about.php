@@ -188,7 +188,7 @@
                         </p>
                     </div>
                 </div>
-                <a href="#" class="about__connectBtn">
+                <a href="https://www.linkedin.com/in/muskan-bhatia20/" class="about__connectBtn">
                     Connect on
                     <svg
                         width="24"

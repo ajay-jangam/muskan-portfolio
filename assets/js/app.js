@@ -1,32 +1,25 @@
 $(document).ready(() => {
 	// Hamburger Menu
 	$(".navbar .navbar-toggler").click(function () {
-		$(".navbar").toggleClass("hamburgerMenu");
+		("hamburgerMenu");
 	});
+
 	// Sliders
 	const clientsSliderOptionsPara = {
 		// Optional parameters
 		loop: true,
 		slidesPerView: "auto",
-		speed: 1500,
 		parallax: true,
 		grabCursor: false,
 		mousewheelControl: false,
 		keyboardControl: true,
+		speed: 1500,
+		allowTouchMove: false,
 	};
 	const clientsSliderTop = new Swiper(".clients__sliderTop", {
 		...clientsSliderOptionsPara,
 		autoplay: {
 			delay: 0,
-			disableOnInteraction: true,
-		},
-	});
-
-	const clientsSliderBottom = new Swiper(".clients__sliderBottom", {
-		...clientsSliderOptionsPara,
-		autoplay: {
-			delay: 0,
-			reverseDirection: true,
 			disableOnInteraction: false,
 		},
 	});
@@ -1143,4 +1136,24 @@ $(document).ready(function () {
 		yoyo: true,
 		ease: "power1.inOut",
 	});
+	// Active class functionality
+	const currentPage = window.location.pathname;
+
+	$(".navbar-nav li a.nav-link").each(function () {
+		const linkPath = $(this).attr("href");
+
+		if (linkPath === "/" && currentPage === "/") $(this).addClass("active");
+		else if (linkPath !== "/" && currentPage.indexOf(linkPath) !== -1)
+			$(this).addClass("active");
+	});
+
+	// Projects Singles count
+	if ($("body").hasClass("project-listing")) {
+		let projectsCount = $(".projects__single").length;
+		$(".projects__buttonDesktop").remove();
+
+		$(
+			`<p class="projects__count"><span>${projectsCount}</span> Projects</p>`
+		).appendTo(".projects__header");
+	}
 });

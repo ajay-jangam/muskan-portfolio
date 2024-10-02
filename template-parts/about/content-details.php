@@ -20,12 +20,12 @@
             <div class="details__followWrappper">
                 <p class="details__followText">Follow me on:</p>
                 <div class="details__followLinks">
-                    <a href="#" class="details__followLink"
+                    <a href="https://www.instagram.com/muscancreate/" class="details__followLink"
                         >Instagram
                         <img
                             src="<?php echo get_template_directory_uri(); ?>/assets/images/footer/arrow-angle.svg"
                             alt="" /></a
-                    ><a href="" class="details__followLink">
+                    ><a href="https://www.behance.net/bhatiamuskan20" class="details__followLink">
                         Behance
                         <img
                             src="<?php echo get_template_directory_uri(); ?>/assets/images/footer/arrow-angle.svg"

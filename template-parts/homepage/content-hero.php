@@ -146,7 +146,7 @@
                                     aria-expanded="false"
                                     aria-controls="collapseTwo"
                                 >
-                                    I design for empathy, not just usability
+                                    Design for empathy, not just usability
                                 </button>
                             </h2>
                             <div
@@ -169,7 +169,7 @@
                                     aria-expanded="false"
                                     aria-controls="collapseThree"
                                 >
-                                   I see design as a journey, not a destination
+                                   See design as a journey, not a destination
                                 </button>
                             </h2>
                             <div
@@ -192,7 +192,7 @@
                                     aria-expanded="false"
                                     aria-controls="collapseFour"
                                 >
-                                    I design for evolution, not perfection
+                                    Design for evolution, not perfection
                                 </button>
                             </h2>
                             <div
@@ -215,7 +215,7 @@
                                     aria-expanded="false"
                                     aria-controls="collapseFive"
                                 >
-                                    I believe in co-creation with clients
+                                    Believe in co-creation with clients
                                 </button>
                             </h2>
                             <div

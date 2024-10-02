@@ -12,21 +12,29 @@
                 <p class="projectHero__title">Designing with <span style="color: #1873f2;" >Purpose,</span></p>
                 <p class="projectHero__title">Delivering with <span style="color: #16bac5; letter-spacing: -0.43px;" >Precision!</span></p>
                 <ul class="projectHero__socialLinks">
-                    <li class="projectHero__socialLink">
-                        Instagram
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/footer/arrow-angle.svg" alt="" class="projectHero__sociaLinkIcon">
+                    <li>
+                        <a class="projectHero__socialLink" href="https://www.instagram.com/muscancreate/">
+                            Instagram
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/footer/arrow-angle.svg" alt="" class="projectHero__sociaLinkIcon">
+                        </a>
                     </li>
-                    <li class="projectHero__socialLink">
-                        Behance
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/footer/arrow-angle.svg" alt="" class="projectHero__sociaLinkIcon">
+                    <li>
+                        <a class="projectHero__socialLink" href="https://www.behance.net/bhatiamuskan20">
+                            Behance
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/footer/arrow-angle.svg" alt="" class="projectHero__sociaLinkIcon">
+                        </a>
                     </li>
-                    <li class="projectHero__socialLink">
-                        LinkedIn
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/footer/arrow-angle.svg" alt="" class="projectHero__sociaLinkIcon">
+                    <li>
+                        <a class="projectHero__socialLink" href="https://www.linkedin.com/in/muskan-bhatia20/">
+                            LinkedIn
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/footer/arrow-angle.svg" alt="" class="projectHero__sociaLinkIcon">
+                        </a>
                     </li>
-                    <li class="projectHero__socialLink">
-                        Medium
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/footer/arrow-angle.svg" alt="" class="projectHero__sociaLinkIcon">
+                    <li>
+                        <a class="projectHero__socialLink" href="https://medium.com/@muskanbhatia.design">
+                            Medium
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/footer/arrow-angle.svg" alt="" class="projectHero__sociaLinkIcon">
+                        </a>
                     </li>
                 </ul>
             </div>

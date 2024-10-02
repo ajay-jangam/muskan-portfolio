@@ -8,12 +8,20 @@
 					<!-- Project Section Start -->
 					<section class="project">
 						<div class="project__wrapper container">
-							<h2 class="project__title">
-								<?php echo the_title(); ?>
-							</h2>
-							<p class="project__desc">
-								<?php the_field( 'description' ); ?>
-							</p>
+							<div class="project__header">
+								<div class="project__headerLeft">
+									<h2 class="project__title">
+										<?php echo the_title(); ?>
+									</h2>
+									<p class="project__desc">
+										<?php the_field( 'description' ); ?>
+									</p>
+								</div>
+								<a href="#" class="project__headerLink">
+									View on Behance
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/footer/arrow-angle.svg" alt="">
+								</a>
+							</div>
 							<div class="project__stats">
 								<div class="project__stat">
 									<p class="project__statName">Client</p>
@@ -38,12 +46,12 @@
 									<p class="project__statValue"><?php the_field( 'timeline' ); ?></p>
 								</div>
 								<div class="project__stat">
-									<p class="project__statName">Screens</p>
-									<p class="project__statValue"><?php the_field( 'screens' ); ?></p>
+									<p class="project__statName">Designers</p>
+									<p class="project__statValue"><?php the_field( 'designers' ); ?></p>
 								</div>
 								<div class="project__stat">
-									<p class="project__statName">Year</p>
-									<p class="project__statValue"><?php the_field( 'year' ); ?></p>
+									<p class="project__statName">Screens</p>
+									<p class="project__statValue"><?php the_field( 'screens' ); ?></p>
 								</div>
 							</div>
 						</div>
