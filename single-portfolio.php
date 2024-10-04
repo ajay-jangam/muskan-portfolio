@@ -17,9 +17,11 @@
 										<?php the_field( 'description' ); ?>
 									</p>
 								</div>
-								<a href="#" class="project__headerLink">
+								<a href="<?php the_field( 'behance_link' ); ?>" class="project__headerLink">
 									View on Behance
-									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/footer/arrow-angle.svg" alt="">
+									<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M2.85629 1.43115H12.1378V10.7126M12.1378 1.43115L1 12.5689L12.1378 1.43115Z" stroke="#2E3047" stroke-width="1.85629" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
 								</a>
 							</div>
 							<div class="project__stats">
@@ -46,7 +48,7 @@
 									<p class="project__statValue"><?php the_field( 'timeline' ); ?></p>
 								</div>
 								<div class="project__stat">
-									<p class="project__statName">Designers</p>
+									<p class="project__statName">Team</p>
 									<p class="project__statValue"><?php the_field( 'designers' ); ?></p>
 								</div>
 								<div class="project__stat">

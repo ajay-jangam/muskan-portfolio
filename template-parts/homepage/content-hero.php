@@ -92,8 +92,7 @@
                         class="hero__quoteIcon"
                     />
                     <p class="hero__profileDescription">
-                        I help businesses by designing human ✧
-                        centered digital experiences ✺︎
+                        Helping businesses by designing human ✧ centered digital experiences ✺︎
                     </p>
                 </div>
             </div>

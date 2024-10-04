@@ -20,17 +20,17 @@
             <div class="details__followWrappper">
                 <p class="details__followText">Follow me on:</p>
                 <div class="details__followLinks">
-                    <a href="https://www.instagram.com/muscancreate/" class="details__followLink"
-                        >Instagram
-                        <img
-                            src="<?php echo get_template_directory_uri(); ?>/assets/images/footer/arrow-angle.svg"
-                            alt="" /></a
-                    ><a href="https://www.behance.net/bhatiamuskan20" class="details__followLink">
+                    <a href="https://www.instagram.com/muscancreate/" class="details__followLink">
+                        Instagram
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.85629 1.43115H12.1378V10.7126M12.1378 1.43115L1 12.5689L12.1378 1.43115Z" stroke="#2E3047" stroke-width="1.85629" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.behance.net/bhatiamuskan20" class="details__followLink">
                         Behance
-                        <img
-                            src="<?php echo get_template_directory_uri(); ?>/assets/images/footer/arrow-angle.svg"
-                            alt=""
-                        />
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.85629 1.43115H12.1378V10.7126M12.1378 1.43115L1 12.5689L12.1378 1.43115Z" stroke="#2E3047" stroke-width="1.85629" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
                     </a>
                 </div>
             </div>

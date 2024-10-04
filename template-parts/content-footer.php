@@ -50,36 +50,30 @@
 						<li
 							class="footer__bottomLink footer__connect"
 						>
-							<a href="#"> Connect </a>
+							Connect
 						</li>
 						<li class="footer__bottomLink">
 							<a href="https://www.linkedin.com/in/muskan-bhatia20/">
 								<span>LinkedIn</span>
-								<img
-									src="<?php echo get_template_directory_uri(); ?>/assets/images/footer/arrow-angle.svg"
-									alt=""
-									class="footer_linkIcon"
-								/>
+								<svg class="footer_linkIcon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M2.85629 1.43115H12.1378V10.7126M12.1378 1.43115L1 12.5689L12.1378 1.43115Z" stroke="#2E3047" stroke-width="1.85629" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
 							</a>
 						</li>
 						<li class="footer__bottomLink">
 							<a href="https://medium.com/@muskanbhatia.design">
 								<span>Medium</span>
-								<img
-									src="<?php echo get_template_directory_uri(); ?>/assets/images/footer/arrow-angle.svg"
-									alt=""
-									class="footer_linkIcon"
-								/>
+								<svg class="footer_linkIcon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M2.85629 1.43115H12.1378V10.7126M12.1378 1.43115L1 12.5689L12.1378 1.43115Z" stroke="#2E3047" stroke-width="1.85629" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
 							</a>
 						</li>
 						<li class="footer__bottomLink">
 							<a href="https://www.behance.net/bhatiamuskan20">
 								<span>Behance</span>
-								<img
-									src="<?php echo get_template_directory_uri(); ?>/assets/images/footer/arrow-angle.svg"
-									alt=""
-									class="footer_linkIcon"
-								/>
+								<svg class="footer_linkIcon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M2.85629 1.43115H12.1378V10.7126M12.1378 1.43115L1 12.5689L12.1378 1.43115Z" stroke="#2E3047" stroke-width="1.85629" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
 							</a>
 						</li>
 					</ul>
@@ -121,11 +115,10 @@
 				</div>
 				<a href="/contact-us" class="footer__link"
 					>Let’s Collaborate
-					<img
-						src="<?php echo get_template_directory_uri(); ?>/assets/images/footer/arrow-right.svg"
-						alt=""
-						class="footer__linkIcon"
-				/></a>
+					<svg class="footer__linkIcon" width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M0.995256 7.34009C0.445591 7.34009 -3.51977e-07 7.7878 -3.27835e-07 8.34009C-3.03694e-07 8.89237 0.445591 9.34009 0.995256 9.34009L15.0142 9.34009L10.2441 14.133C9.8554 14.5235 9.8554 15.1567 10.2441 15.5472C10.6327 15.9377 11.2629 15.9377 11.6516 15.5472L17.417 9.7543C18.1943 8.97325 18.1943 7.70692 17.417 6.92587L11.6516 1.13298C11.2629 0.742457 10.6327 0.742457 10.2441 1.13298C9.8554 1.52351 9.8554 2.15667 10.2441 2.54719L15.0142 7.34009L0.995256 7.34009Z" fill="#F7F4F9"/>
+					</svg>
+				</a>
 			</div>
 			<div class="footer__right footer__rightDesktop">
 				<img
@@ -147,36 +140,30 @@
 			</p>
 			<ul class="footer__bottomLinks">
 				<li class="footer__bottomLink footer__connect">
-					<a href="#"> Connect </a>
+					Connect
 				</li>
 				<li class="footer__bottomLink">
 					<a href="https://www.linkedin.com/in/muskan-bhatia20/">
 						<span>LinkedIn</span>
-						<img
-							src="<?php echo get_template_directory_uri(); ?>/assets/images/footer/arrow-angle.svg"
-							alt=""
-							class="footer_linkIcon"
-						/>
+						<svg class="footer_linkIcon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M2.85629 1.43115H12.1378V10.7126M12.1378 1.43115L1 12.5689L12.1378 1.43115Z" stroke="#2E3047" stroke-width="1.85629" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
 					</a>
 				</li>
 				<li class="footer__bottomLink">
 					<a href="https://medium.com/@muskanbhatia.design">
 						<span>Medium</span>
-						<img
-							src="<?php echo get_template_directory_uri(); ?>/assets/images/footer/arrow-angle.svg"
-							alt=""
-							class="footer_linkIcon"
-						/>
+						<svg class="footer_linkIcon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M2.85629 1.43115H12.1378V10.7126M12.1378 1.43115L1 12.5689L12.1378 1.43115Z" stroke="#2E3047" stroke-width="1.85629" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
 					</a>
 				</li>
 				<li class="footer__bottomLink">
 					<a href="https://www.behance.net/bhatiamuskan20">
 						<span>Behance</span>
-						<img
-							src="<?php echo get_template_directory_uri(); ?>/assets/images/footer/arrow-angle.svg"
-							alt=""
-							class="footer_linkIcon"
-						/>
+						<svg class="footer_linkIcon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M2.85629 1.43115H12.1378V10.7126M12.1378 1.43115L1 12.5689L12.1378 1.43115Z" stroke="#2E3047" stroke-width="1.85629" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
 					</a>
 				</li>
 			</ul>

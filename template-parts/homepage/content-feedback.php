@@ -121,7 +121,7 @@
                         class="feedback__slideImg"
                     />
                     <p class="feedback__slideDesc">
-                        Muskan is a highly talented designer with an eye for perfection, delivering designs that are both beautiful and functional. Her curiosity and drive for continuous learning bring fresh, innovative ideas to every project. 
+                        Muskan's eye for perfection is truly remarkable. What sets Muskan apart is her insatiable curiosity to learn and grow. She was always eager to explore new tools, techniques which allowed her to bring fresh and innovative ideas to the table. 
                     </p>
                     <p class="feedback__slideName">
                         Kumar Ranjan
@@ -137,11 +137,7 @@
                         class="feedback__slideImg"
                     />
                     <p class="feedback__slideDesc">
-                        Her proactive approach to problem-solving
-                        and her collaborative nature made her an
-                        invaluable asset to our team. She truly
-                        excels at balancing creativity with
-                        practicality.
+                        Muskan's ability to empathize with users & translate complex requirements into intuitive designs sets her apart. She possesses a keen eye for detail. She truly excels at balancing creativity with practicality.
                     </p>
                     <p class="feedback__slideName">
                         Raghuchandra K R
@@ -157,10 +153,7 @@
                         class="feedback__slideImg"
                     />
                     <p class="feedback__slideDesc">
-                        She is very hard working, accountable, and
-                        good at working with strict timelines. Her
-                        curiosity to understand a design task is one
-                        of her biggest skills.
+                        I have worked with Muskan on multiple projects. Her curiosity to understand a design task is one of her biggest skills.She is very hard working, accountable, and good at working with strict timelines. She is a great asset to the team.
                     </p>
                     <p class="feedback__slideName">Dhwani Kikani</p>
                     <p class="feedback__slidePost">
@@ -174,11 +167,7 @@
                         class="feedback__slideImg"
                     />
                     <p class="feedback__slideDesc">
-                        Muskan grew to be a highly passionate
-                        designer with a great aesthetic sense from
-                        an intern to a senior in the UX department.
-                        She is a great team player, extremely honest
-                        and transparent.
+                        Muskan grew to be a highly passionate designer with a great aesthetic sense, who not only managed her work well but also assisted her colleagues with theirs. She is a great team player, extremely honest and transparent.
                     </p>
                     <p class="feedback__slideName">
                         Siddharth Bajpai
@@ -194,7 +183,7 @@
                         class="feedback__slideImg"
                     />
                     <p class="feedback__slideDesc">
-                        I've seen Muskan grow with every project we've worked on together. It's always been a pleasure collaborating with her, as she consistently brings unique ideas and a user-centered approach. 
+                        She has consistently impressed me with unique thought and creative ideation she brings on the table carrying user-centered approach. She combines strong design aesthetics with a deep understanding of usability. 
                     </p>
                     <p class="feedback__slideName">
                         Urvashi Jain

@@ -29,7 +29,7 @@
                 <p class="collaborate__cardDesc">
                     Committed to enhancing your team with consistent, high-quality design solutions.
                 </p>
-                <a href="#" class="collaborate__cardLink"
+                <a href="https://tally.so/r/mVMpO6" class="collaborate__cardLink"
                     >Let’s discuss
                     <svg
                         width="19"
@@ -56,7 +56,7 @@
                     Bringing fresh perspectives and creativity to
                     your projects.
                 </p>
-                <a href="#" class="collaborate__cardLink"
+                <a href="https://tally.so/r/mVMpO6" class="collaborate__cardLink"
                     >Let’s connect
                     <svg
                         width="19"
@@ -82,7 +82,7 @@
                 <p class="collaborate__cardDesc">
                     Eager to transform your ideas into reality with strategic design expertise.
                 </p>
-                <a href="#" class="collaborate__cardLink"
+                <a href="https://tally.so/r/mVMpO6" class="collaborate__cardLink"
                     >Partner with me
                     <svg
                         width="19"
@@ -109,7 +109,7 @@
                     Together, we can redefine the boundaries of
                     modern design.
                 </p>
-                <a href="#" class="collaborate__cardLink"
+                <a href="https://tally.so/r/mVMpO6" class="collaborate__cardLink"
                     >Let’s collaborate
                     <svg
                         width="19"

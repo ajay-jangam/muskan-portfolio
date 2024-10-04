@@ -74,8 +74,22 @@
 		min-width: max-content;
 		display: flex;
 		gap: 5px;
+		align-items: center;
 		@include mq($until: mobile) {
 			font-size: 14px;
+		}
+
+		&:visited {
+			color: #2e304799;
+		}
+		&:hover {
+			color: #007aff;
+
+			svg {
+				path {
+					stroke: #007aff;
+				}
+			}
 		}
 	}
 
@@ -126,10 +140,23 @@
 		color: #2e3047;
 	}
 
+	a.project__statValue {
+		&:visited {
+			color: #2e3047;
+		}
+		&:hover {
+			color: #007aff;
+		}
+	}
+
 	// .project__imageWrapper
 
 	&__imageWrapper {
 		margin-top: 4rem;
+
+		.container {
+			margin-bottom: 4rem;
+		}
 	}
 
 	// .project__image

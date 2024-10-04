@@ -85,7 +85,7 @@ $(document).ready(() => {
 
 	const aboutSlide = new Swiper(".about__slider", {
 		...clientsSliderOptionsPara,
-		speed: 1000,
+		speed: 1500,
 		autoplay: {
 			delay: 0,
 			pauseOnMouseEnter: true,
@@ -675,28 +675,27 @@ $(document).ready(function () {
 		opacity: 0,
 		duration: 1,
 		ease: "power3.out",
-	})
-		.from(
-			".projects__doodleImg",
-			{
-				rotate: 360,
-				opacity: 0,
-				duration: 1,
-				ease: "power2.out",
-			},
-			"-=0.5"
-		)
-		.from(
-			".projects__single",
-			{
-				y: 50,
-				opacity: 0,
-				stagger: 0.2,
-				duration: 0.8,
-				ease: "power2.out",
-			},
-			"-=0.5"
-		);
+	}).from(
+		".projects__doodleImg",
+		{
+			rotate: 360,
+			opacity: 0,
+			duration: 1,
+			ease: "power2.out",
+		},
+		"-=0.5"
+	);
+	// .from(
+	// 	".projects__single",
+	// 	{
+	// 		y: 50,
+	// 		opacity: 0,
+	// 		stagger: 0.2,
+	// 		duration: 0.8,
+	// 		ease: "power2.out",
+	// 	},
+	// 	"-=0.5"
+	// );
 
 	// Clients Section
 	gsap.from(".clients__header", {
@@ -835,35 +834,35 @@ $(document).ready(function () {
 				duration: 0.5,
 			},
 			"-=0.5"
-		)
-		// .from(
-		// 	".footer__copyEmailWrapper",
-		// 	{
-		// 		y: 30,
-		// 		opacity: 0,
-		// 		duration: 0.5,
-		// 	},
-		// 	"-=0.3"
-		// )
-		.from(
-			".footer__link",
-			{
-				y: 30,
-				opacity: 0,
-				duration: 0.5,
-			},
-			"-=0.1"
-		)
-		.from(
-			".footer__bottomLinks li",
-			{
-				y: 20,
-				opacity: 0,
-				stagger: 0.1,
-				duration: 0.5,
-			},
-			"-=1"
 		);
+	// .from(
+	// 	".footer__copyEmailWrapper",
+	// 	{
+	// 		y: 30,
+	// 		opacity: 0,
+	// 		duration: 0.5,
+	// 	},
+	// 	"-=0.3"
+	// )
+	// .from(
+	// 	".footer__link",
+	// 	{
+	// 		y: 30,
+	// 		opacity: 0,
+	// 		duration: 0.5,
+	// 	},
+	// 	"-=0.1"
+	// )
+	// .from(
+	// 	".footer__bottomLinks li",
+	// 	{
+	// 		y: 20,
+	// 		opacity: 0,
+	// 		stagger: 0.1,
+	// 		duration: 0.5,
+	// 	},
+	// 	"-=1"
+	// );
 
 	gsap.from(".footer__copyRights", {
 		y: 20,
@@ -872,22 +871,22 @@ $(document).ready(function () {
 	});
 
 	// Hover animations remain unchanged as they're not scroll-triggered
-	$(".projects__single").hover(
-		function () {
-			gsap.to(this, {
-				y: -10,
-				duration: 0.3,
-				ease: "power2.out",
-			});
-		},
-		function () {
-			gsap.to(this, {
-				y: 0,
-				duration: 0.3,
-				ease: "power2.out",
-			});
-		}
-	);
+	// $(".projects__single").hover(
+	// 	function () {
+	// 		gsap.to(this, {
+	// 			y: -10,
+	// 			duration: 0.3,
+	// 			ease: "power2.out",
+	// 		});
+	// 	},
+	// 	function () {
+	// 		gsap.to(this, {
+	// 			y: 0,
+	// 			duration: 0.3,
+	// 			ease: "power2.out",
+	// 		});
+	// 	}
+	// );
 });
 
 // Make sure to include these scripts in your HTML

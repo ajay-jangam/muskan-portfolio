@@ -28,11 +28,10 @@
                 class="projects__button projects__buttonDesktop"
             >
                 View More Projects
-                <img
-                    src="<?php echo get_template_directory_uri(); ?>/assets/images/home/arrow-right.svg"
-                    alt="My Project"
-                    class="projects__buttonArrow"
-                />
+
+                <svg class="projects__buttonArrow" width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.995256 7.34009C0.445591 7.34009 -3.51977e-07 7.7878 -3.27835e-07 8.34009C-3.03694e-07 8.89237 0.445591 9.34009 0.995256 9.34009L15.0142 9.34009L10.2441 14.133C9.8554 14.5235 9.8554 15.1567 10.2441 15.5472C10.6327 15.9377 11.2629 15.9377 11.6516 15.5472L17.417 9.7543C18.1943 8.97325 18.1943 7.70692 17.417 6.92587L11.6516 1.13298C11.2629 0.742457 10.6327 0.742457 10.2441 1.13298C9.8554 1.52351 9.8554 2.15667 10.2441 2.54719L15.0142 7.34009L0.995256 7.34009Z" fill="#F7F4F9"/>
+                </svg>
             </a>
         </div>
         <div class="projects__list">
@@ -44,7 +43,7 @@
                         class="projects__image"
                     />
                     <img
-                        src="<?php echo get_template_directory_uri(); ?>/assets/images/home/project-img-mobile.png"
+                        src="<?php echo get_template_directory_uri(); ?>/assets/images/home/project-img.jpg"
                         alt="Project"
                         class="projects__image projects__imageMobile"
                     />
@@ -76,6 +75,9 @@
                     </div>
                     <a href="/portfolio/yatra-flight-booking-revamp/" class="projects__viewButton">
                         View Project
+                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.995256 7.34009C0.445591 7.34009 -3.51977e-07 7.7878 -3.27835e-07 8.34009C-3.03694e-07 8.89237 0.445591 9.34009 0.995256 9.34009L15.0142 9.34009L10.2441 14.133C9.8554 14.5235 9.8554 15.1567 10.2441 15.5472C10.6327 15.9377 11.2629 15.9377 11.6516 15.5472L17.417 9.7543C18.1943 8.97325 18.1943 7.70692 17.417 6.92587L11.6516 1.13298C11.2629 0.742457 10.6327 0.742457 10.2441 1.13298C9.8554 1.52351 9.8554 2.15667 10.2441 2.54719L15.0142 7.34009L0.995256 7.34009Z" fill="#F7F4F9"/>
+                        </svg>
                     </a>
                 </div>
             </div>
@@ -120,6 +122,10 @@
                     </div>
                     <a href="#" class="projects__viewButton">
                         View Project
+                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.995256 7.34009C0.445591 7.34009 -3.51977e-07 7.7878 -3.27835e-07 8.34009C-3.03694e-07 8.89237 0.445591 9.34009 0.995256 9.34009L15.0142 9.34009L10.2441 14.133C9.8554 14.5235 9.8554 15.1567 10.2441 15.5472C10.6327 15.9377 11.2629 15.9377 11.6516 15.5472L17.417 9.7543C18.1943 8.97325 18.1943 7.70692 17.417 6.92587L11.6516 1.13298C11.2629 0.742457 10.6327 0.742457 10.2441 1.13298C9.8554 1.52351 9.8554 2.15667 10.2441 2.54719L15.0142 7.34009L0.995256 7.34009Z" fill="#F7F4F9"/>
+                        </svg>
+
                     </a>
                 </div>
             </div> -->
@@ -155,17 +161,21 @@
                     </p>
                     <div class="projects__projectTags">
                         <p class="projects__projectTag">
-                            #TravelAppDesign
+                            #Mutual Funds
                         </p>
                         <p class="projects__projectTag">
-                            #UserExperience
+                            #Fintech
                         </p>
                         <p class="projects__projectTag">
-                            #UserEnagagement
+                            #User Journey
                         </p>
                     </div>
                     <a href="/portfolio/transforming-investment-management-with-anand-rathi/" class="projects__viewButton">
                         View Project
+                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.995256 7.34009C0.445591 7.34009 -3.51977e-07 7.7878 -3.27835e-07 8.34009C-3.03694e-07 8.89237 0.445591 9.34009 0.995256 9.34009L15.0142 9.34009L10.2441 14.133C9.8554 14.5235 9.8554 15.1567 10.2441 15.5472C10.6327 15.9377 11.2629 15.9377 11.6516 15.5472L17.417 9.7543C18.1943 8.97325 18.1943 7.70692 17.417 6.92587L11.6516 1.13298C11.2629 0.742457 10.6327 0.742457 10.2441 1.13298C9.8554 1.52351 9.8554 2.15667 10.2441 2.54719L15.0142 7.34009L0.995256 7.34009Z" fill="#F7F4F9"/>
+                        </svg>
+
                     </a>
                 </div>
             </div>
@@ -205,6 +215,10 @@
                     </div>
                     <a href="#" class="projects__viewButton">
                         View Project
+                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.995256 7.34009C0.445591 7.34009 -3.51977e-07 7.7878 -3.27835e-07 8.34009C-3.03694e-07 8.89237 0.445591 9.34009 0.995256 9.34009L15.0142 9.34009L10.2441 14.133C9.8554 14.5235 9.8554 15.1567 10.2441 15.5472C10.6327 15.9377 11.2629 15.9377 11.6516 15.5472L17.417 9.7543C18.1943 8.97325 18.1943 7.70692 17.417 6.92587L11.6516 1.13298C11.2629 0.742457 10.6327 0.742457 10.2441 1.13298C9.8554 1.52351 9.8554 2.15667 10.2441 2.54719L15.0142 7.34009L0.995256 7.34009Z" fill="#F7F4F9"/>
+                        </svg>
+
                     </a>
                 </div>
             </div>
@@ -245,6 +259,10 @@
                     </div>
                     <a href="#" class="projects__viewButton">
                         View Project
+                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.995256 7.34009C0.445591 7.34009 -3.51977e-07 7.7878 -3.27835e-07 8.34009C-3.03694e-07 8.89237 0.445591 9.34009 0.995256 9.34009L15.0142 9.34009L10.2441 14.133C9.8554 14.5235 9.8554 15.1567 10.2441 15.5472C10.6327 15.9377 11.2629 15.9377 11.6516 15.5472L17.417 9.7543C18.1943 8.97325 18.1943 7.70692 17.417 6.92587L11.6516 1.13298C11.2629 0.742457 10.6327 0.742457 10.2441 1.13298C9.8554 1.52351 9.8554 2.15667 10.2441 2.54719L15.0142 7.34009L0.995256 7.34009Z" fill="#F7F4F9"/>
+                        </svg>
+
                     </a>
                 </div>
             </div> -->
@@ -252,11 +270,9 @@
 
         <a href="/projects" class="projects__button projects__buttonMobile">
             View more projects
-            <img
-                src="<?php echo get_template_directory_uri(); ?>/assets/images/home/arrow-right.svg"
-                alt="My Project"
-                class="projects__buttonArrow"
-            />
+            <svg class="projects__buttonArrow" width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.995256 7.34009C0.445591 7.34009 -3.51977e-07 7.7878 -3.27835e-07 8.34009C-3.03694e-07 8.89237 0.445591 9.34009 0.995256 9.34009L15.0142 9.34009L10.2441 14.133C9.8554 14.5235 9.8554 15.1567 10.2441 15.5472C10.6327 15.9377 11.2629 15.9377 11.6516 15.5472L17.417 9.7543C18.1943 8.97325 18.1943 7.70692 17.417 6.92587L11.6516 1.13298C11.2629 0.742457 10.6327 0.742457 10.2441 1.13298C9.8554 1.52351 9.8554 2.15667 10.2441 2.54719L15.0142 7.34009L0.995256 7.34009Z" fill="#F7F4F9"/>
+            </svg>
         </a>
     </div>
 </section>

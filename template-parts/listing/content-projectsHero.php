@@ -15,25 +15,33 @@
                     <li>
                         <a class="projectHero__socialLink" href="https://www.instagram.com/muscancreate/">
                             Instagram
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/footer/arrow-angle.svg" alt="" class="projectHero__sociaLinkIcon">
+                            <svg class="projectHero__sociaLinkIcon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.85629 1.43115H12.1378V10.7126M12.1378 1.43115L1 12.5689L12.1378 1.43115Z" stroke="#2E3047" stroke-width="1.85629" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
                         </a>
                     </li>
                     <li>
                         <a class="projectHero__socialLink" href="https://www.behance.net/bhatiamuskan20">
                             Behance
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/footer/arrow-angle.svg" alt="" class="projectHero__sociaLinkIcon">
+                            <svg class="projectHero__sociaLinkIcon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.85629 1.43115H12.1378V10.7126M12.1378 1.43115L1 12.5689L12.1378 1.43115Z" stroke="#2E3047" stroke-width="1.85629" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
                         </a>
                     </li>
                     <li>
                         <a class="projectHero__socialLink" href="https://www.linkedin.com/in/muskan-bhatia20/">
                             LinkedIn
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/footer/arrow-angle.svg" alt="" class="projectHero__sociaLinkIcon">
+                            <svg class="projectHero__sociaLinkIcon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.85629 1.43115H12.1378V10.7126M12.1378 1.43115L1 12.5689L12.1378 1.43115Z" stroke="#2E3047" stroke-width="1.85629" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
                         </a>
                     </li>
                     <li>
                         <a class="projectHero__socialLink" href="https://medium.com/@muskanbhatia.design">
                             Medium
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/footer/arrow-angle.svg" alt="" class="projectHero__sociaLinkIcon">
+                            <svg class="projectHero__sociaLinkIcon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.85629 1.43115H12.1378V10.7126M12.1378 1.43115L1 12.5689L12.1378 1.43115Z" stroke="#2E3047" stroke-width="1.85629" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
                         </a>
                     </li>
                 </ul>

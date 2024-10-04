@@ -40,15 +40,15 @@
                 <p class="experiments__cardTitle">Food truck branding</p>
                 <p class="experiments__cardDesc">Every stop offers a new regional flavor adventure with rotating food truck.</p>
             </a>
-            <a href="" class="experiments__card">
+            <a href="https://www.behance.net/gallery/209425689/Information-Architecture-Creating-order-from-Chaos" class="experiments__card">
                 <img
                     src="<?php echo get_template_directory_uri(); ?>/assets/images/project-listing/image3.png"
                     alt=""
                     class="experiments__cardImg"
                 />
                             
-                <p class="experiments__cardTitle">Logo design edition</p>
-                <p class="experiments__cardDesc">I love crafting unique brand identities through an imagination.</p>
+                <p class="experiments__cardTitle">A Simple Guide to IA</p>
+                <p class="experiments__cardDesc">Led a dynamic weekend workshop on IA, where participants explored key techniques</p>
             </a>
         </div>
     </div>
