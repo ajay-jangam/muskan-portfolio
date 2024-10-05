@@ -3296,6 +3296,8 @@ body:before {
   gap: 1.5rem;
   align-items: center;
   justify-content: space-between;
+  width: -moz-max-content;
+  width: max-content;
 }
 .snapshots__item {
   width: auto;
