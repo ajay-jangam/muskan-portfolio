@@ -64,13 +64,13 @@
                     </p>
                     <div class="projects__projectTags">
                         <p class="projects__projectTag">
-                            #TravelAppDesign
+                            #Travel App Design
                         </p>
                         <p class="projects__projectTag">
-                            #UserExperience
+                            #User Experience
                         </p>
                         <p class="projects__projectTag">
-                            #UserEnagagement
+                            #User Enagagement
                         </p>
                     </div>
                     <a href="/portfolio/yatra-flight-booking-revamp/" class="projects__viewButton">

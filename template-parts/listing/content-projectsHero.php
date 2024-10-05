@@ -57,6 +57,7 @@
                                 src="<?php echo get_template_directory_uri(); ?>/assets/images/home/brand-logo/pathways.svg"
                                 alt=""
                                 class="projectHero__slideLogo"
+                                style="transform: scale(1.1);"
                             />
                         </div>
                         <div
@@ -75,6 +76,7 @@
                                 src="<?php echo get_template_directory_uri(); ?>/assets/images/home/brand-logo/yatra.svg"
                                 alt=""
                                 class="projectHero__slideLogo"
+                                style="width: 75px;"
                             />
                         </div>
                         <div
@@ -84,6 +86,7 @@
                                 src="<?php echo get_template_directory_uri(); ?>/assets/images/home/brand-logo/qsworld.svg"
                                 alt=""
                                 class="projectHero__slideLogo"
+                                style="transform: scale(1.3);"
                             />
                         </div>
                         <div
@@ -93,6 +96,7 @@
                                 src="<?php echo get_template_directory_uri(); ?>/assets/images/home/brand-logo/pathways.svg"
                                 alt=""
                                 class="projectHero__slideLogo"
+                                style="transform: scale(1.1);"
                             />
                         </div>
 
@@ -112,6 +116,47 @@
                                 src="<?php echo get_template_directory_uri(); ?>/assets/images/home/brand-logo/yatra.svg"
                                 alt=""
                                 class="projectHero__slideLogo"
+                                style="width: 75px;"
+                            />
+                        </div>
+                                                <div
+                            class="projectHero__slide projectHero__slide-4 swiper-slide"
+                        >
+                            <img
+                                src="<?php echo get_template_directory_uri(); ?>/assets/images/home/brand-logo/qsworld.svg"
+                                alt=""
+                                class="projectHero__slideLogo"
+                                style="transform: scale(1.3);"
+                            />
+                        </div>
+                        <div
+                            class="projectHero__slide projectHero__slide-5 swiper-slide"
+                        >
+                            <img
+                                src="<?php echo get_template_directory_uri(); ?>/assets/images/home/brand-logo/pathways.svg"
+                                alt=""
+                                class="projectHero__slideLogo"
+                                style="transform: scale(1.1);"
+                            />
+                        </div>
+
+                        <div
+                            class="projectHero__slide projectHero__slide-6 swiper-slide"
+                        >
+                            <img
+                                src="<?php echo get_template_directory_uri(); ?>/assets/images/home/brand-logo/efeed.svg"
+                                alt=""
+                                class="projectHero__slideLogo"
+                            />
+                        </div>
+                        <div
+                            class="projectHero__slide projectHero__slide-7 swiper-slide"
+                        >
+                            <img
+                                src="<?php echo get_template_directory_uri(); ?>/assets/images/home/brand-logo/yatra.svg"
+                                alt=""
+                                class="projectHero__slideLogo"
+                                style="width: 75px;"
                             />
                         </div>
                     </div>

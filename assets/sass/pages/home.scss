@@ -693,14 +693,14 @@
 
 			.projects__preview {
 				flex-basis: 55%;
-				transform: scale(1.1);
+				transform: scale(1.05);
 				@include mq($until: mini) {
 					flex-basis: 50%;
 					transform: scale(1);
 				}
 			}
 			.projects__details {
-				padding: 2.5rem;
+				padding: 2rem;
 				padding-right: 0;
 				@include mq($until: mini) {
 					padding: 2rem 0;
@@ -830,7 +830,7 @@
 	&__details {
 		transition: all 0.2s ease;
 		flex-basis: 50%;
-		padding: 2rem;
+		padding: 2rem 0 2rem 2rem;
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
@@ -890,7 +890,7 @@
 		text-align: left;
 		align-self: stretch;
 		color: #f8f5facc;
-		max-width: 430px;
+		// max-width: 430px;
 		transition: all 0.2s ease;
 
 		@include mq($until: mobile) {
