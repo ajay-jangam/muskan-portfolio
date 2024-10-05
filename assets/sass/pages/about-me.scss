@@ -799,6 +799,15 @@
 	// .snapshots__linkResume
 
 	&__linkResume {
+		&:hover {
+			color: #fff;
+
+			svg {
+				path {
+					stroke: #fff;
+				}
+			}
+		}
 	}
 
 	// .snapshots__linkProjects
@@ -806,5 +815,14 @@
 	&__linkProjects {
 		color: #fff;
 		align-items: flex-end;
+		&:hover {
+			color: #2e3047;
+
+			svg {
+				path {
+					fill: #2e3047;
+				}
+			}
+		}
 	}
 }

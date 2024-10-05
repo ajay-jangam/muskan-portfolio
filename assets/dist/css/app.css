@@ -3062,7 +3062,7 @@ body:before {
   font-size: 14px;
   line-height: 1.7;
   text-align: left;
-  color: hsla(235, 21.7391304348%, 23%, 0.6);
+  color: hwb(235deg 18% 72%/60%);
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -3357,9 +3357,21 @@ body:before {
   padding: 1.5rem;
   position: absolute;
 }
+.snapshots__linkResume:hover {
+  color: #fff;
+}
+.snapshots__linkResume:hover svg path {
+  stroke: #fff;
+}
 .snapshots__linkProjects {
   color: #fff;
   align-items: flex-end;
+}
+.snapshots__linkProjects:hover {
+  color: #2e3047;
+}
+.snapshots__linkProjects:hover svg path {
+  fill: #2e3047;
 }
 
 .project {

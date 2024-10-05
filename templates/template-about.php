@@ -17,7 +17,7 @@
 
 <!-- Snapshot -->
 
-<?php echo get_template_part( 'template-parts/about/content', 'snapshot' ); ?>
+<?php echo get_template_part( 'template-parts/about/content', 'snapshots' ); ?>
 
 <!-- Footer -->
  
